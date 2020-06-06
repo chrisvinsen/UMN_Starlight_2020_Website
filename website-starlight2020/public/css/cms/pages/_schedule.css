@@ -1,0 +1,252 @@
+/* :: 17.0 Schedule Area CSS */
+ .our-schedule-area {
+     position: relative;
+     z-index: 1;
+     background-color: #EBB930;
+}
+ .our-schedule-area .schedule-tab {
+     position: relative;
+     z-index: 1;
+     margin-bottom: 45px;
+}
+ .our-schedule-area .schedule-tab .nav-tabs {
+     justify-content: center;
+     border-bottom: none;
+}
+ .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+     color: #9293bc;
+     background-color: #EBB930;
+     text-align: center;
+     border-radius: 0;
+     font-size: 18px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     font-weight: 600;
+     padding: 15px 30px;
+     border-bottom: none;
+     border-top: none;
+     border-left: none;
+     border-right: 1px solid #4c4f8d;
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+         font-size: 14px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+         font-size: 10px;
+         padding: 10px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+         font-size: 12px;
+         padding: 15px 20px;
+    }
+}
+ @media only screen and (min-width:576px) and (max-width:767px) {
+     .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+         font-size: 14px;
+    }
+}
+ .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
+     font-size: 14px;
+     font-weight: 500;
+     letter-spacing: 0;
+     text-transform: capitalize;
+}
+ @media only screen and (max-width:767px) {
+     .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
+         font-size: 9px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
+         font-size: 10px;
+    }
+}
+ .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link.active {
+     background-color: #5d5e8d;
+     color: #fff;
+}
+ .our-schedule-area .schedule-tab .nav-tabs .nav-item:nth-child(1) .nav-link {
+     border-radius: 10px 0 0 10px;
+}
+ .our-schedule-area .schedule-tab .nav-tabs .nav-item:last-child .nav-link {
+     border-right: none;
+     border-radius: 0 10px 10px 0;
+}
+ .single-schedule-area {
+     border: 1px solid 5f 608e #444675;
+     border-radius: 10px;
+     padding: 25px;
+     transition-duration: 500ms;
+     margin-bottom: 20px;
+}
+ .single-schedule-area:hover, .single-schedule-area:focus {
+     border-color: #EBB930;
+}
+ .single-schedule-area .single-schedule-tumb-info {
+     flex: 0 0 42%;
+     max-width: 42%;
+     width: 42%;
+     padding-right: 15px;
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .single-schedule-area .single-schedule-tumb-info {
+         flex: 0 0 35%;
+         max-width: 35%;
+         width: 35%;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .single-schedule-area .single-schedule-tumb-info {
+         flex: 0 0 100%;
+         max-width: 100%;
+         width: 100%;
+         padding-left: 0;
+         padding-bottom: 30px;
+    }
+}
+ .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb {
+     height: 90px;
+     width: 90px;
+}
+ .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb img {
+     border-radius: 50%;
+}
+ .single-schedule-area .single-schedule-tumb-info .single-schedule-info {
+     margin-left: 30px;
+}
+ .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
+     font-size: 20px;
+     color: #fff;
+     font-weight: 600;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
+         font-size: 16px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
+         font-size: 14px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
+         font-size: 14px;
+    }
+}
+ .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
+     color: #9293bc;
+     margin-bottom: 0;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
+         font-size: 12px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
+         font-size: 12px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
+         font-size: 12px;
+    }
+}
+ .single-schedule-area .single-schedule-tumb-info .single-schedule-info p span {
+     color: #fff;
+}
+ .single-schedule-area .schedule-time-place {
+     flex: 0 0 42%;
+     max-width: 42%;
+     width: 42%;
+     padding: 0 15px;
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .single-schedule-area .schedule-time-place {
+         flex: 0 0 35%;
+         max-width: 35%;
+         width: 35%;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .single-schedule-area .schedule-time-place {
+         flex: 0 0 100%;
+         max-width: 100%;
+         width: 100%;
+         padding: 0 0 30px 0;
+    }
+}
+ .single-schedule-area .schedule-time-place p {
+     color: #fff;
+     margin-bottom: 0;
+     letter-spacing: 1px;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .single-schedule-area .schedule-time-place p {
+         font-size: 12px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .single-schedule-area .schedule-time-place p {
+         font-size: 12px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .single-schedule-area .schedule-time-place p {
+         font-size: 12px;
+    }
+}
+ .single-schedule-area .schedule-time-place p i {
+     color: #EBB930;
+     margin-right: 5px;
+}
+ .single-schedule-area .schedule-time-place p:last-child {
+     margin-bottom: 0;
+}
+ .single-schedule-area .btn.cvinsen-btn {
+     flex: 0 0 16%;
+     max-width: 16%;
+     width: 16%;
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .single-schedule-area .btn.cvinsen-btn {
+         flex: 0 0 30%;
+         max-width: 30%;
+         width: 30%;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .single-schedule-area .btn.cvinsen-btn {
+         flex: 0 0 100%;
+         max-width: 100%;
+         width: 100%;
+    }
+}
+ .single-schedule-area.single-page {
+     box-shadow: 0px 8px 27px 0px rgba(90, 111, 120, 0.15);
+     border-color: #fff;
+     transition-duration: 500ms;
+}
+ .single-schedule-area.single-page .single-schedule-info h6 {
+     color: #111343;
+}
+ .single-schedule-area.single-page .single-schedule-info p {
+     color: #9293bc;
+     margin-bottom: 0;
+}
+ .single-schedule-area.single-page .single-schedule-info p span {
+     color: #111343;
+}
+ .single-schedule-area.single-page .schedule-time-place p {
+     color: #111343;
+}
+ .single-schedule-area.single-page:hover, .single-schedule-area.single-page:focus {
+     border-color: #EBB930;
+}
+ 

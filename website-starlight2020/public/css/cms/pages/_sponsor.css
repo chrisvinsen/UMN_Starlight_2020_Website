@@ -1,0 +1,62 @@
+/* :: 19.0 Sponsor Area CSS */
+ .our-sponsor-client-area {
+     position: relative;
+     z-index: 1;
+     background-color: #02091A;
+}
+ .our-sponsor-area {
+     position: relative;
+     z-index: 1;
+     width: 100%;
+}
+ .our-sponsor-area .single-sponsor {
+     border: 1px solid 5f 608e #444675;
+     flex: 0 0 25%;
+     max-width: 25%;
+     width: 25%;
+     height: 240px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: -1px;
+     margin-top: -1px;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .our-sponsor-area .single-sponsor {
+         height: 200px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .our-sponsor-area .single-sponsor {
+         height: 150px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .our-sponsor-area .single-sponsor {
+         height: 80px;
+    }
+}
+ .our-sponsor-area .single-sponsor a img {
+     transition-duration: 300ms;
+     max-height: 110px;
+     opacity: 0.5;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .our-sponsor-area .single-sponsor a img {
+         max-height: 90px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .our-sponsor-area .single-sponsor a img {
+         max-height: 50px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .our-sponsor-area .single-sponsor a img {
+         max-height: 30px;
+    }
+}
+ .our-sponsor-area .single-sponsor:hover a img, .our-sponsor-area .single-sponsor:focus a img {
+     opacity: 1;
+}
+ 

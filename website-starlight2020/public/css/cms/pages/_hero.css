@@ -1,0 +1,237 @@
+/* :: 8.0 Hero Area CSS */
+ .welcome-area {
+     position: relative;
+     z-index: 1;
+}
+ .welcome-area .icon-scroll {
+     width: 26px;
+     height: 39px;
+     position: absolute;
+     z-index: 999999;
+     left: 50%;
+     bottom: 40px;
+     margin-left: -13px;
+     box-shadow: inset 0 0 0 2px #fff;
+     border-radius: 25px;
+     opacity: 0.75;
+     cursor: pointer;
+}
+ .welcome-area .icon-scroll::before {
+     position: absolute;
+     z-index: 999999;
+     content: '';
+     width: 6px;
+     height: 6px;
+     background: #fff;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 8px;
+     border-radius: 4px;
+     animation: iconScroll linear 1200ms infinite;
+}
+ @-webkit-keyframes iconScroll {
+     0% {
+         top: 8px;
+         opacity: 1;
+    }
+     50% {
+         opacity: 0;
+         top: 23px;
+    }
+     100% {
+         top: 8px;
+         opacity: 0;
+    }
+}
+ @keyframes iconScroll {
+     0% {
+         top: 8px;
+         opacity: 1;
+    }
+     50% {
+         opacity: 0;
+         top: 23px;
+    }
+     100% {
+         top: 8px;
+         opacity: 0;
+    }
+}
+ .welcome-slides {
+     position: relative;
+     z-index: 1;
+     overflow: hidden;
+}
+ .welcome-slides .owl-prev, .welcome-slides .owl-next {
+     transition-duration: 500ms;
+     border-radius: 50%;
+     position: absolute;
+     width: 46px;
+     height: 46px;
+     top: 50%;
+     left: 70px;
+     margin-top: -33px;
+     z-index: 10;
+     text-align: center;
+     line-height: 44px;
+     border: 2px solid #9293bc;
+     color: #9293bc;
+     font-size: 34px;
+}
+ .welcome-slides .owl-prev:hover, .welcome-slides .owl-next:hover, .welcome-slides .owl-prev:focus, .welcome-slides .owl-next:focus {
+     background-color: rgba(255, 255, 255, 0.5);
+     color: #000;
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .welcome-slides .owl-prev, .welcome-slides .owl-next {
+         left: 30px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .welcome-slides .owl-prev, .welcome-slides .owl-next {
+         width: 40px;
+         left: 15px;
+         height: 40px;
+         font-size: 18px;
+         line-height: 38px;
+    }
+}
+ .welcome-slides .owl-next {
+     left: auto;
+     right: 70px;
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .welcome-slides .owl-next {
+         right: 30px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .welcome-slides .owl-next {
+         right: 15px;
+    }
+}
+ .single-welcome-slide {
+     position: relative;
+     z-index: 2;
+     width: 100%;
+     height: 980px;
+     background-color: #EBB930;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .single-welcome-slide {
+         height: 800px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .single-welcome-slide {
+         height: 800px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .single-welcome-slide {
+         height: 700px;
+    }
+}
+ .single-welcome-slide .welcome-text {
+     position: relative;
+     z-index: 1;
+}
+ .single-welcome-slide .welcome-text h2 {
+     position: relative;
+     z-index: 1;
+     font-weight: 700;
+     font-size: 85px;
+     text-transform: uppercase;
+     display: block;
+     margin-bottom: 10px;
+     color: #fff;
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .single-welcome-slide .welcome-text h2 {
+         font-size: 60px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .single-welcome-slide .welcome-text h2 {
+         font-size: 30px;
+    }
+}
+ @media 'only screen and (max-width:767px)'-landscape {
+     .single-welcome-slide .welcome-text h2 {
+         font-size: 42px;
+    }
+}
+ .single-welcome-slide .welcome-text h6 {
+     color: #fff;
+     margin-bottom: 50px;
+     text-transform: uppercase;
+     display: inline-block;
+     background-color: rgba(255, 255, 255, 0.10);
+     padding: 10px 20px;
+     font-size: 3vw;
+}
+ .single-welcome-slide .welcome-text .hero-mail-contact {
+     color: #fff;
+     font-style: italic;
+     text-decoration: underline;
+}
+ .single-welcome-slide .welcome-text .hero-mail-contact:hover, .single-welcome-slide .welcome-text .hero-mail-contact:focus {
+     color: #EBB930;
+}
+ .single-welcome-slide .welcome-text-two {
+     position: relative;
+     z-index: 1;
+}
+ .single-welcome-slide .welcome-text-two h5 {
+     font-size: 40px;
+     color: #fff;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+     font-weight: 700;
+}
+ @media only screen and (max-width:767px) {
+     .single-welcome-slide .welcome-text-two h5 {
+         font-size: 20px;
+    }
+}
+ .single-welcome-slide .welcome-text-two h2 {
+     font-size: 90px;
+     color: #fff;
+     letter-spacing: 0.5px;
+     text-transform: uppercase;
+     font-weight: 700;
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .single-welcome-slide .welcome-text-two h2 {
+         font-size: 62px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .single-welcome-slide .welcome-text-two h2 {
+         font-size: 30px;
+    }
+}
+ @media 'only screen and (max-width:767px)'-landscape {
+     .single-welcome-slide .welcome-text-two h2 {
+         font-size: 42px;
+    }
+}
+ .single-welcome-slide .welcome-text-two .event-meta {
+     position: relative;
+     z-index: 1;
+     margin-bottom: 50px;
+}
+ .single-welcome-slide .welcome-text-two .event-meta a {
+     color: #fff;
+     margin-right: 40px;
+}
+ @media only screen and (max-width:767px) {
+     .single-welcome-slide .welcome-text-two .event-meta a {
+         margin-right: 15px;
+         font-size: 12px;
+    }
+}
+ .single-welcome-slide .welcome-text-two .event-meta a i {
+     margin-right: 5px;
+}
+ 

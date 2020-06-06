@@ -1,0 +1,47 @@
+/* :: 21.0 CTA Area CSS */
+ .call-to-action-area {
+     position: relative;
+     z-index: 1;
+}
+ .call-to-action-content {
+     position: relative;
+     z-index: 1;
+}
+ .call-to-action-content .call-to-action-heading h6 {
+     font-size: 18px;
+     color: #fff;
+     letter-spacing: 0.5px;
+     text-transform: uppercase;
+}
+ .call-to-action-content .call-to-action-heading h2 {
+     font-size: 55px;
+     text-transform: capitalize;
+     font-weight: 700;
+     letter-spacing: 0.5px;
+     color: #fff;
+     margin-bottom: 30px;
+     display: inline-block;
+}
+ @media only screen and (max-width:767px) {
+     .call-to-action-content .call-to-action-heading h2 {
+         font-size: 30px;
+    }
+}
+ .call-to-action-content .event-time {
+     background-color: rgba(255, 255, 255, 0.10);
+     padding: 30px 50px;
+     display: inline-block;
+     border-radius: 10px;
+}
+ .call-to-action-content .event-time p {
+     font-size: 18px;
+     color: #fff;
+     margin-bottom: 3px;
+}
+ .call-to-action-content .event-time p:last-child {
+     margin-bottom: 0;
+}
+ .call-to-action-content .event-time p i {
+     margin-right: 3px;
+}
+ 

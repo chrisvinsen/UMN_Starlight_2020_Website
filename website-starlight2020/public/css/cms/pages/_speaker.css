@@ -1,0 +1,85 @@
+/* :: 12.0 Speaker Area CSS */
+ .our-speaker-area {
+     position: relative;
+     z-index: 1;
+}
+ .our-speaker-area .row {
+     margin-left: -20px;
+     margin-right: -20px;
+}
+ @media only screen and (max-width:767px) {
+     .our-speaker-area .row {
+         margin-left: -15px;
+         margin-right: -15px;
+    }
+}
+ .our-speaker-area .row .col-12 {
+     padding-left: 20px;
+     padding-right: 20px;
+}
+ @media only screen and (max-width:767px) {
+     .our-speaker-area .row .col-12 {
+         padding-left: 15px;
+         padding-right: 15px;
+    }
+}
+ .single-speaker-area {
+     position: relative;
+     z-index: 1;
+     overflow: hidden;
+     margin-bottom: 40px;
+     border-radius: 10px;
+}
+ .single-speaker-area .speaker-single-thumb {
+     position: relative;
+     z-index: 1;
+     border-radius: 10px;
+}
+ .single-speaker-area .speaker-single-thumb img {
+     transition-duration: 1500ms;
+     border-radius: 10px;
+     width: 100%;
+}
+ .single-speaker-area .social-info {
+     position: absolute;
+     top: -180px;
+     right: 0;
+     z-index: 22;
+     background-color: #EBB930;
+     padding: 15px;
+     border-radius: 0 10px 0 10px;
+     text-align: center;
+     transition-duration: 800ms;
+}
+ .single-speaker-area .social-info a {
+     display: block;
+     font-size: 18px;
+     color: #fff;
+     margin-bottom: 5px;
+}
+ .single-speaker-area .social-info a:last-child {
+     margin-bottom: 0;
+}
+ .single-speaker-area .speaker-info {
+     position: absolute;
+     bottom: 25px;
+     left: 25px;
+     z-index: 22;
+}
+ .single-speaker-area .speaker-info h5 {
+     font-size: 20px;
+     font-weight: 500;
+     color: #fff;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+}
+ .single-speaker-area .speaker-info p {
+     color: #EBB930;
+     margin-bottom: 0;
+     letter-spacing: 1px;
+     line-height: 1;
+}
+ .single-speaker-area:hover .social-info, .single-speaker-area:focus .social-info {
+     top: 0;
+}
+ 

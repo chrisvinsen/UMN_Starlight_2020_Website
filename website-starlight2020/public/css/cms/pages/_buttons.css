@@ -1,0 +1,299 @@
+/* :: 6.0 Buttons Area CSS */
+ .btn:focus {
+      box-shadow: none;
+}
+ .cvinsen-btn {
+      position: relative;
+      z-index: 1;
+      height: 46px;
+      line-height: 46px !important;
+      font-size: 14px;
+      font-weight: 500 !important;
+      border: none !important;
+      display: inline-block;
+      padding: 0 25px !important;
+      text-align: center !important;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #ffffff !important;
+      border-radius: 23px !important;
+      transition-duration: 500ms;
+      overflow: hidden;
+}
+
+ .cvinsen-btn i {
+      margin-left: 5px;
+}
+ .cvinsen-btn::before {
+      transition-duration: 800ms;
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      top: -10%;
+      left: -10%;
+      content: '';
+      background: #EBB930;
+      background-image: linear-gradient(120deg, #EBB930 0%, #E9C734 50%,#FFFF93 100%);
+      z-index: -2;
+}
+ .cvinsen-btn:focus, .cvinsen-btn:hover {
+      font-weight: 500;
+      background-color: #fff;
+      color: #111343 !important;
+      box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+}
+ .cvinsen-btn:focus i, .cvinsen-btn:hover i {
+      animation: buttonIcon 1s ease-in infinite;
+}
+ .cvinsen-btn:focus::before, .cvinsen-btn:hover::before {
+      left: 110%;
+}
+ @-webkit-keyframes buttonIcon {
+      0% {
+           opacity: 1;
+     }
+      100% {
+           opacity: 0;
+     }
+}
+ @keyframes buttonIcon {
+      0% {
+           opacity: 1;
+     }
+      100% {
+           opacity: 0;
+     }
+}
+ .cvinsen-btn-2 {
+      position: relative;
+      z-index: 1;
+      height: 46px;
+      line-height: 46px;
+      font-size: 14px;
+      font-weight: 500;
+      display: inline-block;
+      padding: 0 25px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #fff;
+      border-radius: 23px;
+      transition-duration: 500ms;
+}
+ .cvinsen-btn-2 i {
+      margin-left: 4px;
+}
+ .cvinsen-btn-2.btn-2 {
+      color: #111343;
+}
+ .cvinsen-btn-2:focus, .cvinsen-btn-2:hover {
+      font-weight: 500;
+      box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+      background-color: #EBB930;
+      color: #fff;
+}
+ .cvinsen-btn-white {
+      position: relative;
+      z-index: 1;
+      height: 46px;
+      padding: 0 25px !important;
+      border: 2px solid #fff !important;
+      color: #fff !important;
+      border-radius: 23px !important;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 42px !important;
+      font-weight: 500 !important;
+      transition-duration: 500ms !important;
+}
+ .cvinsen-btn-white i {
+      margin-left: 5px;
+}
+ .cvinsen-btn-white:hover, .cvinsen-btn-white:focus {
+      background-color: #EBB930;
+      border-color: #EBB930;
+      color: #000;
+}
+ .cvinsen-btn-white-2 {
+      position: relative;
+      z-index: 1;
+      height: 46px;
+      padding: 0 25px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border-radius: 23px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 42px;
+      font-weight: 500;
+      transition-duration: 500ms;
+}
+ .cvinsen-btn-white-2 i {
+      margin-left: 3px;
+}
+ .cvinsen-btn-white-2:hover, .cvinsen-btn-white-2:focus {
+      background-color: #EBB930;
+      border-color: #EBB930;
+      color: #fff;
+}
+ .cvinsen-gb-btn {
+      position: relative;
+      z-index: 1;
+      color: #fff !important;
+      font-size: 14px !important;
+      font-weight: 500 !important;
+      text-transform: uppercase;
+      line-height: 46px !important;
+      padding: 0 25px !important;
+      min-width: 180px;
+      height: 46px;
+      transition-duration: 500ms !important;
+      border-radius: 23px !important;
+      border: none !important;
+      overflow: hidden;
+}
+ .cvinsen-gb-btn::before {
+      transition-duration: 800ms;
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      top: -10%;
+      left: -10%;
+      content: '';
+      background: #EBB930;
+      background-image: linear-gradient(120deg, #EBB930 0%, #E9C734 50%,#FFFF93 100%);
+      z-index: -2;
+}
+ .cvinsen-gb-btn::after {
+      transition-duration: 500ms;
+      position: absolute;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      border-radius: 23px;
+      top: 2px;
+      left: 2px;
+      right: 2px;
+      bottom: 2px;
+      background-color: #151853;
+      content: '';
+      z-index: -1;
+}
+
+.download-pdf-btn{
+      position: relative;
+      z-index: 1;
+      color: #fff !important;
+      font-size: 20px !important;
+      font-weight: 500 !important;
+      text-transform: uppercase;
+      line-height: 46px !important;
+      padding: 0 25px !important;
+      min-width: 180px;
+      height: 46px;
+      transition-duration: 500ms !important;
+      border-radius: 23px !important;
+      border: none !important;
+      overflow: hidden;
+}
+
+.download-pdf-btn::after{
+      transition-duration: 500ms;
+      position: absolute;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      border-radius: 23px;
+      top: 2px;
+      left: 2px;
+      right: 2px;
+      bottom: 2px;
+      content: '';
+      z-index: -1;
+}
+
+ .cvinsen-gb-btn:hover, .cvinsen-gb-btn:focus {
+      color: #fff;
+}
+ .cvinsen-gb-btn:hover::after, .cvinsen-gb-btn:focus::after {
+      opacity: 0;
+}
+
+.btn-yellow{
+      background-image: linear-gradient(120deg, #EBB930 0%, #E9C734 50%,#FFFF93 100%);
+}
+
+.custom-btn-LO{
+      background-image: linear-gradient(120deg,   #F88D87 0%, #F8BAAD 75%, #ffffff 100%) !important;
+}
+.custom-btn-PR{
+      background-image: linear-gradient(120deg,   #CC1275 0%, #E07496 75%, #ffffff 100%) !important;
+}
+.custom-btn-DOC{
+      background-image: linear-gradient(120deg,   #F48160 0%, #F6B796 75%, #ffffff 100%) !important;
+}
+.custom-btn-ACR{
+      background-image: linear-gradient(120deg,   #F9A602 0%, #F6CD63 75%, #ffffff 100%) !important;
+}
+.custom-btn-VSL{
+      background-image: linear-gradient(120deg,   #855D41 0%, #B7A287 75%, #ffffff 100%) !important;
+}
+.custom-btn-MDPR{
+      background-image: linear-gradient(120deg,   #E47911 0%, #ECB268 75%, #ffffff 100%) !important;
+}
+.custom-btn-SPR{
+      background-image: linear-gradient(120deg,   #224618 0%, #7A9062 75%, #ffffff 100%) !important;
+}
+.custom-btn-WEB{
+      background-image: linear-gradient(120deg,   #35459D 0%, #8290BD 75%, #ffffff 100%) !important;
+}
+.custom-btn-PRKP{
+      background-image: linear-gradient(120deg,   #666666 0%, #A6A69C 75%, #ffffff 100%) !important;
+}
+.custom-btn-DCR{
+      background-image: linear-gradient(120deg,   #812991 0%, #B17FB0 75%, #ffffff 100%) !important;
+}
+.custom-btn-KEAM{
+      background-image: linear-gradient(120deg,   #97120B 0%, #C27559 75%, #ffffff 100%) !important;
+}
+.custom-btn-FM{
+      background-image: linear-gradient(120deg,   #73A508 0%, #ACC756 75%, #ffffff 100%) !important;
+}
+
+
+.custom-bg-LO{
+      background-image: linear-gradient(120deg,   #F88D87 0%, #F8BAAD 50%, #ffffff 100%) !important;
+}
+.custom-bg-PR{
+      background-image: linear-gradient(120deg,   #CC1275 0%, #E07496 50%, #ffffff 100%) !important;
+}
+.custom-bg-DOC{
+      background-image: linear-gradient(120deg,   #F48160 0%, #F6B796 50%, #ffffff 100%) !important;
+}
+.custom-bg-ACR{
+      background-image: linear-gradient(120deg,   #F9A602 0%, #F6CD63 50%, #ffffff 100%) !important;
+}
+.custom-bg-VSL{
+      background-image: linear-gradient(120deg,   #855D41 0%, #B7A287 50%, #ffffff 100%) !important;
+}
+.custom-bg-MDPR{
+      background-image: linear-gradient(120deg,   #E47911 0%, #ECB268 50%, #ffffff 100%) !important;
+}
+.custom-bg-SPR{
+      background-image: linear-gradient(120deg,   #224618 0%, #7A9062 50%, #ffffff 100%) !important;
+}
+.custom-bg-WEB{
+      background-image: linear-gradient(120deg,   #35459D 0%, #8290BD 50%, #ffffff 100%) !important;
+}
+.custom-bg-PRKP{
+      background-image: linear-gradient(120deg,   #666666 0%, #A6A69C 50%, #ffffff 100%) !important;
+}
+.custom-bg-DCR{
+      background-image: linear-gradient(120deg,   #812991 0%, #B17FB0 50%, #ffffff 100%) !important;
+}
+.custom-bg-KEAM{
+      background-image: linear-gradient(120deg,   #97120B 0%, #C27559 50%, #ffffff 100%) !important;
+}
+.custom-bg-FM{
+      background-image: linear-gradient(120deg,   #73A508 0%, #ACC756 50%, #ffffff 100%) !important;
+}

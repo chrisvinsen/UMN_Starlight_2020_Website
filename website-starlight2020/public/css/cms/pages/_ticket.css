@@ -1,0 +1,118 @@
+/* :: 18.0 Tickets Area CSS */
+ .our-ticket-pricing-table-area {
+     position: relative;
+     z-index: 1;
+}
+ .our-ticket-pricing-table-area .row {
+     margin-right: -30px;
+     margin-left: -30px;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .our-ticket-pricing-table-area .row {
+         margin-left: -15px;
+         margin-right: -15px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .our-ticket-pricing-table-area .row {
+         margin-left: -15px;
+         margin-right: -15px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .our-ticket-pricing-table-area .row {
+         margin-left: -15px;
+         margin-right: -15px;
+    }
+}
+ .our-ticket-pricing-table-area .row .col-12 {
+     padding-left: 30px;
+     padding-right: 30px;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .our-ticket-pricing-table-area .row .col-12 {
+         padding-left: 15px;
+         padding-right: 15px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .our-ticket-pricing-table-area .row .col-12 {
+         padding-left: 15px;
+         padding-right: 15px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .our-ticket-pricing-table-area .row .col-12 {
+         padding-left: 15px;
+         padding-right: 15px;
+    }
+}
+ .single-ticket-pricing-table {
+     background-color: #fff;
+     padding: 0 40px 40px 40px;
+     border-radius: 10px;
+     transition-duration: 500ms;
+}
+ .single-ticket-pricing-table.active {
+     transform: scale(1.1);
+}
+ @media only screen and (max-width:767px) {
+     .single-ticket-pricing-table.active {
+         transform: scale(1.05);
+    }
+}
+ .single-ticket-pricing-table .ticket-plan {
+     background-color: #EBB930;
+     padding: 10px 25px;
+     display: inline-block;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     color: #fff;
+     border-radius: 0 0 5px 5px;
+     margin-bottom: 25px;
+     line-height: 1;
+}
+ .single-ticket-pricing-table .ticket-icon img {
+     max-height: 100px;
+}
+ @media only screen and (max-width:767px) {
+     .single-ticket-pricing-table .ticket-icon img {
+         max-height: 60px;
+    }
+}
+ .single-ticket-pricing-table .ticket-price {
+     font-size: 60px;
+     color: #111343;
+     font-weight: 600;
+     letter-spacing: 1px;
+     line-height: 1;
+     margin-top: 25px;
+     margin-bottom: 15px;
+}
+ .single-ticket-pricing-table .ticket-price span {
+     font-size: 30px;
+     font-weight: 600;
+     position: relative;
+     top: -20px;
+}
+ .single-ticket-pricing-table .ticket-pricing-table-details p {
+     color: #5d5e8d;
+     margin-bottom: 8px;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .single-ticket-pricing-table .ticket-pricing-table-details p {
+         font-size: 14px;
+    }
+}
+ .single-ticket-pricing-table .ticket-pricing-table-details p i {
+     color: #EBB930;
+     margin-right: 5px;
+}
+ .single-ticket-pricing-table .ticket-pricing-table-details p:last-child {
+     margin-bottom: 0;
+}
+ .single-ticket-pricing-table.style-2 {
+     background-color: #fff;
+     box-shadow: 0px 8px 27px 0px rgba(90, 111, 120, 0.15);
+}
+ 

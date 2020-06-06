@@ -1,0 +1,99 @@
+/* :: 7.0 Header Area CSS */
+ .classy-nav-container {
+     background-color: transparent;
+     padding: 0;
+}
+ .classy-nav-container .classy-navbar {
+     transition-duration: 500ms;
+     height: 105px;
+     padding: 0;
+}
+ @media only screen and (max-width:767px) {
+     .classy-nav-container .classy-navbar .nav-brand {
+         max-width: 90px;
+         margin-right: 15px;
+    }
+}
+ .classy-nav-container .classy-navbar .classynav ul li a {
+     font-size: 16px;
+     text-transform: uppercase;
+     color: #fff;
+     font-weight: 500;
+     padding: 0 20px;
+}
+ .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
+     color: #ebb930;
+ }
+
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .classy-nav-container .classy-navbar .classynav ul li a {
+         font-size: 14px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .classy-nav-container .classy-navbar .classynav ul li a {
+         font-size: 14px;
+         color: #111343;
+    }
+     .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
+         color: #ebb930; 
+    }
+}
+ @media only screen and (max-width:767px) {
+     .classy-nav-container .classy-navbar .classynav ul li a {
+         font-size: 14px;
+         color: #111343;
+    }
+     .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
+         color: #ebb930;
+    }
+}
+ .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
+     font-size: 14px;
+     text-transform: uppercase;
+     height: 42px;
+     line-height: 42px;
+     padding: 0 30px;
+     color: #111343;
+}
+ .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
+     color: #EBB930;
+}
+ .classy-nav-container .classy-navbar .classynav ul li.active a {
+     color: #EBB930;
+}
+ .classynav ul li.has-down > a::after, .classynav ul li.has-down.active > a::after, .classynav ul li.megamenu-item > a::after {
+     color: #ebb930;
+}
+ .classy-nav-container .classy-navbar .classynav ul li.active a {
+     color: #ebb930;
+}
+ .classynav ul li.has-down > a::after, .classynav ul li.has-down.active > a::after, .classynav ul li.megamenu-item > a::after {
+     color: #ebb930;
+}
+ .breakpoint-off .classynav ul li .dropdown, .breakpoint-off .classynav ul li .megamenu {
+     width: 200px;
+     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+     border-radius: 4px;
+}
+ .breakpoint-off .classynav ul li .megamenu {
+     width: 100%;
+}
+ .classy-navbar-toggler .navbarToggler span {
+     background-color: #fff;
+}
+ .header-area {
+     position: fixed;
+     z-index: 999;
+     width: 100%;
+     transition-duration: 500ms;
+     background-color: rgba(0, 0, 0, 0.80);
+}
+ .header-area.sticky {
+     background-color: #000;
+     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+}
+ .header-area.sticky .classy-navbar {
+     height: 75px;
+}
+ 

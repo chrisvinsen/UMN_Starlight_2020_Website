@@ -1,0 +1,131 @@
+/* :: 10.0 About Area CSS */
+ .about-us-countdown-area {
+     position: relative;
+     z-index: 1;
+     background-color: #270000; /* what is starlight */
+}
+ .about-us-countdown-area .about-content-text h6 { /* what is starlight head + our tagline */
+     font-size: 14px;
+     font-weight: 500;
+     color: #270000;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     border-bottom: 2px solid #ebb930;
+     margin-bottom: 20px;
+     padding-bottom: 5px;
+     display: inline-block;
+}
+ .about-us-countdown-area .about-content-text h3 {
+     font-size: 40px;
+     color: #fff;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     margin-bottom: 20px;
+}
+ @media only screen and (min-width:992px) and (max-width:1199px) {
+     .about-us-countdown-area .about-content-text h3 {
+         font-size: 32px;
+    }
+}
+ @media only screen and (min-width:768px) and (max-width:991px) {
+     .about-us-countdown-area .about-content-text h3 {
+         font-size: 24px;
+    }
+}
+ @media only screen and (max-width:767px) {
+     .about-us-countdown-area .about-content-text h3 {
+         font-size: 22px;
+    }
+}
+ .about-us-countdown-area .about-content-text p {
+     color: #fff;
+}
+/* :: About Single Page CSS */
+ .single-we-offer-content {
+     position: relative;
+     z-index: 1;
+     box-shadow: 0px 8px 27px 0px rgba(90, 111, 120, 0.15);
+     border-radius: 10px;
+     padding: 30px 25px;
+     margin-bottom: 30px;
+     overflow: hidden;
+}
+ .single-we-offer-content .offer-icon {
+     position: relative;
+     z-index: 1;
+     margin: auto;
+     height: 115px;
+     width: 115px;
+     background: #510d0a;
+     background-image: linear-gradient(120deg, #000000 0%, #510d0a 50%, #7d371b 100%);
+     border-radius: 50%;
+     line-height: 115px;
+}
+ .single-we-offer-content .offer-icon::after {
+     transition-duration: 1000ms;
+     border-radius: 50%;
+     content: '';
+     position: absolute;
+     width: 0%;
+     height: 0%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background: #ebb930;
+     background-image: linear-gradient(120deg,  #000000 0%, #510d0a 50%, #7d371b 100%);
+     z-index: -10;
+}
+ .single-we-offer-content h5 {
+     transition-duration: 1000ms;
+     font-size: 22px;
+     color: #ebb930;
+     margin-top: 25px;
+     position: relative;
+     z-index: 2;
+}
+ .single-we-offer-content p {
+     transition-duration: 1000ms;
+     color: #000000;
+     margin-bottom: 0;
+     position: relative;
+     z-index: 2;
+}
+ .single-we-offer-content:hover h5, .single-we-offer-content:focus h5, .single-we-offer-content:hover p, .single-we-offer-content:focus p {
+     color: #fff;
+}
+ .single-we-offer-content:hover .offer-icon::after, .single-we-offer-content:focus .offer-icon::after {
+     width: 800%;
+     height: 800%;
+}
+ .our-gallery-area {
+     position: relative;
+     z-index: 1;
+}
+ .our-gallery-area .row {
+     margin-left: -7.5px;
+     margin-right: -7.5px;
+}
+ .our-gallery-area .row .col-12 {
+     padding-left: 7.5px;
+     padding-right: 7.5px;
+}
+ .our-gallery-area .single-gallery-thumb {
+     margin-bottom: 15px;
+     position: relative;
+     z-index: 1;
+}
+ .our-gallery-area .single-gallery-thumb::before {
+     background: #270000;
+     background-image: linear-gradient(120deg,  #000000 0%, #510d0a 50%, #7d371b 100%);
+     content: "";
+     height: 100%;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     opacity: 0;
+     transition-duration: 300ms;
+}
+ .our-gallery-area .single-gallery-thumb:hover::before {
+     opacity: 0.8;
+}
+ 
