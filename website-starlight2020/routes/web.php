@@ -26,3 +26,4 @@ Route::group(['prefix'=>'committee'], function(){
 });
 
 Route::get('/contact','CMSController@contact');
+Route::get('/register','registercontroller@index');
