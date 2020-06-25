@@ -40,26 +40,77 @@ transparent = true;
 
             /*  Activate the tooltips      */
             $('[rel="tooltip"]').tooltip();
-
+            $.validator.messages.required = "Kamu perlu memasukkan data ini.";
             // Code for the Validator
             var $validator = $('.wizard-card form').validate({
-        		  rules: {
-                    stagename: {
-                        required: true,
-                        minlength: 3
-                      },
-        		    firstname: {
-        		      required: true,
-        		      minlength: 3
-        		    },
-        		    lastname: {
-        		      required: true,
-        		      minlength: 3
-        		    },
-        		    email: {
-        		      required: true
-        		    }
-                },
+        		    rules: {
+                        phonenumber: {
+                            minlength: 15,
+                            maxlength: 19
+                        },
+                        phonenumber0: {
+                            minlength: 15,
+                            maxlength: 19
+                        },
+                        phonenumber1: {
+                            minlength: 15,
+                            maxlength: 19
+                        },
+                        phonenumber2: {
+                            minlength: 15,
+                            maxlength: 19
+                        },
+                        phonenumber3: {
+                            minlength: 15,
+                            maxlength: 19
+                        },
+                        phonenumber4: {
+                            minlength: 15,
+                            maxlength: 19
+                        },
+                        phonenumber5: {
+                            minlength: 15,
+                            maxlength: 19
+                        },
+                        membersvalue: {
+                            min: 2,
+                            max: 5
+                        }
+                    },
+                    messages: {
+                        phonenumber: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
+                        phonenumber0: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
+                        phonenumber1: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
+                        phonenumber2: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
+                        phonenumber3: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
+                        phonenumber4: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
+                        phonenumber5: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
+                        membersvalue: {
+                            min: "Jumlah anggota harus lebih dari satu anggota.",
+                            max: "Jumlah anggota tidak boleh lebih dari lima anggota."
+                        }
+                    }
         	});
 
             // Wizard Initialization
@@ -88,13 +139,13 @@ transparent = true;
 
                 onTabClick : function(tab, navigation, index){
 
-                    var $valid = $('.wizard-card form').valid();
+                    // var $valid = $('.wizard-card form').valid();
 
-                    if(!$valid){
-                        return false;
-                    } else{
+                    // if(!$valid){
+                    //     return false;
+                    // } else{
                         return true;
-                    }
+                    // }
 
                 },
 

@@ -48,7 +48,7 @@
                             </a>
                         </li>
                         <li id="li-validation" class="linav">
-                            <a href="#validation" class="anav"  class="disable"  data-toggle="tab" id="a-validation" onclick="setvalidation()">
+                            <a href="#validation" class="anav disable" data-toggle="tab" id="a-validation" onclick="setvalidation()">
                                 <div class="icon-circle" id="circle-validation">
                                     <i class="facheck fas fa-user-check"></i>
                                 </div>
@@ -94,7 +94,7 @@
                                     <!-- kalo group ilang members -->
                                     <div class="form-group" id="membersvalue">
                                         <label>Jumlah Anggota <small>(maksimal 5 anggota)</small></label>
-                                        <input name="membersvalue" id="membersvalueinput" type="number" class="form-control" placeholder="5" min="2" max="5" required onchange="changeMembers()">
+                                        <input name="membersvalue" id="membersvalueinput" type="number" class="form-control" placeholder="5" min="2" max="5" required onchange="changeMembers()" onkeypress="return event.charCode >= 50 && event.charCode <= 53 && $(this).val().length < 1" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line <small>(perwakilan)</small></label>
@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon <small>(perwakilan)</small></label>
-                                        <input name="phonenumber" type="text" class="form-control" placeholder="081234567"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Username Instagram <small>(perwakilan yang mengupload video di IGTV)</small></label>
@@ -110,11 +110,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Deskripsi penampilan <small>(penjelasan secara singkat tentang apa yang ingin ditampilkan)</small></label>
-                                        <textarea name="stagedescription" class="form-control" placeholder="Extend your light" rows="3" placeholder="The stage is owned by everybody to present all talents by Universitas Multimedia Nusantara" required></textarea>
+                                        <textarea name="stagedescription" class="form-control" placeholder="Extend your light" rows="3" required></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label>Deskripsi background performer <small>(cerita tentang asal usul performer solo atau group)</small></label>
-                                        <textarea name="performerbackground" class="form-control" rows="3" placeholder="The stage is owned by everybody to present all talents by Universitas Multimedia Nusantara" required></textarea>
+                                        <textarea name="performerbackground" class="form-control" rows="3" placeholder="The stage is owned by everybody to present all talents by Universitas Multimedia Nusantara"    required></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label>Bukti pembayaran uang pendaftaran</label>
@@ -158,7 +158,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber0" type="text" class="form-control" placeholder="081234567"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber0" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -215,7 +215,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber1" type="text" class="form-control" placeholder="081234567"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber1" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -260,7 +260,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber2" type="text" class="form-control" placeholder="081234567"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber2" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -305,7 +305,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber3" type="text" class="form-control" placeholder="081234567"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber3" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -350,7 +350,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber4" type="text" class="form-control" placeholder="081234567"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber4" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -395,7 +395,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber5" type="text" class="form-control" placeholder="081234567"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber5" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -439,10 +439,12 @@
                                         Nullam eget auctor justo. Ut maximus euismod elit, eu finibus enim mattis non. Sed ut sollicitudin ligula, sed fermentum nulla. Ut at enim vitae risus suscipit malesuada et non lacus. Praesent egestas fermentum orci quis semper. Vestibulum consequat felis lorem, sed venenatis erat convallis in. Praesent tempor lorem sit amet turpis condimentum varius. Quisque quis lobortis erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac feugiat quam. Maecenas ut velit in tortor lobortis bibendum. <br>
                                     </div>
                                 </div>
-                                <div class="custom-control custom-checkbox mt-5">
-                                    <input type="checkbox" class="custom-control-input" id="validaterules">
-                                    <label class="custom-control-label" for="validaterules" style="margin-top: 1%;">Saya menyetujui peraturan dan ketentuan performance Starlight</label>
-                                    </div>
+                                <div class="custom-control custom-checkbox mt-5 mb-5">
+                                    <input name="validaterules" type="checkbox" class="custom-control-input" id="validaterules" value="validrules" required>
+                                    <label class="custom-control-label" for="validaterules" style="margin-top: 0.5%;">Saya menyetujui peraturan dan ketentuan performance Starlight</label>
+                                    <br>
+                                    <label id="validation-error" class="mt-1" style="color: #EB5E28;font-weight: 300;font-size: 0.8em;display:none;" for="validaterules" >Kamu perlu menyetujui peraturan dan ketentuan performance Starlight.</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -450,7 +452,7 @@
                 <div class="wizard-footer">
                     <div class="pull-right">
                         <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' onclick="nextcheck()" name='next' value='Next' id="nextbtn"/>
-                        <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd hideBtn' name='finish' value='Finish' id="finishbtn" />
+                        <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' onclick="finishcheck()" value='Finish' id="finishbtn" />
                     </div>
 
                     <div class="pull-left">
