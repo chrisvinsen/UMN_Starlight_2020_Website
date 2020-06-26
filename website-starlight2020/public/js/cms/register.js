@@ -156,7 +156,7 @@ function setformgeneral(){
         $("#a-formgeneral").removeClass("disable");
         if($("#solocheck").is(':checked')){
             $('#membersvalue').css('display','none');
-            $("#membersvalueinput").val(1);
+            // $("#membersvalueinput").val(1);
         }
         else{
             $('#membersvalue').css('display','block');
