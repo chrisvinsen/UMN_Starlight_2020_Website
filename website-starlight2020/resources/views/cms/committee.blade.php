@@ -2,7 +2,6 @@
 
 @section('custom_css')
 <!-- Custom CSS -->
-<!-- <link rel="stylesheet" href="{{ asset('css/cms/home.css') }}">       -->
 <style>
     #banner-committee{
         background-image: url('{{ asset('images/bg-img/H1.png') }}');

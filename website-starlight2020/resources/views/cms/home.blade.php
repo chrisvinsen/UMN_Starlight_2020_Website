@@ -2,7 +2,7 @@
 
 @section('custom_css')
 <!-- Custom CSS -->
-<!-- <link rel="stylesheet" href="{{ asset('css/cms/home.css') }}">       -->
+<link rel="stylesheet" href="{{ asset('css/cms/home.css') }}">
 @endsection
 
 @section('content')

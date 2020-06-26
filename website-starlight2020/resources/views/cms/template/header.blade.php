@@ -1,3 +1,4 @@
+<!-- Custom CSS -->
 <header class="header-area" id="hdr">
     <link rel="icon" tngype="image/gif/png" href="{{ asset('images/core-img/log.png') }}">
         <title>Starlight 2020 - {{ $title }}</title>
@@ -7,7 +8,7 @@
             <nav class="classy-navbar justify-content-between" id="conferNav">
 
                 <!-- Logo -->
-                <a class="nav-brand" href="./index.html"><img src="{{ asset('images/core-img/Logo_starlight_fix.png') }}" alt="Logo Starlight" width="75px"></a>
+                <a class="nav-brand" href="/"><img src="{{ asset('images/core-img/Logo_starlight_fix.png') }}" alt="Logo Starlight" width="75px"></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">

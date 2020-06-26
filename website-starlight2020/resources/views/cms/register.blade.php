@@ -3,7 +3,7 @@
 @section('custom_css')
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ asset('css/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.css') }}"> 
-<link rel="stylesheet" href="{{ asset('css/cms/register.css') }}">    
+<link rel="stylesheet" href="{{ asset('css/cms/register.css') }}">   
 @endsection
 
 @section('content')

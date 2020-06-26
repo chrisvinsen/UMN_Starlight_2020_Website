@@ -1179,3 +1179,9 @@ text-shadow: none;
 	}
 
 	
+.bg-reddark{
+	background-color: #270000 !important;
+}
+.text-reddark{
+	color: #270000 !important;
+}

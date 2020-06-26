@@ -1,38 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
 
-/*@import "~ng-pick-datetime/assets/style/picker.min.css";*/
+@import './classy-nav.css';
+@import './owl.carousel.min.css';
 
-@import './classy-nav/classy-nav.css';
-@import './magnific-popup/magnific-popup.css';
-@import './material-design-iconic-font/material-design-iconic-font.min.css';
-@import 'styles.css';
-
-@import './owl-carousel/owl.carousel.min.css';
-
-@import './pages/_about.css';
 @import './pages/_backtotop.css';
-@import './pages/_blog.css';
 @import './pages/_breadcrumb.css';
 @import './pages/_buttons.css';
 @import './pages/_client.css';
 @import './pages/_contact.css';
 @import './pages/_counter.css';
-@import './pages/_cta.css';
 @import './pages/_footer.css';
 @import './pages/_header.css';
+@import './pages/_cta.css';
 @import './pages/_heading.css';
-@import './pages/_hero.css';
 @import './pages/_preloader.css';
-@import './pages/_reboot.css';
-@import './pages/_schedule.css';
 @import './pages/_spacing.css';
+@import './pages/_reboot.css';
 @import './pages/_speaker.css';
 @import './pages/_sponsor.css';
 @import './pages/_ticket.css';
+@import './pages/_about.css';
+@import './pages/_schedule.css';
+@import './pages/_blog.css';
 @import './pages/_widget.css';
-
+@import './pages/_hero.css';
 
 .owl-carousel {
     touch-action: none; 
@@ -352,7 +343,7 @@ img.starlight:hover {
     padding: 18px 28px;
     margin-bottom: 15px;
     border: 1px solid #e5e5e5;
-    background: #f3f8f9;
+    background: rgb(243, 244, 245);
     font-size: 18px;
     font-weight: bold;
     color: #232127;
@@ -360,7 +351,7 @@ img.starlight:hover {
 }
 
 .accordion-wrap .entry-title.active {
-    background: #111343; /* FAQ */
+    background: #270000; /* FAQ */
     color: #fff;
 }
 

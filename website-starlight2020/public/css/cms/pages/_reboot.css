@@ -72,7 +72,7 @@
      z-index: -1;
      background: #510d0a;
      background-image: linear-gradient(120deg,  #000000 0%, #510d0a 50%, #7d371b 100%); /* gradieng header */
-     opacity: 0.9;
+     opacity: 0.8;
 }
  .bg-gradient-overlay-2 {
      position: relative;

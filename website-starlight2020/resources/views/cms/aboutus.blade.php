@@ -2,7 +2,7 @@
 
 @section('custom_css')
 <!-- Custom CSS -->
-<link rel="stylesheet" href="{{ asset('css/cms/aboutus.css') }}">      
+<link rel="stylesheet" href="{{ asset('css/cms/aboutus.css') }}">  
 <style>
     #banner-aboutus{
         background-image: url('{{ asset('images/bg-img/H7.png') }}');
@@ -45,14 +45,14 @@
             </div>
         </div>
     </section>
-    <section class="about-us-countdown-area section-padding-100-0" style="background-color: white">
+    <section class="about-us-countdown-area section-padding-100-0 bg-white">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-8">
                     <div class="about-content-text mb-80 text-center">
-                        <h6 class="wow bounceInUp" data-wow-delay="300ms">Our Tagline</h6>
-                        <h3 class="wow bounceInUp f-carneval" data-wow-delay="300ms" style="color:#151853;">Extend Your Light</h3>
-                        <p class="wow bounceInUp f-poppins" data-wow-delay="300ms" style="color:#151853">
+                        <h6 class="wow bounceInUp text-reddark" data-wow-delay="300ms">Our Tagline</h6>
+                        <h3 class="wow bounceInUp f-carneval text-reddark" data-wow-delay="300ms">Extend Your Light</h3>
+                        <p class="wow bounceInUp f-poppins text-reddark" data-wow-delay="300ms">
                             Arti dari EXTEND YOUR LIGHT adalah kami ingin para peserta dapat memancarkan lebih banyak cahaya di panggung Starlight bahkan memperluas atau memperluas cahaya. Yang kami maksud di sini adalah bakat dari masing-masing peserta dan antusiasme yang berasal dari panitia.
                             Kami berharap para peserta dapat mengembangkan bakat mereka lebih banyak lagi di panggung Starlight. Demikian juga dengan komite, kami berharap bahwa komite juga akan terus memancarkan antusiasme dan memberikan sepenuhnya kepada Starlight.
                         </p>
@@ -67,7 +67,7 @@
                 <div class="col-12">
                     <div class="section-heading-3 text-center wow bounceInUp" data-wow-delay="300ms">
                         <p>Starlight 2020</p>
-                        <h4 class="f-carneval">Our Goals</h4>
+                        <h4 class="f-carneval text-reddark">Our Goals</h4>
                     </div>
                 </div>
             </div>
@@ -105,26 +105,24 @@
         <div class="row elements-wrap">
             <div class="col-12">
                 <div class="section-heading-3 text-center mb-5 wow bounceInUp" data-wow-delay="300ms">
-                    <h4 class="f-carneval">Frequently Asked Questions</h4>
+                    <h4 class="f-carneval text-reddark">Frequently Asked Questions</h4>
                 </div>
-
                 <div class="entry-content elements-container">
                     <div class="row">
                         <div class="col-12">
                             <div class="accordion-wrap type-accordion">
                                 <h3 class="entry-title flex justify-content-between align-items-center active wow bounceInUp">Apa itu Starlight?<span class="arrow-r"></span></h3>
-
                                 <div class="entry-content wow bounceInUp">
                                     <p class="py-0 px-3">Starlight merupakah acara tahunan Universitas Multimedia Nusantara yang menyediakan panggung bagi peserta yang ingin menunjukkan segala bakat dan potensi baik internal maupun eksternal.</p>
                                 </div>
 
-                                <h3 class="entry-title flex justify-content-between align-items-center active wow bounceInUp">Apa tema Starlight 2020?<span class="arrow-r"></span></h3>
+                                <h3 class="entry-title flex justify-content-between align-items-center wow bounceInUp">Apa tema Starlight 2020?<span class="arrow-r"></span></h3>
 
                                 <div class="entry-content wow bounceInUp">
                                     <p class="py-0 px-3">Tahun ini, Starlight 2020 mengusung tema "Sirius" yang merupakan bintang paling terang di langit. Dengan tema ini, diharapkan para peserta Starlight 2020 mampu menunjukkan bakatnya dengan percaya diri seterang Sirius.</p>
                                 </div>
 
-                                <h3 class="entry-title flex justify-content-between align-items-center active wow bounceInUp">Apa konsep Starlight 2020?<span class="arrow-r"></span></h3>
+                                <h3 class="entry-title flex justify-content-between align-items-center wow bounceInUp">Apa konsep Starlight 2020?<span class="arrow-r"></span></h3>
 
                                 <div class="entry-content wow bounceInUp">
                                     <p class="py-0 px-3">Konsep yang diusung Starlight 2020 tahun ini adalah Carnival.  Konsep ini tentunya menyemarakan Starlight 2020 dengan  berbagai bakat yang menggabungkan konsep hiburan, musik dan talenta lainnya.</p>
