@@ -20,7 +20,7 @@
                         <h2 class="page-title wow bounceInUp" data-wow-delay="500ms">Contact</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb wow bounceInLeft" data-wow-delay="500ms">
-                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Contact</li>
                             </ol>
                         </nav>

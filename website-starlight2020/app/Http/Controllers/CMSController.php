@@ -13,13 +13,6 @@ class CMSController extends Controller
         $title = "Home";
         $nav_menu = 'home';
 
-        // $banner_lists = CMSHomeBanners::get();
-        // $category_lists = CMSCategories::get();
-        // $case_lists = CMSHomeCases::get();
-        // $contact_lists = CMSHomeContacts::get();
-        // $customer_lists = CMSHomeCustomers::get();
-        // $goal_lists = CMSHomeGoals::first();
-
         return view('cms.home', compact('title', 'nav_menu'));
     }
 
@@ -46,5 +39,4 @@ class CMSController extends Controller
 
     	return view('cms.contact', compact('title', 'nav_menu'));
     }
-
 }

@@ -8,7 +8,7 @@
                 <div class="col-12 col-md-4">
                     <div class="single-footer-widget mb-60 wow bounceInLeft">
                         <!-- Footer Logo -->
-                        <a href="#" class="footer-logo img-hover-zoom"><img class="mx-auto d-block" src="{{ asset('images/core-img/Logo_starlight_fix.png') }}" alt="Logo Starlight" width="75px"></a>
+                        <a href="javascript:void(0)" class="footer-logo img-hover-zoom"><img class="mx-auto d-block" src="{{ asset('images/core-img/Logo_starlight_fix.png') }}" alt="Logo Starlight" width="75px"></a>
                         <p class="text-center">Multimedia Nusantara University</p>
                         <p class="text-center">Jl. Scientia Boulevard, Gading, Serpong, Tangerang, Banten 15227</p>
                     </div>

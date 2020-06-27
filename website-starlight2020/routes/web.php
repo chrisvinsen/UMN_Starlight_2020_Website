@@ -17,13 +17,14 @@ Route::get('home', function () {
 	return redirect("/");
 });
 
-Route::get('','CMSController@home');
+Route::get('','CMSController@home')->name('home');
 
-Route::get('/aboutus','CMSController@aboutus');
+Route::get('/aboutus','CMSController@aboutus')->name('aboutus');
 
 Route::group(['prefix'=>'committee'], function(){
-	Route::get('','CMSController@committee');
+	Route::get('','CMSController@committee')->name('committee');
 });
 
-Route::get('/contact','CMSController@contact');
-Route::get('/register','registercontroller@index');
+Route::get('/contact','CMSController@contact')->name('contact');
+
+Route::get('/registration','RegistrationController@index')->name('registration');

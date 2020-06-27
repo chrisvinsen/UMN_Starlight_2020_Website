@@ -7,8 +7,8 @@
     <title>Starlight 2020 - {{ $title }}</title>
 
     <!-- Icon Starlight -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
     <!-- ---------- Style ---------- -->
 
@@ -24,7 +24,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/cms/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/cms/custom_css.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/cms/pages/_preloader.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/cms/material-design-iconic-font/material-design-iconic-font.min.css') }}">
+    
     @yield('custom_css')
     <style>
         .no-js #loader { display: none;  }

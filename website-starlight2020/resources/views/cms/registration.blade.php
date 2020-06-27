@@ -3,20 +3,19 @@
 @section('custom_css')
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ asset('css/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.css') }}"> 
-<link rel="stylesheet" href="{{ asset('css/cms/register.css') }}">   
+<link rel="stylesheet" href="{{ asset('css/cms/registration.css') }}">   
 @endsection
 
 @section('content')
 <div class="container col-sm-8 pt-5 pb-5">
     {{csrf_field()}}
     <div class="wizard-container" style="letter-spacing:1px;font-size:14px;" >
-        <div class="wizard-card card" data-color="red" id="wizard">
+        <div class="wizard-card card py-4" data-color="red" id="wizard">
             <form action="" class="formfull">
                 <div class="wizard-header">
-                    <h3 class="wizard-title mb-3">
-                        Pendaftaran Performance Starlight
+                    <h3 class="wizard-title mb-4">
+                        PENDAFTARAN PESERTA
                     </h3>
-                    <!-- <p class="category">Come and join us</p> -->
                 </div>
                 <div class="wizard-navigation">
                     <div class="progress-with-circle">
@@ -443,7 +442,7 @@
                                     <input name="validaterules" type="checkbox" class="custom-control-input" id="validaterules" value="validrules" required>
                                     <label class="custom-control-label" for="validaterules" style="margin-top: 0.5%;">Saya menyetujui peraturan dan ketentuan performance Starlight</label>
                                     <br>
-                                    <label id="validation-error" class="mt-1" style="color: #EB5E28;font-weight: 300;font-size: 0.8em;display:none;" for="validaterules" >Kamu perlu menyetujui peraturan dan ketentuan performance Starlight.</label>
+                                    <label id="validation-error" class="mt-1" style="color: #b10000;font-weight: 300;font-size: 0.8em;display:none;" for="validaterules" >Kamu perlu menyetujui peraturan dan ketentuan performance Starlight.</label>
                                 </div>
                             </div>
                         </div>

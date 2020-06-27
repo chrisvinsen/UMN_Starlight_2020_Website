@@ -10,7 +10,7 @@ a:hover{
 }
 .form-control.error{
     background-color: #ffffff;
-    color: #EB5E28;
+    color: #b10000;
     border-color: #dc3545;
     padding-right: calc(1.5em + .75rem);
     background-image: url("assets/img/error.svg");
@@ -20,7 +20,7 @@ a:hover{
 }
 .error.custom-file-label{
     background-color: #ffffff;
-    color: #EB5E28;
+    color: #b10000;
     border-color: #dc3545!important;
     padding-right: calc(1.5em + .75rem);
     background-image: url("assets/img/error.svg");
@@ -146,5 +146,5 @@ a:hover{
     flex-wrap: wrap;
 }
 .checked .facheck{
-    color:#EB5E28;
+    color:#b10000;
 }

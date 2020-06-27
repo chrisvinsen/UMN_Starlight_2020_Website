@@ -21,7 +21,7 @@
                         <h2 class="page-title wow bounceInUp">About Us</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb wow bounceInLeft">
-                                <li class="breadcrumb-item"><a href="/" >Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('home') }}" >Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">About us</li>
                             </ol>
                         </nav>

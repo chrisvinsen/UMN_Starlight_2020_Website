@@ -15,7 +15,7 @@ function nextMember(){
     else{
         if($('#studentid' + index).get(0).files.length === 0){
             $('#studentid' + index + 'label').css('border-color','#dc3545');
-            $('#studentid' + index + 'label').css('color','#EB5E28');
+            $('#studentid' + index + 'label').css('color','#b10000');
         }
     }
 }
@@ -57,7 +57,7 @@ function nextcheck(){
     if($("#formgeneral").hasClass("active")){
         if($('#payment').get(0).files.length === 0){
             $('#paymentlabel').css('border-color','#dc3545');
-            $('#paymentlabel').css('color','#EB5E28');
+            $('#paymentlabel').css('color','#b10000');
         }
         if($(".formfull").valid()){
             $('.linav').removeClass('active');
@@ -89,13 +89,13 @@ function nextcheck(){
         if($("#solocheck").is(':checked')){
             if($('#studentid0').get(0).files.length === 0){
                 $('#studentid0label').css('border-color','#dc3545');
-                $('#studentid0label').css('color','#EB5E28');
+                $('#studentid0label').css('color','#b10000');
             }
         }
         else{
             if($('#studentid' + $('#membersvalueinput').val()).get(0).files.length === 0){
                 $('#studentid' + $('#membersvalueinput').val() + 'label').css('border-color','#dc3545');
-                $('#studentid' + $('#membersvalueinput').val() + 'label').css('color','#EB5E28');
+                $('#studentid' + $('#membersvalueinput').val() + 'label').css('color','#b10000');
             }
         } 
         if($(".formfull").valid()){
@@ -128,20 +128,20 @@ function setsologroupcheck(){
     //     if($("#formgeneral").hasClass("active")){
     //         if($('#payment').get(0).files.length === 0){
     //             $('#paymentlabel').css('border-color','#dc3545');
-    //             $('#paymentlabel').css('color','#EB5E28');
+    //             $('#paymentlabel').css('color','#b10000');
     //         }
     //     }
     //     if($("#formindividual").hasClass("active")){
     //         if($("#solocheck").is(':checked')){
     //             if($('#studentid0').get(0).files.length === 0){
     //                 $('#studentid0label').css('border-color','#dc3545');
-    //                 $('#studentid0label').css('color','#EB5E28');
+    //                 $('#studentid0label').css('color','#b10000');
     //             }
     //         }
     //         else{
     //             if($('#studentid' + index).get(0).files.length === 0){
     //                 $('#studentid' + index + 'label').css('border-color','#dc3545');
-    //                 $('#studentid' + index + 'label').css('color','#EB5E28');
+    //                 $('#studentid' + index + 'label').css('color','#b10000');
     //             }
     //         } 
     //     }
@@ -168,13 +168,13 @@ function setformgeneral(){
     //         if($("#solocheck").is(':checked')){
     //             if($('#studentid0').get(0).files.length === 0){
     //                 $('#studentid0label').css('border-color','#dc3545');
-    //                 $('#studentid0label').css('color','#EB5E28');
+    //                 $('#studentid0label').css('color','#b10000');
     //             }
     //         }
     //         else{
     //             if($('#studentid' + index).get(0).files.length === 0){
     //                 $('#studentid' + index + 'label').css('border-color','#dc3545');
-    //                 $('#studentid' + index + 'label').css('color','#EB5E28');
+    //                 $('#studentid' + index + 'label').css('color','#b10000');
     //             }
     //         } 
     //     }
@@ -211,7 +211,7 @@ function setformindividual(){
     //     if($("#formgeneral").hasClass("active")){
     //         if($('#payment').get(0).files.length === 0){
     //             $('#paymentlabel').css('border-color','#dc3545');
-    //             $('#paymentlabel').css('color','#EB5E28');
+    //             $('#paymentlabel').css('color','#b10000');
     //         }
     //     }
     // }
@@ -225,20 +225,20 @@ function setvalidation(){
     //     if($("#formgeneral").hasClass("active")){
     //         if($('#payment').get(0).files.length === 0){
     //             $('#paymentlabel').css('border-color','#dc3545');
-    //             $('#paymentlabel').css('color','#EB5E28');
+    //             $('#paymentlabel').css('color','#b10000');
     //         }
     //     }
     //     if($("#formindividual").hasClass("active")){
     //         if($("#solocheck").is(':checked')){
     //             if($('#studentid0').get(0).files.length === 0){
     //                 $('#studentid0label').css('border-color','#dc3545');
-    //                 $('#studentid0label').css('color','#EB5E28');
+    //                 $('#studentid0label').css('color','#b10000');
     //             }
     //         }
     //         else{
     //             if($('#studentid' + index).get(0).files.length === 0){
     //                 $('#studentid' + index + 'label').css('border-color','#dc3545');
-    //                 $('#studentid' + index + 'label').css('color','#EB5E28');
+    //                 $('#studentid' + index + 'label').css('color','#b10000');
     //             }
     //         } 
     //     }

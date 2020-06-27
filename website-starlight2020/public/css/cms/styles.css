@@ -25,18 +25,22 @@
 	font-family: 'AlaNkcthi';
 	src:url('../../fonts/AlaNkcthi.otf') format('opentype');
 }
+@font-face{
+	font-family: 'Open-Sans';
+	src:url('../../fonts/OpenSans-Regular.ttf') format('truetype');
+}
 
 .f-poppins{
-	font-family: 'Poppins-Regular';
+	font-family: 'Poppins-Regular' !important;
 }
 .f-carneval{
-	font-family: 'Carneval';
+	font-family: 'Carneval' !important;
 }
 .f-AlaNkcthi{
-	font-family: 'AlaNkcthi';
+	font-family: 'AlaNkcthi' !important;
 }
 .f-Redressed{
-	font-family: 'Redressed';
+	font-family: 'Redressed' !important;
 }
 
 [data-icon]:before {
