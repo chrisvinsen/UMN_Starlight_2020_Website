@@ -2,16 +2,16 @@
 
 @section('custom_css')
 <!-- Custom CSS -->
-<link rel="stylesheet" href="{{ asset('css/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.css') }}"> 
-<link rel="stylesheet" href="{{ asset('css/cms/registration.css') }}">   
+<link rel="stylesheet" href="{{ asset('css/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.css') }}">
+<link rel="stylesheet" href="{{ asset('css/cms/registration.css') }}">
 @endsection
 
 @section('content')
 <div class="container col-sm-8 pt-5 pb-5">
-    {{csrf_field()}}
     <div class="wizard-container" style="letter-spacing:1px;font-size:14px;" >
         <div class="wizard-card card py-4" data-color="red" id="wizard">
-            <form action="" class="formfull">
+            <form action="{{url('/registrationPost')}}" class="formfull" method="POST" enctype="multipart/form-data">
+            {{csrf_field()}}
                 <div class="wizard-header">
                     <h3 class="wizard-title mb-4">
                         PENDAFTARAN PESERTA
@@ -53,7 +53,7 @@
                                 </div>
                                 Persetujuan
                             </a>
-                        </li>   
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-content">
@@ -189,9 +189,9 @@
                             </script>
                             <h5 class="info-text" style="font-weight:bold;">
                                 Individual Form<br>
-                                <input type='button' class="previous disable" style="color:white;cursor:pointer;" onclick="prevMember()" value="&#8249;"> 
+                                <input type='button' class="previous disable" style="color:white;cursor:pointer;" onclick="prevMember()" value="&#8249;">
                                 <small> <div style="display: inline-block;" id="membernumber">Member 1</div> </small>
-                                <input type='button' class="next" style="cursor:pointer;" onclick="nextMember()" value="&#8250;"> 
+                                <input type='button' class="next" style="cursor:pointer;" onclick="nextMember()" value="&#8250;">
                             </h5>
                             <!-- member1 -->
                             <div class="row" id="member1">
@@ -451,7 +451,7 @@
                 <div class="wizard-footer">
                     <div class="pull-right">
                         <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' onclick="nextcheck()" name='next' value='Next' id="nextbtn"/>
-                        <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' onclick="finishcheck()" value='Finish' id="finishbtn" />
+                        <input type='submit' class='btn btn-finish btn-fill btn-danger btn-wd' onclick="finishcheck()" value='Finish' id="finishbtn" />
                     </div>
 
                     <div class="pull-left">
@@ -468,7 +468,7 @@
 <!-- End of all content -->
 @endsection
 
-@section('custom_js')   
+@section('custom_js')
 <!-- Custom js -->
 <script src="{{ asset('js/cms/register.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/jquery.bootstrap.wizard.js') }}" type="text/javascript"></script>

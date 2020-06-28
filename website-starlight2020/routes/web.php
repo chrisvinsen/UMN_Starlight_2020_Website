@@ -28,3 +28,4 @@ Route::group(['prefix'=>'committee'], function(){
 Route::get('/contact','CMSController@contact')->name('contact');
 
 Route::get('/registration','RegistrationController@index')->name('registration');
+Route::post('/registrationPost', 'RegistrationController@registrationPost')->name('registrationPost');
