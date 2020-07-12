@@ -234,7 +234,7 @@ label.error:not(.form-control) {
 }
 
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-  background-color: #E3E3E3;
+  /* background-color: #E3E3E3; */
   cursor: not-allowed;
   color: #9A9A9A;
   opacity: 1;

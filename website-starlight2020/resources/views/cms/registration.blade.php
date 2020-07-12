@@ -14,7 +14,7 @@
             {{csrf_field()}}
                 <div class="wizard-header">
                     <h3 class="wizard-title mb-4">
-                        PENDAFTARAN PESERTA
+                        Pendaftaran Peserta
                     </h3>
                 </div>
                 <div class="wizard-navigation">
@@ -474,4 +474,12 @@
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/jquery.bootstrap.wizard.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/jquery.validate.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/cms/sweetalert/sweetalert.js') }}"></script>
+<script>
+    Swal.fire(
+    'Registrasi berhasil',
+    'Tolong tunggu email konfirmasi dari Starlight untuk mendapatkan kode registrasi',
+    'success'
+    )
+</script>
 @endsection

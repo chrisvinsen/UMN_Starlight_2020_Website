@@ -29,3 +29,7 @@ Route::get('/contact','CMSController@contact')->name('contact');
 
 Route::get('/registration','RegistrationController@index')->name('registration');
 Route::post('/registrationPost', 'RegistrationController@registrationPost')->name('registrationPost');
+
+
+Route::get('/search','SearchController@index')->name('search');
+Route::post('/searchPost', 'SearchController@searchPost')->name('searchPost');
