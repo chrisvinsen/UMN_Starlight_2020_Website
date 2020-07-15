@@ -17,13 +17,16 @@ class CreateDataUmum extends Migration
             $table->increments('id');
             $table->string('stagename', 50)->unique();
             $table->integer('membersvalue')->default(1);
-            $table->string('line', 30)->unique();
-            $table->string('phonenumber', 20)->unique();
-            $table->string('instagram', 30)->unique();
+            $table->string('line', 30);
+            $table->string('phonenumber', 20);
+            $table->string('instagram', 30);
             $table->text('stagedescription');
             $table->text('performerbackground');
             $table->string('payment');
-            $table->string('videolink', 50)->unique();
+            $table->string('videolink', 50);
+            $table->string('token')->unique();
+            $table->string('stage');
+            $table->string('status');
             $table->timestamps();
         });
     }

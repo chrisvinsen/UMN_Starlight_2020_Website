@@ -7,7 +7,7 @@
 
 @section('content')
 <div class="container col-sm-8 pt-1 pb-5" style="min-height:60rem;">
-    <div class="register-check" style="margin-top:100px; @if (session('msg')=='success' || session('msg')=='fail') display:none; @endif">
+    <div class="register-check" style="margin-top:100px; @if (session('msg')=='success' || session('msg')=='fail' || session('msg') == 'pending') display:none; @endif">
         <div class="img-logo img-hover-zoom overflow-visible wow jackInTheBox" style="visibility: visible; animation-delay: 750ms; animation-name: jackInTheBox;" data-wow-delay="750ms">
             <img class="mx-auto d-block" src="{{ asset('images/core-img/Logo_starlight_fix.png') }}" alt="Logo Starlight" width="400px">
         </div>
@@ -28,6 +28,10 @@
                 <input type="submit" style="@if (Session::has('msg')) display:block; @endif" class="btn btn-lg btn-block btn-outline-warning" id="submitbtn" value="Search"/>
             </div>
         </form>
+    </div>
+    <div class="results-fail" style="@if (session('msg')=='pending') display:block; @endif">
+        <h2 style="color:white;">Status Pending</h2>
+        <h4 style="color:white;margin-top:70px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique, urna at elementum rutrum, lacus sem tempor ante, a condimentum ante quam in lectus. Sed maximus augue a dolor blandit, ut maximus orci vestibulum. Nunc dictum dui mauris, sit amet vulputate ipsum consectetur nec. Fusce nunc turpis, tempor quis lorem a, porta eleifend felis. Nam vitae rhoncus libero.</h4>
     </div>
     <div class="results-success" style="@if (session('msg')=='success') display:block; @endif">
         <div class="congrats">

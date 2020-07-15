@@ -329,6 +329,7 @@
                                 </div>
                             </div>
                             <!-- member4 -->
+                            <!-- GG lah Starlight, dendanya mahal 😱 -->
                             <div class="row" id="member4" style="display: none;">
                                 <div class="col-lg-8 offset-lg-2">
                                     <div class="form-group">
@@ -475,6 +476,7 @@
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/jquery.validate.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/sweetalert/sweetalert.js') }}"></script>
+@if (session('status') == 'success')
 <script>
     Swal.fire(
     'Registrasi berhasil',
@@ -482,4 +484,5 @@
     'success'
     )
 </script>
+@endif
 @endsection

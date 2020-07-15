@@ -1,8 +1,7 @@
 /node_modules
 /public/hot
 /public/storage
-/public/images/data_umum
-/public/images/data_individu
+/public/images/Registration
 /storage/*.key
 /vendor
 .env

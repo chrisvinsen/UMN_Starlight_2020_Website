@@ -19,8 +19,8 @@ class CreateDataIndividu extends Migration
             $table->date('birthdate');
             $table->string('address', 100);
             $table->string('school', 30);
-            $table->string('phonenumber', 20)->unique();
-            $table->string('line', 30)->unique();
+            $table->string('phonenumber', 20);
+            $table->string('line', 30);
             $table->string('ktp')->nullable();
             $table->string('studentid');
             $table->string('stagename');
