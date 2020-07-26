@@ -75,6 +75,9 @@ transparent = true;
                         membersvalue: {
                             min: 2,
                             max: 5
+                        },
+                        validaterules:{
+                            required: true
                         }
                     },
                     messages: {
@@ -109,6 +112,16 @@ transparent = true;
                         membersvalue: {
                             min: "Jumlah anggota harus lebih dari satu anggota.",
                             max: "Jumlah anggota tidak boleh lebih dari lima anggota."
+                        },
+                        validaterules:{
+                            required: "Kamu perlu menyetujui peraturan dan ketentuan performance Starlight."
+                        }
+                    },
+                    errorPlacement: function(error, element) {
+                        if (!$("#validaterules").is(":checked")) {
+                            error.insertAfter("#cstm-label");
+                        } else {
+                            error.insertAfter(element);
                         }
                     }
         	});

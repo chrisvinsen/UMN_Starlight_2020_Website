@@ -3,6 +3,84 @@
 @section('custom_css')
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ asset('css/cms/search.css') }}">
+<style>
+    body{
+        background: url("{{ asset('images/bg-img/search.jpg') }}");
+        /* background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; */
+    }
+
+    .liquida{
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+    }
+
+    .liquida span {
+    position: relative;
+    color: #fff;
+    font-weight:bold;
+    font-family: Arial;
+    letter-spacing: 8px;
+    z-index: 1;
+    }
+
+    a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(120deg, #EBB930 0%, #E9C734 50%,#FFFF93 100%);;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+    }
+
+    a .liquid::after,
+    a .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+    }
+
+    a .liquid::before {
+    
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+    }
+
+    a .liquid::after {
+    
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+    }
+
+    a:hover .liquid{
+    top: -120px;
+    }
+
+    @keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+    }
+</style>
 @endsection
 
 @section('content')
@@ -14,7 +92,7 @@
         <div class="mx-auto" style="text-align:center;" >
             <h1 style="color:white;">Starlight Registration Check</h1>
         </div>
-        <form action="{{url('/searchPost')}}" method="post">
+        <form name="searchform" action="{{url('/searchPost')}}" method="post">
             {{csrf_field()}}
             <div class="input-field first col-sm-8 mx-auto mt-5" id="first" onclick="openInput()">
                 <input class="input @if (Session::has('msg')) input-focus @endif" name="search" id="inputFocus" type="text" placeholder="Masukkan kode pendaftaran anda" />
@@ -24,9 +102,15 @@
                     {{ session('feedback') }}
                 </div>
             @endif
-            <div class="search-btn col-sm-4 pt-4 mx-auto">
-                <input type="submit" style="@if (Session::has('msg')) display:block; @endif" class="btn btn-lg btn-block btn-outline-warning" id="submitbtn" value="Search"/>
+            <div class="search-btn col-sm-4 pt-4 mx-auto" id="submitbtn" style="@if (Session::has('msg')) display:block; @endif">
+                <a href="#" class="mx-auto liquida">
+                    <span onclick="searchform.submit()">Search</span>
+                    <div class="liquid"></div>
+                </a>
             </div>
+            <!-- <div class="search-btn col-sm-4 pt-4 mx-auto">
+                <input type="submit" style="@if (Session::has('msg')) display:block; @endif" class="btn btn-lg btn-block btn-outline-warning" id="submitbtn" value="Search"/>
+            </div> -->
         </form>
     </div>
     <div class="results-fail" style="@if (session('msg')=='pending') display:block; @endif">
@@ -53,6 +137,7 @@
     function openInput(){
         $('#inputFocus').addClass('input-focus');
         $("#submitbtn").fadeIn("slow");
+        console.log(window.innerWidth);
     }
 </script>
 @endsection

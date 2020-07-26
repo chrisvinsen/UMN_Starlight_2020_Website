@@ -4,6 +4,15 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ asset('css/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.css') }}">
 <link rel="stylesheet" href="{{ asset('css/cms/registration.css') }}">
+<style>
+    body{
+        background: url("{{ asset('images/bg-img/register.jpg') }}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: 50% 50%; */
+        /* background-position: center;  */
+    }
+</style>
 @endsection
 
 @section('content')
@@ -22,8 +31,16 @@
                         <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 15%;height: 100%;"></div>
                     </div>
                     <ul>
-                        <li id="li-sologroupcheck" class="active linav">
-                            <a href="#sologroupcheck" class="anav" data-toggle="tab" id="a-sologroupcheck" onclick="setsologroupcheck()">
+                        <li id="li-validation" class="active linav">
+                            <a href="#validation" class="anav" data-toggle="tab" id="a-validation" onclick="setvalidation()">
+                                <div class="icon-circle" id="circle-validation">
+                                    <i class="facheck fas fa-user-check"></i>
+                                </div>
+                                Persetujuan
+                            </a>
+                        </li>
+                        <li id="li-sologroupcheck" class="linav">
+                            <a href="#sologroupcheck" class="anav disable" data-toggle="tab" id="a-sologroupcheck" onclick="setsologroupcheck()">
                                 <div class="icon-circle" id="circle-sologroup">
                                     <i class="facheck fas fa-user-friends"></i>
                                 </div>
@@ -46,18 +63,10 @@
                                 Individu
                             </a>
                         </li>
-                        <li id="li-validation" class="linav">
-                            <a href="#validation" class="anav disable" data-toggle="tab" id="a-validation" onclick="setvalidation()">
-                                <div class="icon-circle" id="circle-validation">
-                                    <i class="facheck fas fa-user-check"></i>
-                                </div>
-                                Persetujuan
-                            </a>
-                        </li>
                     </ul>
                 </div>
                 <div class="tab-content">
-                    <div class="tab-pane active" id="sologroupcheck">
+                    <div class="tab-pane" id="sologroupcheck">
                         <div class="col-lg-8 offset-lg-2">
                             <div class="row">
                                 <div class="col-lg-4 offset-lg-2">
@@ -329,7 +338,7 @@
                                 </div>
                             </div>
                             <!-- member4 -->
-                            <!-- GG lah Starlight, dendanya mahal 😱 -->
+                            <!-- GG lah Starlight, dendanya mahal 😱, oke bro mike 😊 -->
                             <div class="row" id="member4" style="display: none;">
                                 <div class="col-lg-8 offset-lg-2">
                                     <div class="form-group">
@@ -421,29 +430,165 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="validation">
+                    <div class="tab-pane active" id="validation">
+                        <script>
+                            var downloadCheck = 0;
+                        </script>
                         <div class="col-lg-8 offset-lg-2">
                             <h5 class="info-text" style="font-weight:bold;">
                                 Peraturan Performance Starlight
                             </h5>
                             <div class="col-lg-12 mt-5">
                                 <div class="row">
-                                    <div class="rules">
-                                        <h5>1. Rule 1</h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id massa euismod, interdum dolor vel, ornare elit. Nunc dolor urna, pharetra vel ex nec, hendrerit viverra sem. Pellentesque at bibendum lacus. Nullam dapibus lectus nec velit ullamcorper ullamcorper. Nam eu nibh nec dolor aliquet dignissim. Praesent varius ipsum eu dolor vehicula, id convallis est tempor. Integer quis enim magna. Phasellus porttitor suscipit augue eget gravida. Nulla ac leo at ipsum hendrerit elementum porttitor eu leo. Integer ut vehicula elit, in scelerisque lorem. Maecenas quis iaculis mi, eu gravida ligula. Nunc blandit et mauris eget dictum. Mauris porttitor maximus quam id efficitur. Morbi hendrerit augue vel eleifend interdum. <br>
-                                        <h5 class="mt-3">2. Rule 2</h5>
-                                        Phasellus euismod ex quis eleifend commodo. In a turpis non neque ultricies commodo. Fusce libero magna, tincidunt vel cursus eu, venenatis sit amet libero. Proin accumsan ut magna ac efficitur. Aenean sed mattis augue, vel rhoncus lacus. Pellentesque sollicitudin sed ante at iaculis. Donec quis neque eu nisi placerat faucibus vel imperdiet nunc. Sed at luctus dui, vel lacinia diam. <br>
-                                        <h5 class="mt-3">3. Rule 3</h5>
-                                        Praesent sit amet mattis lectus, eget mattis augue. Praesent sollicitudin nunc eget nunc bibendum pulvinar. Fusce mattis elementum odio, sit amet blandit nibh posuere quis. Quisque nec purus consectetur, rhoncus libero ac, rutrum urna. Aenean consectetur, augue sed varius suscipit, lorem turpis ornare metus, et mattis sem nunc eu mi. Donec sed erat pulvinar, ornare mauris ut, ullamcorper enim. Vestibulum nec imperdiet mi, ac cursus purus. Aenean eget neque id sapien convallis sollicitudin eget sit amet felis. Aliquam tristique aliquam magna. Nullam aliquet arcu mollis, imperdiet enim ornare, rhoncus lectus. Maecenas sodales enim vel orci pulvinar, et consectetur mauris dignissim. Donec maximus ut leo nec cursus. Pellentesque imperdiet ligula neque, eget sagittis libero sollicitudin ut. Vivamus at tortor volutpat, tincidunt metus a, tempor est. Nullam condimentum massa nulla, in iaculis risus porta eget. Suspendisse potenti. <br>
-                                        <h5 class="mt-3">4. Rule 4</h5>
-                                        Nullam eget auctor justo. Ut maximus euismod elit, eu finibus enim mattis non. Sed ut sollicitudin ligula, sed fermentum nulla. Ut at enim vitae risus suscipit malesuada et non lacus. Praesent egestas fermentum orci quis semper. Vestibulum consequat felis lorem, sed venenatis erat convallis in. Praesent tempor lorem sit amet turpis condimentum varius. Quisque quis lobortis erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac feugiat quam. Maecenas ut velit in tortor lobortis bibendum. <br>
-                                    </div>
+                                    <object data="{{ asset('images/regulasi.pdf') }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="500px">
+                                        <div class="rules">
+                                            <h5><b>A. Ketentuan Umum Vergilia (Peserta) Lomba :</b></h5>
+                                            1. Starlight 2020 terdiri atas 3 rangkaian mulai dari Venicea, Mardi Gras, hingga Rio de Janeiro. <br>
+                                            2. Pendaftaran tahap Venicea dibuka melalui website (starlight.umn.ac.id) yang diselenggarakan mulai dari <b>Senin, 31 Agustus 2020</b> sampai dengan <b>Sabtu, 10 Oktober 2020</b> Pk 23.59 WIB. <br> 
+                                            3. Bakat yang ditampilkan dapat berupa <b>APAPUN</b>, dengan syarat <b>BUKAN</b> berupa editing dan animasi. <br>
+                                            4. Peserta <b>WAJIB</b> secara resmi terdaftar dalam instansi pendidikan pada tingkat SMA/SMK/MA (Sekolah Menengah Atas/ Sekolah Menengah Kejuruan/ Madrasah Aliyah) atau Perguruan Tinggi se-Indonesia. <br>
+                                            5. Peserta dapat mengatasnamakan atau menjadi perwakilan dari instansi pendidikan mereka masing-masing atau mendaftar tanpa instansi <b>(membawa nama tim pribadi).</b> <br>
+                                            6. Tidak ada batasan usia bagi peserta, selama peserta masih terdaftar secara aktif dalam instansi pendidikan tersebut. <br> 
+                                            7. Salah satu perwakilan dari peserta yang lolos ke tahap selanjutnya (tahap stage Mardi Gras) <b>WAJIB</b> untuk masuk ke dalam grup besar melalui aplikasi LINE. Untuk Link invitation akan tercantum pada laman pengumuman lolos dari Venicea ke Mardi Gras. <br>
+                                            8. Bagi peserta yang sudah dinyatakan lolos ke tahap selanjutnya, <b>DILARANG</b> untuk mengundurkan diri. <u>Bila mengundurkan diri maka uang pendaftaran tidak akan dikembalikan. <br></u>
+                                            9. Peserta yang sudah mendaftarkan diri <b>DILARANG</b> untuk mengganti/menambahkan/mengurangi jumlah anggotanya dari awal hingga akhir rangkaian acara. Kecuali dengan keadaan sebagai berikut : <br>
+                                            <div class="indent">a. Diopname, (melampirkan surat keterangan dari Rumah Sakit dan diserahkan kepada LO yang bersangkutan). <br></div>
+                                            <div class="indent">b. Keluarga Inti meninggal, dengan menginformasikan kepada LO masing-masing. <br></div>
+                                            10. Keputusan juri bersifat mutlak dan <b>TIDAK DAPAT</b> diganggu gugat. <br>
+                                            11. Pihak Panitia Starlight 2020 berhak menggunakan dan meminta video audisi peserta untuk kebutuhan publikasi dan promosi acara Starlight 2020. <br>
+                                            12. Seluruh peserta audisi online <b>WAJIB mengikuti</b> seluruh ketentuan dan aturan yang berlaku di Starlight 2020. <br>
+                                            13. Jika peserta tidak mengikuti regulasi yang telah ditetapkan oleh pihak panitia Starlight 2020, maka pihak panitia berhak <b>mendiskualifikasi</b> peserta. <br><br>
+                                            <h5><b>B. List Juara dan Hadiah Pemenang</b></h5>
+                                            Berikut ini merupakan kategori pemenang beserta hadiah dari Starlight 2020 : <br><br>
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <td><b>Categories</b></td>
+                                                    <td><b>Prize</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sirius (The Newborn Star)</td>
+                                                    <td>Rp 2.000.000 + Piala + E-Sertifikat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Adara (First Runner Up)</td>
+                                                    <td>Rp 1.500.000 + Piala + E-Sertifikat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Murzim (Second Runner Up)</td>
+                                                    <td>Rp 1.000.000 + Piala + E-Sertifikat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cassiopeia (Best Costume)</td>
+                                                    <td>Rp 350.000 + E-Sertifikat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stellar (Crowd Pleaser)</td>
+                                                    <td>Rp 125.000 + E-Sertifikat</td>
+                                                </tr>
+                                            </table> <br>
+                                            <h5><b>C. Ketentuan Pendaftaran :</b></h5>
+                                            1. Peserta terdiri dari <b>minimal</b> 1 orang dan <b>maksimal</b> 8 orang.  <br>
+                                            2. Peserta dianggap <b>resmi terdaftar</b> dalam perlombaan apabila <b>sudah memenuhi ketentuan biaya pendaftaran</b> sejumlah : <br>
+                                            <div class="indent">
+                                                a. 1-3 orang/kelompok <br>
+                                                <div class="indent">
+                                                    Earlybird	: Rp 80.000,-  <br>
+                                                    New Normal	: Rp 100.000,- <br>
+                                                </div>
+                                                b. 4-8 orang/kelompok  <br>
+                                                <div class="indent">
+                                                    Earlybird	: Rp 140.000,-  <br>
+                                                    New Normal 	: Rp 160.000,-  <br>
+                                                </div>
+                                                <div style="font-style:italic;color:red;"><b>*Early Bird</b>: 31 Agustus - 13 September 2020. <br></div>
+                                                <div style="font-style:italic;color:red;"><b>*New Normal</b>: 14 September - 20 Oktober 2020. <br></div>
+                                            </div>
+                                            3. Biaya pendaftaran ditransfer ke rekening dengan nomor rekening <b>BCA 8831372281 atas nama JONATHAN NITISANJAYA</b> dengan berita : Venicea_Nama Panggung.  <br>
+
+                                            Nominal yang ditransfer oleh peserta <b>WAJIB</b> menggunakan kode unik di belakangnya, yaitu ‘005’. Contoh: Transfer biaya pendaftaran sebesar Rp 125.005,00. <br>
+                                            4. Ketentuan uang pendaftaran bagi <b>peserta yang tidak lolos</b> pada Venicea Stage akan dikembalikan sebesar <b>25%</b> dari uang pendaftaran. <br>
+                                            5. Bagi <b>peserta yang berasal dari Mahasiswa Universitas Multimedia Nusantara</b>, akan mendapatkan potongan sebesar <b>30%</b> dari biaya pendaftaran (dengan syarat apabila <b>SELURUH</b> anggota tim merupakan mahasiswa Universitas Multimedia Nusantara dan memasukkan bukti berupa scan foto Kartu Tanda Mahasiswa). <br><br>
+                                            <h5><b>D. Ketentuan Konten Video Penampilan Vergilia (Peserta) :</b></h5>
+                                            1. Video berdurasi <b>minimal</b> 2 menit 30 detik dan <b>maksimal</b> 4 menit. <br>
+                                            2. Peserta <b>DILARANG</b> melakukan tahap editing seperti color grading, penggunaan autotune, atau penggunaan efek-efek visual dan audio lainnya, <b>terkecuali</b> untuk penggabungan beberapa footage video yang <b>TETAP</b> direkam secara one-take. <br>
+                                            <div class="indent">
+                                                *Contoh editing video yang diperbolehkan :  <br>
+                                                <div style="color:#3c78d8;">
+                                                    (Dance)  <br>
+                                                    https://www.youtube.com/watch?v=Ol1BJca6DPA&feature=youtu.be  <br>
+                                                    (Vocal)  <br>
+                                                    https://www.youtube.com/watch?v=uZb7we7O8hk&feature=youtu.be  <br>
+                                                    (Orchestra)  <br>
+                                                    https://www.youtube.com/watch?v=3eXT60rbBVk&feature=youtu.be  <br>
+                                                    (Band)  <br>
+                                                    https://www.youtube.com/watch?v=P_yeICLSDOQ&feature=youtu.be <br>
+                                                </div>
+                                                <div style="color:red;">
+                                                    (Orientasi akhir harus berbentuk Landscape.) <br>   
+                                                </div>
+                                            </div>
+                                            3. Peserta <b>WAJIB</b> untuk menggunakkan teknik record one take saat merekam (teknik pengambilan video dalam satu kali perekaman).
+                                            4. Video <b>WAJIB</b> berbentuk <b>landscape</b> (1920 x 1080 px). <br>
+                                            5. Video yang diunggah oleh peserta <b>WAJIB</b> memiliki resolusi minimal 720p dan frame rate 30fps. <br>
+                                            6. Perekaman video dapat dilakukan menggunakan teknologi apapun baik menggunakan handphone, kamera, dan sebagainya.
+                                            7. Video yang diunggah dalam bentuk <b>.mp4</b> atau <b>.mov</b>. <br>
+                                            8. Peserta <b>tidak dianjurkan</b> menggunakan benda tajam atau alat yang membahayakan dalam penampilan. <br>
+                                            9. Karya yang dikumpulkan merupakan <b>hasil karya sendiri</b> dan bukan milik orang lain. <br>
+                                            10. <b>WAJIB</b> mengenakan <b>pakaian</b> yang <b>sopan</b> (tidak mengenakan pakaian yang terbuka). <br>
+                                            11. Peserta <b>DILARANG</b> menampilkan brand produk atau jasa dalam video penampilan. <br>
+                                            12. Peserta <b>DILARANG</b> membawa atau menampilkan unsur SARA, Asusila, Kekerasan, dan Pornografi dalam konten video. <br>	
+                                            13. Peserta <b>DILARANG</b> menggunakan konten video yang menyinggung dan merugikan orang lain.  <br><br>
+                                            <h5><b>E. Ketentuan Submisi Video :</b></h5>
+                                            1. Submisi dikumpulkan dalam bentuk <b>video</b> dan diunggah ke Instagram (IGTV). <br>
+                                            2. Peserta <b>WAJIB</b> mengunggah video melalui Instagram, dengan menggunakan hashtag <b>#Starlight2020 #ExtendYourLight #AudisiVeniceaStarlight</b>, mention <b>@starlightumn</b>, dan tag <b>@starlightumn</b>. <br>
+                                            <div class="indent">
+                                                *Bagi peserta yang tergabung dalam team <b>WAJIB</b> men-tag teman dalam satu timnya. <br>
+                                            </div>
+                                            3. Peserta <b>WAJIB</b> mengunggah video di Instagram dengan menggunakan template caption sebagai berikut : <br>
+                                            <div class="indent">
+                                                <b>a. Solo <br></b>
+                                                <div class="indent">
+                                                    Title: <br>
+                                                    [ VENICEA STARLIGHT 2020 ] <br> <br>
+
+                                                    Description: <br>
+                                                    Halo! Aku, (nama panggung), siap untuk membentangkan cahaya menuju tak terbatas dan melampauinya! <br> <br>
+
+                                                    Alasanku mengikuti Starlight 2020 adalah (jelaskan alasanmu mengikuti Starlight 2020). <br> <br>
+
+                                                    Jadi, jangan lupa dukung aku dalam petualangan di Planet Starlight, karena aku siap melintasi angkasa menuju Mardi Gras! <br> <br>
+
+                                                    #Starlight2020 #ExtendYourLight #AudisiVeniceaStarlight @starlightumn <br> <br>
+                                                </div>
+                                                <b>b. Grup <br></b>
+                                                <div class="indent">
+                                                    Title: <br>
+                                                    [ VENICEA STARLIGHT 2020 ] <br> <br>
+
+                                                    Description: <br>
+                                                    Halo! Kami, (nama panggung), siap untuk membentangkan cahaya menuju tak terbatas dan melampauinya! <br> <br>
+
+                                                    Alasanku mengikuti Starlight 2020 adalah (jelaskan alasanmu mengikuti Starlight 2020). <br> <br>
+
+                                                    Jadi, jangan lupa dukung kami dalam petualangan di Planet Starlight karena kami siap melintasi angkasa menuju Mardi Gras! <br> <br>
+
+                                                    #Starlight2020 #ExtendYourLight #AudisiVeniceaStarlight @starlightumn <br> <br>
+                                                </div>
+                                            </div>
+
+                                            4. Seluruh peserta <b>WAJIB</b> mengikuti (follow) akun instagram @starlightumn. <br>
+                                            5. Akun Instagram peserta <b>WAJIB</b> tidak terkunci (tidak boleh akun private). <br>
+                                            6. Bagi peserta yang memiliki anggota lebih dari satu orang, <b>video</b> hanya boleh diunggah oleh <b>SATU perwakilan</b> saja. <br>
+                                        </div>
+                                    </object>
                                 </div>
                                 <div class="custom-control custom-checkbox mt-5 mb-5">
                                     <input name="validaterules" type="checkbox" class="custom-control-input" id="validaterules" value="validrules" required>
-                                    <label class="custom-control-label" for="validaterules" style="margin-top: 0.5%;">Saya menyetujui peraturan dan ketentuan performance Starlight</label>
+                                    <label id="cstm-label" class="custom-control-label" for="validaterules" style="margin-top: 0.5%;">Saya telah membaca dan menyetujui peraturan dan ketentuan performance Starlight</label>
                                     <br>
-                                    <label id="validation-error" class="mt-1" style="color: #b10000;font-weight: 300;font-size: 0.8em;display:none;" for="validaterules" >Kamu perlu menyetujui peraturan dan ketentuan performance Starlight.</label>
+                                    <!-- <label class="mt-1 validation-error" style="color: #b10000;font-weight: 300;font-size: 0.8em;display:none;" for="validaterules" ></label> -->
+                                    <br>
+                                    <label class="custom-control-label" for="validaterules" style="margin-top: 0.5%;font-weight:bold;">*Kamu akan mendownload peraturan dan ketentuan performance Starlight ketika menekan tombol next</label>
                                 </div>
                             </div>
                         </div>
@@ -451,7 +596,8 @@
                 </div>
                 <div class="wizard-footer">
                     <div class="pull-right">
-                        <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' onclick="nextcheck()" name='next' value='Next' id="nextbtn"/>
+                        <a href="{{ asset('images/regulasi.pdf') }}" class='btn btn-next btn-fill btn-danger btn-wd' id="downloadbtn" onclick="donwloadCheck()" name="next" download>Next</a>
+                        <input type='button' class='btn btn-next btn-fill btn-danger btn-wd hideBtn' onclick="nextcheck()" name='next' value='Next' id="nextbtn"/>
                         <input type='submit' class='btn btn-finish btn-fill btn-danger btn-wd' onclick="finishcheck()" value='Finish' id="finishbtn" />
                     </div>
 

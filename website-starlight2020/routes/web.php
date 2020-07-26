@@ -33,3 +33,6 @@ Route::post('/registrationPost', 'RegistrationController@registrationPost')->nam
 
 Route::get('/search','SearchController@index')->name('search');
 Route::post('/searchPost', 'SearchController@searchPost')->name('searchPost');
+
+Route::get('/frame','FrameController@index')->name('frame');
+Route::post('/framePost', 'frameController@framePost')->name('framePost');

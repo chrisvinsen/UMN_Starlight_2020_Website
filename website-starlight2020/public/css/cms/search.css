@@ -6,10 +6,6 @@ line-height: 1.15;
 -webkit-text-size-adjust: 100%;
 /* 2 */
 }
-body{
-    background: linear-gradient(180deg, #270000 0%, #5A3A31 100%) no-repeat center center fixed;
-    background-size: cover !important;
-}
 
 /* Sections
     ========================================================================== */
