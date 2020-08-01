@@ -2,6 +2,7 @@
 /public/hot
 /public/storage
 /public/images/Registration
+/public/images/user
 /storage/*.key
 /vendor
 .env

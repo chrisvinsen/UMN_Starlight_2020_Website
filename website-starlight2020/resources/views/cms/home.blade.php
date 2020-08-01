@@ -10,7 +10,7 @@
 <div>
     <section class="welcome-area" id="welcome">
         <div class="welcome-slides owl-carousel">
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" 
+            <div class="single-welcome-slide bg-img bg-overlay jarallax"
             style="background-image: url('{{ asset('images/bg-img/G2.JPG') }}');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
@@ -177,11 +177,11 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 </div>
 <!-- End of all content -->
 @endsection
 
-@section('custom_js')   
+@section('custom_js')
 <!-- Custom js -->
 @endsection

@@ -142,14 +142,14 @@ h1{
                 <img src="{{ asset('images/gallery/TW1.png') }}">
               </div>
             </div>
-          </div>          
+          </div>
         </div>
         <div class="mt-5">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
         <label for="uploadphoto">
           <span class="btn cvinsen-btn mt-50">
-            Upload Photo 
+            Upload Photo
           </span>
           <form action="{{url('/framePost')}}" class="formfull" method="POST" enctype="multipart/form-data">
             {{csrf_field()}}
@@ -161,7 +161,7 @@ h1{
 <!-- End of all content -->
 @endsection
 
-@section('custom_js')   
+@section('custom_js')
 <!-- Custom js -->
 <script>
   $('form input').change(function() {
