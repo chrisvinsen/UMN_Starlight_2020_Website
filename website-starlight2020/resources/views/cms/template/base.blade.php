@@ -37,7 +37,7 @@
             width: 100%;
             height: 100%;
             z-index: 9999;
-            background: url({{ asset('images/loaders.svg') }}) center no-repeat #270000;
+            background: url({{ asset('images/loaders_starlight.gif') }}) center no-repeat #270000;
         }
     </style>
 </head>
