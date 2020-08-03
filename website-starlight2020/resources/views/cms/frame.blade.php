@@ -115,37 +115,74 @@ h1{
 <div class="container col-sm-8 pt-5 pb-5">
     <div style="margin-top:100px;text-align:center;">
         <h1>Bingkai Starlight 2020</h1>
+        <div class="mt-5"> 
+        <pre style="color: #ffffff;"><b>ONE STEP CLOSER TO BE A VERGILIA!🌟</b>
+
+Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪 
+dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨
+
+Semangat! ✨</pre>
+        </div>
         <div class="mt-5">
           <div class="polaroid-wrapper">
             <div class="item">
               <div class="polaroid">
-                <img src="{{ asset('images/gallery/TW1.png') }}">
+                <img src="{{ asset('images/gallery/drea.jpg') }}">
               </div>
             </div>
             <div class="item">
               <div class="polaroid">
-                <img src="{{ asset('images/gallery/TW1.png') }}">
+                <img src="{{ asset('images/gallery/brenda.jpg') }}">
               </div>
             </div>
             <div class="item">
               <div class="polaroid">
-                <img src="{{ asset('images/gallery/TW1.png') }}">
+                <img src="{{ asset('images/gallery/rekha.jpg') }}">
               </div>
             </div>
             <div class="item">
               <div class="polaroid">
-                <img src="{{ asset('images/gallery/TW1.png') }}">
+                <img src="{{ asset('images/gallery/adit.jpg') }}">
               </div>
             </div>
             <div class="item">
               <div class="polaroid">
-                <img src="{{ asset('images/gallery/TW1.png') }}">
+                <img src="{{ asset('images/gallery/theo.jpg') }}">
               </div>
             </div>
           </div>
         </div>
         <div class="mt-5">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <pre style="color:white;">[STARLIGHT 2020 OFFICIALLY STARTED]
+
+Hello! My name is (name) and I'm ready to join STARLIGHT 2020 🌟as a vergillia,
+where I would like to proudly show you my marvelous (voice/movement/magic/...)✨
+I would like to invite all of you to join our special Starlight Carnival Stage: 
+Venicea🎪, Mardi Gras🎪, and Rio de Janeiro🎪 to support (me/us).
+
+So stay tune on @starlightumn for any updates and pack your bags for a journey with (me/us)!✨
+
+See you, Starlighters! 🙌🏻
+—⁣⁣
+Starlight!⁣⁣
+Extend Your Light💫⁣⁣
+—⁣⁣
+Instagram: @starlightumn ⁣⁣
+LINE: @252uzsbl⁣⁣
+Web: starlight.umn.ac.id⁣⁣
+E-mail: starlight@umn.ac.id⁣⁣
+#starlightumn⁣⁣
+#extendyourlight⁣⁣
+#carnival
+
+<b>ONE STEP CLOSER TO BE A VERGILIA!🌟</b>
+
+Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪 
+dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨
+
+Semangat! ✨
+
+</pre>
         </div>
         <label for="uploadphoto">
           <span class="btn cvinsen-btn mt-50">
