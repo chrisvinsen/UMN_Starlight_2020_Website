@@ -101,8 +101,8 @@
                                     </div>
                                     <!-- kalo group ilang members -->
                                     <div class="form-group" id="membersvalue">
-                                        <label>Jumlah Anggota <small>(maksimal 5 anggota)</small></label>
-                                        <input name="membersvalue" id="membersvalueinput" type="number" class="form-control" placeholder="5" min="2" max="5" required onchange="changeMembers()" onkeypress="return event.charCode >= 50 && event.charCode <= 53 && $(this).val().length < 1" required>
+                                        <label>Jumlah Anggota <small>(maksimal 8 anggota)</small></label>
+                                        <input name="membersvalue" id="membersvalueinput" type="number" class="form-control" placeholder="5" min="2" max="8" required onchange="changeMembers()" onkeypress="return event.charCode >= 50 && event.charCode <= 57 && $(this).val().length < 1" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line <small>(perwakilan)</small></label>
@@ -121,10 +121,6 @@
                                         <textarea name="stagedescription" class="form-control" placeholder="Extend your light" rows="3" required></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label>Deskripsi background performer <small>(cerita tentang asal usul performer solo atau group)</small></label>
-                                        <textarea name="performerbackground" class="form-control" rows="3" placeholder="The stage is owned by everybody to present all talents by Universitas Multimedia Nusantara"    required></textarea>
-                                    </div>
-                                    <div class="form-group">
                                         <label>Bukti pembayaran uang pendaftaran</label>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" name="payment" id="payment" required onchange="checkFile(this)" accept="image/*">
@@ -133,8 +129,16 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label>Link video yang diunggah melalui IGTV <small>(link akan digunakan panitia untuk melihat video dari para peserta)</small></label>
-                                        <input name="videolink" type="url" class="form-control" placeholder="https://www.instagram.com/tv/CASH5NNnVnm/" required>
+                                        <label>Nama pengirim rekening bank</label>
+                                        <input name="payment_name" type="text" class="form-control" placeholder="Starlighters" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nama bank</label>
+                                        <input name="payment_bank" type="text" class="form-control" placeholder="BCA" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>No rekening</label>
+                                        <input name="payment_number" type="text" class="form-control" placeholder="111 111 1111" required>
                                     </div>
                                 </div>
                             </div>

@@ -9,14 +9,14 @@ class FrameController extends Controller
 {
     //
     public function index(){
-        $title = "Bingkai";
+        $title = "Twibbon";
         $nav_menu = "";
 
         return view('cms.frame', compact('title', 'nav_menu'));
     }
 
     public function framePost(Request $request) {
-        $title = "Bingkai";
+        $title = "Twibbon";
         $nav_menu = "";
 
         $filename = 'default-user';
