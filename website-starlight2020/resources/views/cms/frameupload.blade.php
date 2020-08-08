@@ -11,7 +11,7 @@
     <div style="margin-top:100px;text-align:center;">
         <h1>Twibbon Starlight 2020</h1>
         <div class="mt-5">
-            <div class="col-sm-6 mx-auto" style = "position: relative" id = "frame" >
+            <div class="container mx-auto" style = "position: relative" id = "frame" >
               <img id = "photo" src = "{{ $photo }}" alt = "photo">
               <canvas id = "canvas" style = "display: block"></canvas>
             </div>
