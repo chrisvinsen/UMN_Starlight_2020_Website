@@ -440,7 +440,7 @@
                             </h5>
                             <div class="col-lg-12 mt-5">
                                 <div class="row">
-                                    <object data="{{ asset('images/regulasi.pdf') }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="500px">
+                                    <object data="{{ asset('files/Regulasi Pendaftaran Peserta Starlight 2020.pdf') }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="500px">
                                         <div class="rules">
                                             <h5><b>A. Ketentuan Umum Vergilia (Peserta) Lomba :</b></h5>
                                             1. Starlight 2020 terdiri atas 3 rangkaian mulai dari Venicea, Mardi Gras, hingga Rio de Janeiro. <br>
@@ -596,7 +596,7 @@
                 </div>
                 <div class="wizard-footer">
                     <div class="pull-right">
-                        <a href="{{ asset('images/regulasi.pdf') }}" class='btn btn-next btn-fill btn-danger btn-wd' id="downloadbtn" onclick="donwloadCheck()" name="next" download>Next</a>
+                        <a href="{{ asset('files/Regulasi Pendaftaran Peserta Starlight 2020.pdf') }}" class='btn btn-next btn-fill btn-danger btn-wd' id="downloadbtn" onclick="donwloadCheck()" name="next" download>Next</a>
                         <input type='button' class='btn btn-next btn-fill btn-danger btn-wd hideBtn' onclick="nextcheck()" name='next' value='Next' id="nextbtn"/>
                         <input type='submit' class='btn btn-finish btn-fill btn-danger btn-wd' onclick="finishcheck()" value='Finish' id="finishbtn" />
                     </div>

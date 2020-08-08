@@ -52,8 +52,8 @@ h1{
           <div class="polaroid-wrapper">
             <div class="item">
               <div style = "position: relative" id = "frame" >
-                <img id = "photo" src = "{{ $photo }}" alt = "photo">
-                <canvas id = "canvas" style = "display: block"></canvas>
+                <img id = "photo" src = "{{ $photo }}" alt = "photo" width="500">
+                <canvas id = "canvas" style = "display: block" width="500"></canvas>
               </div>
             </div>
             <div class="item">
@@ -89,6 +89,8 @@ h1{
     img.src = 'images/gallery/Venice Carnival Twibbon peserta.png';
     const photo = document.getElementById('photo');
     const min = Math.min(photo.width, photo.height);
+    console.log(photo.width)
+    console.log(photo.height)
 
     const canvas = document.getElementById('canvas');
     canvas.width = photo.width;
