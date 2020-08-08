@@ -101,8 +101,8 @@
                                     </div>
                                     <!-- kalo group ilang members -->
                                     <div class="form-group" id="membersvalue">
-                                        <label>Jumlah Anggota <small>(maksimal 5 anggota)</small></label>
-                                        <input name="membersvalue" id="membersvalueinput" type="number" class="form-control" placeholder="5" min="2" max="5" required onchange="changeMembers()" onkeypress="return event.charCode >= 50 && event.charCode <= 53 && $(this).val().length < 1" required>
+                                        <label>Jumlah Anggota <small>(maksimal 8 anggota)</small></label>
+                                        <input name="membersvalue" id="membersvalueinput" type="number" class="form-control" placeholder="5" min="2" max="8" required onchange="changeMembers()" onkeypress="return event.charCode >= 50 && event.charCode <= 56 && $(this).val().length < 1" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line <small>(perwakilan)</small></label>
@@ -110,7 +110,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon <small>(perwakilan)</small></label>
-                                        <input name="phonenumber" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber" type="text" class="form-control phone" placeholder="0812-3456-789" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Username Instagram <small>(perwakilan yang mengupload video di IGTV)</small></label>
@@ -121,10 +121,6 @@
                                         <textarea name="stagedescription" class="form-control" placeholder="Extend your light" rows="3" required></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label>Deskripsi background performer <small>(cerita tentang asal usul performer solo atau group)</small></label>
-                                        <textarea name="performerbackground" class="form-control" rows="3" placeholder="The stage is owned by everybody to present all talents by Universitas Multimedia Nusantara"    required></textarea>
-                                    </div>
-                                    <div class="form-group">
                                         <label>Bukti pembayaran uang pendaftaran</label>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" name="payment" id="payment" required onchange="checkFile(this)" accept="image/*">
@@ -133,8 +129,16 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label>Link video yang diunggah melalui IGTV <small>(link akan digunakan panitia untuk melihat video dari para peserta)</small></label>
-                                        <input name="videolink" type="url" class="form-control" placeholder="https://www.instagram.com/tv/CASH5NNnVnm/" required>
+                                        <label>Nama pengirim rekening bank</label>
+                                        <input name="payment_name" type="text" class="form-control" placeholder="Starlighters" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nama bank</label>
+                                        <input name="payment_bank" type="text" class="form-control" placeholder="BCA" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>No rekening pengirim</label>
+                                        <input name="payment_number" type="text" class="form-control" placeholder="111 111 1111" required onkeypress="return event.charCode >= 48 && event.charCode <= 57 && $(this).val().length < 18">
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +170,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber0" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber0" type="text" class="form-control phone" placeholder="0812-3456-789" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -223,7 +227,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber1" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber1" type="text" class="form-control phone" placeholder="0812-3456-789" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -268,7 +272,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber2" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber2" type="text" class="form-control phone" placeholder="0812-3456-789" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -313,7 +317,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber3" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber3" type="text" class="form-control phone" placeholder="0812-3456-789" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -359,7 +363,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber4" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber4" type="text" class="form-control phone" placeholder="0812-3456-789" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -404,7 +408,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon</label>
-                                        <input name="phonenumber5" type="text" class="form-control phone" placeholder="(081) 234-567-89"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                        <input name="phonenumber5" type="text" class="form-control phone" placeholder="0812-3456-789" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line</label>
@@ -423,6 +427,141 @@
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" name="studentid5" id="studentid5" required onchange="checkFile(this)" accept="image/*">
                                             <label class="custom-file-label" for="studentid5" style="background-color: #ffffff;" id="studentid5label">Choose file...</label>
+                                            <div class="invalid-feedback">Invalid file</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- member6 -->
+                            <div class="row" id="member6" style="display: none;">
+                                <div class="col-lg-8 offset-lg-2">
+                                    <div class="form-group">
+                                        <label>Nama Lengkap</label>
+                                        <input name="fullname6" type="text" class="form-control" placeholder="Starlight UMN" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tanggal Lahir</label>
+                                        <input name="birthdate6" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Alamat</label>
+                                        <textarea name="address6" class="form-control" placeholder="Jalan Scientia Boulevard, Gading Serpong, Tangerang, Banten" rows="3" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Asal Instansi <small>(SMA/Universitas)</small></label>
+                                        <input name="school6" type="text" class="form-control" placeholder="Universitas Multimedia Nusantara" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nomor Telepon</label>
+                                        <input name="phonenumber6" type="text" class="form-control phone" placeholder="0812-3456-789" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>ID Line</label>
+                                        <input name="line6" type="text" class="form-control" placeholder="@252uzsbl" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="ktp6" id="ktp6"  onchange="checkFile(this)" accept="image/*">
+                                            <label class="custom-file-label" for="ktp5" style="background-color: #ffffff;" id="ktp6label">Choose file...</label>
+                                            <div class="invalid-feedback">Invalid file</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Scan Foto Kartu Pelajar/Kartu Tanda Mahasiswa</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="studentid6" id="studentid6" required onchange="checkFile(this)" accept="image/*">
+                                            <label class="custom-file-label" for="studentid6" style="background-color: #ffffff;" id="studentid6label">Choose file...</label>
+                                            <div class="invalid-feedback">Invalid file</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- member7 -->
+                            <div class="row" id="member7" style="display: none;">
+                                <div class="col-lg-8 offset-lg-2">
+                                    <div class="form-group">
+                                        <label>Nama Lengkap</label>
+                                        <input name="fullname7" type="text" class="form-control" placeholder="Starlight UMN" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tanggal Lahir</label>
+                                        <input name="birthdate7" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Alamat</label>
+                                        <textarea name="address7" class="form-control" placeholder="Jalan Scientia Boulevard, Gading Serpong, Tangerang, Banten" rows="3" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Asal Instansi <small>(SMA/Universitas)</small></label>
+                                        <input name="school7" type="text" class="form-control" placeholder="Universitas Multimedia Nusantara" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nomor Telepon</label>
+                                        <input name="phonenumber7" type="text" class="form-control phone" placeholder="0812-3456-789" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>ID Line</label>
+                                        <input name="line7" type="text" class="form-control" placeholder="@252uzsbl" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="ktp7" id="ktp7"  onchange="checkFile(this)" accept="image/*">
+                                            <label class="custom-file-label" for="ktp7" style="background-color: #ffffff;" id="ktp7label">Choose file...</label>
+                                            <div class="invalid-feedback">Invalid file</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Scan Foto Kartu Pelajar/Kartu Tanda Mahasiswa</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="studentid7" id="studentid7" required onchange="checkFile(this)" accept="image/*">
+                                            <label class="custom-file-label" for="studentid7" style="background-color: #ffffff;" id="studentid7label">Choose file...</label>
+                                            <div class="invalid-feedback">Invalid file</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- member8 -->
+                            <div class="row" id="member8" style="display: none;">
+                                <div class="col-lg-8 offset-lg-2">
+                                    <div class="form-group">
+                                        <label>Nama Lengkap</label>
+                                        <input name="fullname8" type="text" class="form-control" placeholder="Starlight UMN" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tanggal Lahir</label>
+                                        <input name="birthdate8" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Alamat</label>
+                                        <textarea name="address8" class="form-control" placeholder="Jalan Scientia Boulevard, Gading Serpong, Tangerang, Banten" rows="3" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Asal Instansi <small>(SMA/Universitas)</small></label>
+                                        <input name="school8" type="text" class="form-control" placeholder="Universitas Multimedia Nusantara" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nomor Telepon</label>
+                                        <input name="phonenumber8" type="text" class="form-control phone" placeholder="0812-3456-789" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>ID Line</label>
+                                        <input name="line8" type="text" class="form-control" placeholder="@252uzsbl" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="ktp8" id="ktp8"  onchange="checkFile(this)" accept="image/*">
+                                            <label class="custom-file-label" for="ktp8" style="background-color: #ffffff;" id="ktp5label">Choose file...</label>
+                                            <div class="invalid-feedback">Invalid file</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Scan Foto Kartu Pelajar/Kartu Tanda Mahasiswa</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="studentid8" id="studentid8" required onchange="checkFile(this)" accept="image/*">
+                                            <label class="custom-file-label" for="studentid8" style="background-color: #ffffff;" id="studentid8label">Choose file...</label>
                                             <div class="invalid-feedback">Invalid file</div>
                                         </div>
                                     </div>

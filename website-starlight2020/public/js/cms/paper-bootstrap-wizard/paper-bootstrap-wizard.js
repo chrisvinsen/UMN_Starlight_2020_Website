@@ -44,43 +44,63 @@ transparent = true;
             // Code for the Validator
             var $validator = $('.wizard-card form').validate({
         		    rules: {
+                        payment_number: {
+                            minlength: 10,
+                            maxlength: 18
+                        },
                         phonenumber: {
-                            minlength: 15,
-                            maxlength: 19
+                            minlength: 13,
+                            maxlength: 15
                         },
                         phonenumber0: {
-                            minlength: 15,
-                            maxlength: 19
+                            minlength: 13,
+                            maxlength: 15
                         },
                         phonenumber1: {
-                            minlength: 15,
-                            maxlength: 19
+                            minlength: 13,
+                            maxlength: 15
                         },
                         phonenumber2: {
-                            minlength: 15,
-                            maxlength: 19
+                            minlength: 13,
+                            maxlength: 15
                         },
                         phonenumber3: {
-                            minlength: 15,
-                            maxlength: 19
+                            minlength: 13,
+                            maxlength: 15
                         },
                         phonenumber4: {
-                            minlength: 15,
-                            maxlength: 19
+                            minlength: 13,
+                            maxlength: 15
                         },
                         phonenumber5: {
-                            minlength: 15,
-                            maxlength: 19
+                            minlength: 13,
+                            maxlength: 15
+                        },
+                        phonenumber6: {
+                            minlength: 13,
+                            maxlength: 15
+                        },
+                        phonenumber7: {
+                            minlength: 13,
+                            maxlength: 15
+                        },
+                        phonenumber8: {
+                            minlength: 13,
+                            maxlength: 15
                         },
                         membersvalue: {
                             min: 2,
-                            max: 5
+                            max: 8
                         },
                         validaterules:{
                             required: true
                         }
                     },
                     messages: {
+                        payment:{
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Kamu tidak boleh memasukkan lebih dari 18 nomor."
+                        },
                         phonenumber: {
                             minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
                             maxlength: "Please enter no more than 14 numbers."
@@ -109,9 +129,21 @@ transparent = true;
                             minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
                             maxlength: "Please enter no more than 14 numbers."
                         },
+                        phonenumber6: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
+                        phonenumber7: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
+                        phonenumber8: {
+                            minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
+                            maxlength: "Please enter no more than 14 numbers."
+                        },
                         membersvalue: {
                             min: "Jumlah anggota harus lebih dari satu anggota.",
-                            max: "Jumlah anggota tidak boleh lebih dari lima anggota."
+                            max: "Jumlah anggota tidak boleh lebih dari delapan anggota."
                         },
                         validaterules:{
                             required: "Kamu perlu menyetujui peraturan dan ketentuan performance Starlight."

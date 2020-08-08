@@ -2,70 +2,31 @@
 
 @section('custom_css')
 <!-- Custom CSS -->
-<!-- <link rel="stylesheet" href="{{ asset('css/cms/home.css') }}"> -->
+<link rel="stylesheet" href="{{ asset('css/cms/frame.css') }}">
 <link rel="stylesheet" href="https://unpkg.com/jcrop/dist/jcrop.css">
-<style>
-body{
-  background: linear-gradient(180deg, #270000 0%, #5A3A31 100%);
-  background-size: cover !important;
-  color:white;
-}
-.polaroid-wrapper {
-  width: 100%;
-  padding: 0 2rem;
-  text-align: center;
-}
-.polaroid {
-  background: #fff;
-  padding: 0.5rem;
-  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
-}
-.polaroid > img {
-  max-width: 100%;
-  height: auto;
-}
-.item {
-  width: 30%;
-  display: inline-block;
-  margin-top: 2rem;
-}
-h1{
-  color:white;
-}
-.jcrop-widget .jcrop-handle{
-    display:none;
-    position:absolute;
-    border:0px rgba(127,127,127,0.8) solid;
-    width:10px;
-    height:10px;
-    box-sizing:border-box;
-    background:transparent
-}
-</style>
 @endsection
 
 @section('content')
 <div class="container col-sm-8 pt-5 pb-5">
     <div style="margin-top:100px;text-align:center;">
-        <h1>Bingkai Starlight 2020</h1>
+        <h1>Twibbon Starlight 2020</h1>
         <div class="mt-5">
-          <div class="polaroid-wrapper">
-            <div class="item">
-              <div style = "position: relative" id = "frame" >
-                <img id = "photo" src = "{{ $photo }}" alt = "photo" width="500">
-                <canvas id = "canvas" style = "display: block" width="500"></canvas>
-              </div>
+            <div class="container mx-auto" style = "position: relative" id = "frame" >
+              <img id = "photo" src = "{{ $photo }}" alt = "photo">
+              <canvas id = "canvas" style = "display: block"></canvas>
             </div>
-            <div class="item">
+            <div class="mx-auto">
+                <div class="mt-3">
+                  <button class="btn cvinsen-btn" id = "download">Unduh</button>
+                </div>
                 <label for="uploadphoto">
-                <span class="btn cvinsen-btn mt-50" >
+                <span class="btn cvinsen-btn mt-3" >
                     Unggah Foto Baru
                 </span>
-                <form action="{{url('/framePost')}}" class="formfull" method="POST" enctype="multipart/form-data">
+                <form action="{{url('/twibbonPost')}}" class="formfull" method="POST" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <input type="file" style="display:none;" accept="image/png, image/jpeg, image/jpg" name="uploadphoto" id="uploadphoto" />
                 </form>
-                <button class="btn cvinsen-btn mt-50" id = "download">Unduh</button>
             </div>
             <canvas id = "preview_canvas" style = "display: none"></canvas>
           </div>

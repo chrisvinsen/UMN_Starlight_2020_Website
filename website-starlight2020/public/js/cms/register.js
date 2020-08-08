@@ -277,12 +277,10 @@ function changeMembers() {
                 }
                 var curchr = this.value.length;
                 var curval = $(this).val();
-                if (curchr == 3) {
-                    $(this).val("(" + curval + ")" + " ");
-                } else if (curchr == 9 || curchr == 13) {
+                if (curchr == 4 || curchr == 9) {
                     $(this).val(curval + "-");
                 }
-                $(this).attr("maxlength", "19");
+                $(this).attr("maxlength", "15");
             });
             $(this).bind("paste", function (e) {
                 e.preventDefault();
@@ -292,13 +290,13 @@ function changeMembers() {
                 } else {
                     inputValue = String(
                         inputValue.replace(
-                            /(\d{3})(\d{3})(\d{3})(\d{3})/,
-                            "($1) $2-$3-$4"
+                            /(\d{4})(\d{4})(\d{5})/,
+                            "$1-$2-$3"
                         )
                     );
                     $(this).val(inputValue);
                     $(this).val("");
-                    inputValue = inputValue.substring(0, 18);
+                    inputValue = inputValue.substring(0, 15);
                     $(this).val(inputValue);
                 }
             });
