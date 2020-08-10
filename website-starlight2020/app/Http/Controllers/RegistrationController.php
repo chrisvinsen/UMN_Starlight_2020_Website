@@ -53,7 +53,7 @@ class RegistrationController extends Controller
             $path_payment = '/images/Registration/Payment/' . $filename;
             $request->file('payment')->move($path, $filename);
 
-            $data_umum = DB::insert('insert into data_umum (stagename, membersvalue, line, phonenumber, instagram, stagedescription, performerbackground, payment, videolink, token, stage, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+            $data_umum = DB::insert('insert into data_umum (stagename, membersvalue, line, phonenumber, instagram, stagedescription, payment, payment_name, payment_bank, payment_number, token, stage, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
             [
                 $request->stagename,
                 $request->membersvalue,
@@ -61,10 +61,11 @@ class RegistrationController extends Controller
                 $request->phonenumber,
                 $request->instagram,
                 $request->stagedescription,
-                $request->performerbackground,
                 $path_payment,
-                $request->videolink,
-                strtoupper(Str::random(30)),
+                $request->payment_name,
+                $request->payment_bank,
+                $request->payment_number,
+                strtoupper(Str::random(6)),
                 'Caribana',
                 'Pending'
             ]);
@@ -325,6 +326,135 @@ class RegistrationController extends Controller
                     $request->line5,
                     $path_ktp5,
                     $path_studentid5,
+                    $request->stagename
+                ]);
+            }
+
+            if ($request->fullname6) {
+                $path_ktp6 = null;
+                $path_studentid6 = null;
+                if ($request->hasFile('ktp6')) {
+                    $extension = $request->file('ktp6')->getClientOriginalExtension();
+
+                    $path = public_path('images/Registration/KTP');
+
+                    if (!File::exists($path)) {
+                        File::makeDirectory($path, $mode = 0777, true, true);
+                    }
+
+                    $filename = 'ktp_' . $request->fullname6 . '.' . $extension;
+                    $path_ktp6 = '/images/Registration/KTP/' . $filename;
+                    $request->file('ktp6')->move($path, $filename);
+                }
+                if ($request->hasFile('studentid6')) {
+                    $extension = $request->file('studentid6')->getClientOriginalExtension();
+
+                    $path = public_path('images/Registration/StudentID');
+
+                    if (!File::exists($path)) {
+                        File::makeDirectory($path, $mode = 0777, true, true);
+                    }
+
+                    $filename = 'studentid_' . $request->fullname6 . '.' . $extension;
+                    $path_studentid6 = '/images/Registration/StudentID/' . $filename;
+                    $request->file('studentid6')->move($path, $filename);
+                }
+                $data_individu6 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                [
+                    $request->fullname6,
+                    $request->birthdate6,
+                    $request->address6,
+                    $request->school6,
+                    $request->phonenumber6,
+                    $request->line6,
+                    $path_ktp6,
+                    $path_studentid6,
+                    $request->stagename
+                ]);
+            }
+
+            if ($request->fullname7) {
+                $path_ktp7 = null;
+                $path_studentid7 = null;
+                if ($request->hasFile('ktp7')) {
+                    $extension = $request->file('ktp7')->getClientOriginalExtension();
+
+                    $path = public_path('images/Registration/KTP');
+
+                    if (!File::exists($path)) {
+                        File::makeDirectory($path, $mode = 0777, true, true);
+                    }
+
+                    $filename = 'ktp_' . $request->fullname7 . '.' . $extension;
+                    $path_ktp7 = '/images/Registration/KTP/' . $filename;
+                    $request->file('ktp7')->move($path, $filename);
+                }
+                if ($request->hasFile('studentid7')) {
+                    $extension = $request->file('studentid7')->getClientOriginalExtension();
+
+                    $path = public_path('images/Registration/StudentID');
+
+                    if (!File::exists($path)) {
+                        File::makeDirectory($path, $mode = 0777, true, true);
+                    }
+
+                    $filename = 'studentid_' . $request->fullname7 . '.' . $extension;
+                    $path_studentid7 = '/images/Registration/StudentID/' . $filename;
+                    $request->file('studentid7')->move($path, $filename);
+                }
+                $data_individu7 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                [
+                    $request->fullname7,
+                    $request->birthdate7,
+                    $request->address7,
+                    $request->school7,
+                    $request->phonenumber7,
+                    $request->line7,
+                    $path_ktp7,
+                    $path_studentid7,
+                    $request->stagename
+                ]);
+            }
+
+            if ($request->fullname8) {
+                $path_ktp8 = null;
+                $path_studentid8 = null;
+                if ($request->hasFile('ktp8')) {
+                    $extension = $request->file('ktp8')->getClientOriginalExtension();
+
+                    $path = public_path('images/Registration/KTP');
+
+                    if (!File::exists($path)) {
+                        File::makeDirectory($path, $mode = 0777, true, true);
+                    }
+
+                    $filename = 'ktp_' . $request->fullname8 . '.' . $extension;
+                    $path_ktp8 = '/images/Registration/KTP/' . $filename;
+                    $request->file('ktp8')->move($path, $filename);
+                }
+                if ($request->hasFile('studentid8')) {
+                    $extension = $request->file('studentid8')->getClientOriginalExtension();
+
+                    $path = public_path('images/Registration/StudentID');
+
+                    if (!File::exists($path)) {
+                        File::makeDirectory($path, $mode = 0777, true, true);
+                    }
+
+                    $filename = 'studentid_' . $request->fullname8 . '.' . $extension;
+                    $path_studentid8 = '/images/Registration/StudentID/' . $filename;
+                    $request->file('studentid8')->move($path, $filename);
+                }
+                $data_individu8 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                [
+                    $request->fullname8,
+                    $request->birthdate8,
+                    $request->address8,
+                    $request->school8,
+                    $request->phonenumber8,
+                    $request->line8,
+                    $path_ktp8,
+                    $path_studentid8,
                     $request->stagename
                 ]);
             }

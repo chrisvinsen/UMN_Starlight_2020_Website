@@ -583,11 +583,11 @@
                                         <div class="rules">
                                             <h5><b>A. Ketentuan Umum Vergilia (Peserta) Lomba :</b></h5>
                                             1. Starlight 2020 terdiri atas 3 rangkaian mulai dari Venicea, Mardi Gras, hingga Rio de Janeiro. <br>
-                                            2. Pendaftaran tahap Venicea dibuka melalui website (starlight.umn.ac.id) yang diselenggarakan mulai dari <b>Senin, 31 Agustus 2020</b> sampai dengan <b>Sabtu, 10 Oktober 2020</b> Pk 23.59 WIB. <br> 
+                                            2. Pendaftaran tahap Venicea dibuka melalui website (starlight.umn.ac.id) yang diselenggarakan mulai dari <b>Senin, 31 Agustus 2020</b> sampai dengan <b>Sabtu, 10 Oktober 2020</b> Pk 23.59 WIB. <br>
                                             3. Bakat yang ditampilkan dapat berupa <b>APAPUN</b>, dengan syarat <b>BUKAN</b> berupa editing dan animasi. <br>
                                             4. Peserta <b>WAJIB</b> secara resmi terdaftar dalam instansi pendidikan pada tingkat SMA/SMK/MA (Sekolah Menengah Atas/ Sekolah Menengah Kejuruan/ Madrasah Aliyah) atau Perguruan Tinggi se-Indonesia. <br>
                                             5. Peserta dapat mengatasnamakan atau menjadi perwakilan dari instansi pendidikan mereka masing-masing atau mendaftar tanpa instansi <b>(membawa nama tim pribadi).</b> <br>
-                                            6. Tidak ada batasan usia bagi peserta, selama peserta masih terdaftar secara aktif dalam instansi pendidikan tersebut. <br> 
+                                            6. Tidak ada batasan usia bagi peserta, selama peserta masih terdaftar secara aktif dalam instansi pendidikan tersebut. <br>
                                             7. Salah satu perwakilan dari peserta yang lolos ke tahap selanjutnya (tahap stage Mardi Gras) <b>WAJIB</b> untuk masuk ke dalam grup besar melalui aplikasi LINE. Untuk Link invitation akan tercantum pada laman pengumuman lolos dari Venicea ke Mardi Gras. <br>
                                             8. Bagi peserta yang sudah dinyatakan lolos ke tahap selanjutnya, <b>DILARANG</b> untuk mengundurkan diri. <u>Bila mengundurkan diri maka uang pendaftaran tidak akan dikembalikan. <br></u>
                                             9. Peserta yang sudah mendaftarkan diri <b>DILARANG</b> untuk mengganti/menambahkan/mengurangi jumlah anggotanya dari awal hingga akhir rangkaian acara. Kecuali dengan keadaan sebagai berikut : <br>
@@ -663,7 +663,7 @@
                                                     https://www.youtube.com/watch?v=P_yeICLSDOQ&feature=youtu.be <br>
                                                 </div>
                                                 <div style="color:red;">
-                                                    (Orientasi akhir harus berbentuk Landscape.) <br>   
+                                                    (Orientasi akhir harus berbentuk Landscape.) <br>
                                                 </div>
                                             </div>
                                             3. Peserta <b>WAJIB</b> untuk menggunakkan teknik record one take saat merekam (teknik pengambilan video dalam satu kali perekaman).
@@ -675,7 +675,7 @@
                                             9. Karya yang dikumpulkan merupakan <b>hasil karya sendiri</b> dan bukan milik orang lain. <br>
                                             10. <b>WAJIB</b> mengenakan <b>pakaian</b> yang <b>sopan</b> (tidak mengenakan pakaian yang terbuka). <br>
                                             11. Peserta <b>DILARANG</b> menampilkan brand produk atau jasa dalam video penampilan. <br>
-                                            12. Peserta <b>DILARANG</b> membawa atau menampilkan unsur SARA, Asusila, Kekerasan, dan Pornografi dalam konten video. <br>	
+                                            12. Peserta <b>DILARANG</b> membawa atau menampilkan unsur SARA, Asusila, Kekerasan, dan Pornografi dalam konten video. <br>
                                             13. Peserta <b>DILARANG</b> menggunakan konten video yang menyinggung dan merugikan orang lain.  <br><br>
                                             <h5><b>E. Ketentuan Submisi Video :</b></h5>
                                             1. Submisi dikumpulkan dalam bentuk <b>video</b> dan diunggah ke Instagram (IGTV). <br>

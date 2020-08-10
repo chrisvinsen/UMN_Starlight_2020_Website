@@ -15,9 +15,10 @@ class DataUmum extends Model
         'phonenumber',
         'instagram',
         'stagedescription',
-        'performerbackground',
         'payment',
-        'videolink'
+        'payment_name',
+        'payment_bank',
+        'payment_number'
     ];
 
     protected $hidden = ['created_at', 'updated_at', 'deleted_at'];

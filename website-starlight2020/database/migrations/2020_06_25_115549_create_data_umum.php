@@ -21,9 +21,10 @@ class CreateDataUmum extends Migration
             $table->string('phonenumber', 20);
             $table->string('instagram', 30);
             $table->text('stagedescription');
-            $table->text('performerbackground');
             $table->string('payment');
-            $table->string('videolink', 50);
+            $table->string('payment_name');
+            $table->string('payment_bank');
+            $table->string('payment_number');
             $table->string('token')->unique();
             $table->string('stage');
             $table->string('status');
