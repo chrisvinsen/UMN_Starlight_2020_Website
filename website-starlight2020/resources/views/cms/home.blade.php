@@ -19,7 +19,6 @@
                                 <div data-animation="fadeInUp" data-delay="300ms" class="w-50 mx-auto d-block img-hover-zoom overflow-visible wow bounceInUp">
                                     <img src="{{ asset('images/core-img/Font_starlight_2.png') }}" class="img-responsive">
                                 </div>
-                                <!-- <h5 data-animation="fadeInUp" data-delay="100ms">Starlight 2020</h5> -->
                                 <h2 data-animation="fadeInUp" data-delay="300ms">EXTEND YOUR LIGHT</h2>
                                 <div class="event-meta" data-animation="fadeInUp" data-delay="300ms">
                                     <a class="event-date"><i class="zmdi zmdi-alarm-check"></i> October 24, 2020</a>

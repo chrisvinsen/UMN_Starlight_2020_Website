@@ -28,18 +28,6 @@ class RegistrationController extends Controller
             $type = 'solo';
         }
 
-        // $validatedData = $request->validate([
-        //     'stagename' => 'required|max:50|unique:data_umum',
-        //     'membersvalue' => 'required',
-        //     'line' => 'required|max:30|unique:data_umum',
-        //     'phonenumber' => 'required|max:15|unique:data_umum',
-        //     'instagram' => 'required|max:30|unique:data_umum',
-        //     'stagedescription' => 'required',
-        //     'performerbackground' => 'required',
-        //     'payment' => 'required',
-        //     'videolink' => 'required|max:50|unique:data_umum'
-        // ]);
-
         if ($request->hasFile('payment')) {
             $extension = $request->file('payment')->getClientOriginalExtension();
 

@@ -6,9 +6,6 @@
 <style>
     body{
         background: url("{{ asset('images/bg-img/search.jpg') }}");
-        /* background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center; */
     }
 
     .liquida{
@@ -108,9 +105,6 @@
                     <div class="liquid"></div>
                 </a>
             </div>
-            <!-- <div class="search-btn col-sm-4 pt-4 mx-auto">
-                <input type="submit" style="@if (Session::has('msg')) display:block; @endif" class="btn btn-lg btn-block btn-outline-warning" id="submitbtn" value="Search"/>
-            </div> -->
         </form>
     </div>
     <div class="results-fail" style="@if (session('msg')=='pending') display:block; @endif">

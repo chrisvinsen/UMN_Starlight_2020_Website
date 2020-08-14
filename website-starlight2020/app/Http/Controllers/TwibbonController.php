@@ -5,17 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use File;
 
-class FrameController extends Controller
+class TwibbonController extends Controller
 {
     //
     public function index(){
         $title = "Twibbon";
         $nav_menu = "";
 
-        return view('cms.frame', compact('title', 'nav_menu'));
+        return view('cms.twibbon', compact('title', 'nav_menu'));
     }
 
-    public function framePost(Request $request) {
+    public function twibbonPost(Request $request) {
         $title = "Twibbon";
         $nav_menu = "";
 
@@ -32,6 +32,6 @@ class FrameController extends Controller
         }
         $photo = 'images/user/' . $filename;
 
-        return view('cms.frameUpload', compact('title', 'nav_menu', 'photo'));
+        return view('cms.twibbon_result', compact('title', 'nav_menu', 'photo'));
     }
 }
