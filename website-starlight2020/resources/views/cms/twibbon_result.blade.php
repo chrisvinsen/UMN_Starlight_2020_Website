@@ -49,28 +49,26 @@
     $('form input').change(function() {
         $(this).closest('form').submit();
     });
-    
+
     const img = new Image();
-    img.src = 'images/gallery/Venice Carnival Twibbon peserta.png';
+    img.src = 'images/gallery/twibbon1kx1k.png';
     const photo = document.getElementById('photo');
     const min = Math.min(photo.width, photo.height);
-    console.log(photo.width)
-    console.log(photo.height)
-    
+
     const canvas = document.getElementById('canvas');
     canvas.width = photo.width;
     canvas.height = photo.height;
     const context = canvas.getContext('2d');
     context.drawImage(photo, 0, 0, photo.width, photo.height);
     photo.style.display = 'none';
-    
+
     class SvgWidget extends Jcrop.Widget {
         init () {
             super.init();
             this.el.appendChild(img);
         }
     }
-    
+
     const jcrop = Jcrop.attach('frame',{
         aspectRatio: 1,
         allowResize: false,
@@ -79,37 +77,40 @@
         setSelect: [0, 0, min, min]
     });
     jcrop.addClass('jcrop-ux-keep-current');
-    
+
     const rect = Jcrop.Rect.create(0, 0, min, min);
     const options = { allowResize: false };
     jcrop.newWidget(rect, options);
-    
+
     let flag = false;
     jcrop.listen('crop.update', (widget, e) => {
         const preview_canvas = document.getElementById('preview_canvas');
-        preview_canvas.width = min;
-        preview_canvas.height = min;
-        preview_canvas.getContext('2d').drawImage(canvas, widget.pos.x, widget.pos.y, widget.pos.w, widget.pos.h, 0, 0, min, min);
-        preview_canvas.getContext('2d').drawImage(img, 0, 0, 2000, 2000, 0, 0, min, min);
+        preview_canvas.width = 1000;
+        preview_canvas.height = 1000;
+        preview_canvas.getContext('2d').drawImage(canvas, widget.pos.x, widget.pos.y, widget.pos.w, widget.pos.h, 0, 0, 1000, 1000);
+        preview_canvas.getContext('2d').drawImage(img, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
         flag = true;
     });
-    
+
     document.getElementById('download').addEventListener('click', () => {
         if (flag) {
             const photo = document.getElementById('preview_canvas');
             photo.toBlobHD((blob) => {
                 saveAs(blob, "STARLIGHT2020.png");
             }, "image/png");
+            // Miichael males nih 😣... hehehe
         } else {
             const photo = document.createElement('canvas');
-            photo.width = min;
-            photo.height = min;
-            photo.getContext('2d').drawImage(canvas, 0, 0, min, min, 0, 0, min, min);
-            photo.getContext('2d').drawImage(img, 0, 0, 2000, 2000, 0, 0, min, min);
+            photo.width = 1000;
+            photo.height = 1000;
+            photo.getContext('2d').drawImage(canvas, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
+            photo.getContext('2d').drawImage(img, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
             photo.toBlobHD((blob) => {
                 saveAs(blob, "STARLIGHT2020.png");
             }, "image/png");
         }
     });
+
+    // Happy Hacking! - Miichael 😎
 </script>
 @endsection
