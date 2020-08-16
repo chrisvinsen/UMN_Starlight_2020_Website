@@ -233,20 +233,16 @@ function changeMembers() {
             options
         );
 
-        if (params.format === "xxx-xxx-xxxx") {
+        if (params.format === "x") {
             $(this).bind("paste", function (e) {
                 e.preventDefault();
                 var inputValue = e.originalEvent.clipboardData.getData("Text");
                 if (!$.isNumeric(inputValue)) {
                     return false;
                 } else {
-                    inputValue = String(
-                        inputValue.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3")
-                    );
-                    $(this).val(inputValue);
-                    $(this).val("");
-                    inputValue = inputValue.substring(0, 12);
-                    $(this).val(inputValue);
+                    if(inputValue < 9 && inputValue > 1){
+                        $(this).val(inputValue);
+                    }
                 }
             });
             $(this).on("keypress", function (e) {
@@ -266,7 +262,7 @@ function changeMembers() {
                 }
                 $(this).attr("maxlength", "12");
             });
-        } else if (params.format === "(xxx) xxx-xxxx") {
+        } else if (params.format === "xxxx-xxxx-xxx") {
             $(this).on("keypress", function (e) {
                 if (
                     e.which != 8 &&
@@ -305,7 +301,10 @@ function changeMembers() {
 })(jQuery);
 $(document).ready(function () {
     $(".phone").usPhoneFormat({
-        format: "(xxx) xxx-xxxx",
+        format: "xxxx-xxxx-xxx",
+    });
+    $("#membersvalueinput").usPhoneFormat({
+        format: "x",
     });
     $("#validaterules").required = true;
 });

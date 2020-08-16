@@ -15,15 +15,14 @@
     <div style="margin-top:100px;text-align:center;">
         <h1>Twibbon Starlight 2020</h1>
         <div class="mt-5">
-            <pre style="color: #ffffff;">
-<b>ONE STEP CLOSER TO BE A VERGILIA!🌟</b>
+            <b>ONE STEP CLOSER TO BE A VERGILIA!🌟</b> <br>
 
-Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪
-dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨
+            Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪 <br>
+            dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨ <br>
 
-Semangat! ✨</pre>
+            Semangat! ✨
         </div>
-        <div class="mt-5">
+        <div class="mt-3">
             <div class="polaroid-wrapper">
                 <div class="item">
                     <div class="polaroid">
@@ -53,40 +52,45 @@ Semangat! ✨</pre>
             </div>
         </div>
         <div class="mt-5">
-            <pre style="color:white;">
-[STARLIGHT 2020 OFFICIALLY STARTED]
+            [STARLIGHT 2020 OFFICIALLY STARTED] <br> <br>
 
-Hello! My name is (name) and I'm ready to join STARLIGHT 2020 🌟as a vergillia,
-where I would like to proudly show you my marvelous (voice/movement/magic/...)✨
-I would like to invite all of you to join our special Starlight Carnival Stage:
-Venicea🎪, Mardi Gras🎪, and Rio de Janeiro🎪 to support (me/us).
+            Hello! My name is (name) and I'm ready to join STARLIGHT 2020 🌟as a vergillia, <br>
+            where I would like to proudly show you my marvelous (voice/movement/magic/...)✨ <br>
+            I would like to invite all of you to join our special Starlight Carnival Stage: <br>
+            Venicea🎪, Mardi Gras🎪, and Rio de Janeiro🎪 to support (me/us). <br> <br>
 
-So stay tune on @starlightumn for any updates and pack your bags for a journey with (me/us)!✨
+            So stay tune on @starlightumn for any updates and pack your bags for a journey with (me/us)!✨ <br> <br>
 
-See you, Starlighters! 🙌🏻
-—⁣⁣
-Starlight!⁣⁣
-Extend Your Light💫⁣⁣
-—⁣⁣
-Instagram: @starlightumn ⁣⁣
-LINE: @252uzsbl⁣⁣
-Web: starlight.umn.ac.id⁣⁣
-E-mail: starlight@umn.ac.id⁣⁣
-#starlightumn⁣⁣
-#extendyourlight⁣⁣
-#carnival
+            See you, Starlighters! 🙌🏻 <br>
+            —⁣⁣ <br>
+            Starlight!⁣⁣ <br>
+            Extend Your Light💫⁣⁣ <br>
+            —⁣⁣ <br>
+            Instagram: @starlightumn ⁣⁣ <br>
+            LINE: @252uzsbl⁣⁣ <br>
+            Web: starlight.umn.ac.id⁣⁣ <br>
+            E-mail: starlight@umn.ac.id⁣⁣ <br>
+            #starlightumn⁣⁣ <br>
+            #extendyourlight⁣⁣ <br>
+            #carnival <br> <br>
 
-<b>ONE STEP CLOSER TO BE A VERGILIA!🌟</b>
+            <b>ONE STEP CLOSER TO BE A VERGILIA!🌟</b> <br> <br>
 
-Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪
-dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨
+            Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪 <br>
+            dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨ <br> <br>
 
-Semangat! ✨
-          </pre>
+            Semangat! ✨
         </div>
-        <label for="uploadphoto">
-            <span class="btn cvinsen-btn mt-50">
-            Upload Photo
+
+        <label for="uploadphoto" class="mt-3">
+            <span class='btn-cont'>
+                <div class='bttn' href='#'>
+                    Upload Photo
+                    <span class='line-1'></span>
+                    <span class='line-2'></span>
+                    <span class='line-3'></span>
+                    <span class='line-4'></span>
+                </div>
             </span>
             <form action="{{url('/twibbonPost')}}" class="formfull" method="POST" enctype="multipart/form-data">
                 {{csrf_field()}}

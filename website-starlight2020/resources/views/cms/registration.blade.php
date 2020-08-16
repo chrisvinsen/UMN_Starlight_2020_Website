@@ -155,7 +155,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate0" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate0" data-rule-optdate="true" type="text" onfocus="(this.type='date')" class="form-control" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -212,7 +212,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate1" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -257,7 +257,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate2" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate2" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -302,7 +302,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate3" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate3" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -347,7 +347,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate4" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate4" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -392,7 +392,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate5" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate5" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -437,7 +437,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate6" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate6" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -482,7 +482,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate7" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate7" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -527,7 +527,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate8" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate8" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -721,7 +721,7 @@
                                     <input name="validaterules" type="checkbox" class="custom-control-input" id="validaterules" value="validrules" required>
                                     <label id="cstm-label" class="custom-control-label" for="validaterules" style="margin-top: 0.5%;">Saya telah membaca dan menyetujui peraturan dan ketentuan performance Starlight</label>
                                     <br><br>
-                                    <label class="custom-control-label" for="validaterules" style="margin-top: 0.5%;font-weight:bold;">*Kamu akan mendownload peraturan dan ketentuan performance Starlight ketika menekan tombol next</label>
+                                    <label class="custom-control-label" for="validaterules" style="margin-top: 0.5%;font-weight:bold;">*Kamu akan mengunduh peraturan dan ketentuan performance Starlight ketika menekan tombol next</label>
                                 </div>
                             </div>
                         </div>
@@ -729,7 +729,7 @@
                 </div>
                 <div class="wizard-footer">
                     <div class="pull-right">
-                        <a href="{{ asset('files/Regulasi Pendaftaran Peserta Starlight 2020.pdf') }}" class='btn btn-next btn-fill btn-danger btn-wd' id="downloadbtn" onclick="donwloadCheck()" name="next" download>Next</a>
+                        <a href="#" class='btn btn-next btn-fill btn-danger btn-wd' id="downloadbtn" onclick="donwloadCheck()" name="next" download>Next</a>
                         <input type='button' class='btn btn-next btn-fill btn-danger btn-wd hideBtn' onclick="nextcheck()" name='next' value='Next' id="nextbtn"/>
                         <input type='submit' class='btn btn-finish btn-fill btn-danger btn-wd' onclick="finishcheck()" value='Finish' id="finishbtn" />
                     </div>
