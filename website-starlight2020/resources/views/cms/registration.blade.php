@@ -764,4 +764,9 @@
     )
 </script>
 @endif
+@if (session('status') == 'fail')
+<script>
+    Swal.fire("Registrasi gagal", "Silahkan registrasi ulang", "error");
+</script>
+@endif
 @endsection
