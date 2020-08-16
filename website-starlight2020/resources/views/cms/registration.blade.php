@@ -17,7 +17,7 @@
 <div class="container col-sm-8 pt-5 pb-5">
     <div class="wizard-container" style="letter-spacing:1px; font-size:14px;" >
         <div class="wizard-card card py-4" data-color="red" id="wizard">
-            <form action="{{url('/registrationPost')}}" class="formfull" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('registrationPost') }}" class="formfull" method="POST" enctype="multipart/form-data">
             {{csrf_field()}}
                 <div class="wizard-header">
                     <h3 class="wizard-title mb-4">
@@ -759,7 +759,7 @@
 <script>
     Swal.fire(
         'Registrasi berhasil',
-        'Tolong tunggu email konfirmasi dari Starlight untuk mendapatkan kode registrasi',
+        'Mohon tunggu email konfirmasi dari Starlight untuk mendapatkan kode registrasi',
         'success'
     )
 </script>

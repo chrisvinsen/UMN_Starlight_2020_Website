@@ -1,12 +1,12 @@
 $(document).ready(function($){
     'use strict';
 
-    var cvinsen_window = $(window);
+    var starlight_window = $(window);
 
     // ****************************
     // :: 1.0 Preloader Active Code
     // ****************************
-    cvinsen_window.on('load', function () {
+    starlight_window.on('load', function () {
         $('#preloader').fadeOut('1000', function () {
             $(this).remove();
         });
@@ -110,7 +110,7 @@ $(document).ready(function($){
     // *********************************
 
     if ($.fn.imagesLoaded) {
-        $('.cvinsen-portfolio').imagesLoaded(function () {
+        $('.starlight-portfolio').imagesLoaded(function () {
             // filter items on button click
             $('.portfolio-menu').on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
@@ -119,7 +119,7 @@ $(document).ready(function($){
                 });
             });
             // init Isotope
-            var $grid = $('.cvinsen-portfolio').isotope({
+            var $grid = $('.starlight-portfolio').isotope({
                 itemSelector: '.single_gallery_item',
                 percentPosition: true,
                 masonry: {
@@ -159,8 +159,8 @@ $(document).ready(function($){
     // :: 8.0 Stick Active Code
     // ************************
 
-    cvinsen_window.on('scroll', function () {
-        if (cvinsen_window.scrollTop() > 0) {
+    starlight_window.on('scroll', function () {
+        if (starlight_window.scrollTop() > 0) {
             $('.header-area').addClass('sticky');
         } else {
             $('.header-area').removeClass('sticky');
@@ -207,7 +207,7 @@ $(document).ready(function($){
     // ***********************
     // :: 11.0 WOW Active Code
     // ***********************
-    if (cvinsen_window.width() > 767) {
+    if (starlight_window.width() > 767) {
         new WOW().init();
     }
 
@@ -233,7 +233,7 @@ $(document).ready(function($){
     // :: 13.0 Scrollup Active Code
     // ****************************
     if ($.fn.scrollUp) {
-        cvinsen_window.scrollUp({
+        starlight_window.scrollUp({
             scrollSpeed: 1000,
             scrollText: '<i class="arrow_carrot-up"</i>'
         });

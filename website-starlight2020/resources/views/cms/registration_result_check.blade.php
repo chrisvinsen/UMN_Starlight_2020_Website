@@ -89,7 +89,7 @@
         <div class="mx-auto" style="text-align:center;" >
             <h1 style="color:white;">Starlight Registration Check</h1>
         </div>
-        <form name="searchform" action="{{url('/searchPost')}}" method="post">
+        <form name="searchform" action="{{ route('searchPost') }}" method="post">
             {{csrf_field()}}
             <div class="input-field first col-sm-8 mx-auto mt-5" id="first" onclick="openInput()">
                 <input class="input @if (Session::has('msg')) input-focus @endif" name="search" id="inputFocus" type="text" placeholder="Masukkan kode pendaftaran anda" />

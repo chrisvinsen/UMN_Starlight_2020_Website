@@ -85,10 +85,10 @@ Semangat! ✨
           </pre>
         </div>
         <label for="uploadphoto">
-            <span class="btn cvinsen-btn mt-50">
+            <span class="btn starlight-btn mt-50">
             Upload Photo
             </span>
-            <form action="{{url('/twibbonPost')}}" class="formfull" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('twibbonPost') }}" class="formfull" method="POST" enctype="multipart/form-data">
                 {{csrf_field()}}
                 <input type="file" style="display:none;" accept="image/png, image/jpeg, image/jpg"  name="uploadphoto" id="uploadphoto">
             </form>

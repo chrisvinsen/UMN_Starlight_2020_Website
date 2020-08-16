@@ -31,7 +31,7 @@
                         </ul>
 
                         <!-- Get Tickets Button -->
-                        <a class="btn cvinsen-btn mt-3 mt-lg-0 ml-3 ml-lg-5" href="{{ route('registration') }}"> Registration <i class="zmdi zmdi-long-arrow-right"></i></a>
+                        <a class="btn starlight-btn mt-3 mt-lg-0 ml-3 ml-lg-5" href="{{ route('registration') }}"> Registration <i class="zmdi zmdi-long-arrow-right"></i></a>
                     </div>
                     <!-- Nav End -->
                 </div>

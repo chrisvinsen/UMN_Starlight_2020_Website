@@ -39,7 +39,7 @@
                                     <img src="{{ asset('images/core-img/Font_starlight_2.png') }}" class="img-responsive">
                                     <h6 class="f-carneval" data-animation="fadeInUp" data-delay="300ms">Extend Your Light</h6>
                                     <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                        <a routerLink="/about" class="btn cvinsen-btn">More Information <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                        <a routerLink="/about" class="btn starlight-btn">More Information <i class="zmdi zmdi-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +55,6 @@
                                 <div data-animation="fadeInUp" data-delay="300ms" class="w-50 mx-auto d-block img-hover-zoom overflow-visible">
                                     <img src="{{ asset('images/core-img/Font_starlight_2.png') }}" class="img-responsive">
                                 </div>
-                                <!-- <h5 data-animation="fadeInUp" data-delay="100ms">Starlight 2020</h5> -->
                                 <h2 data-animation="fadeInUp" data-delay="300ms">EXTEND YOUR LIGHT</h2>
                                 <div class="event-meta" data-animation="fadeInUp" data-delay="300ms">
                                     <a class="event-date"><i class="zmdi zmdi-alarm-check"></i> October 24, 2020</a>
@@ -81,7 +80,7 @@
                         <h5 class="wow bounceInUp text-light f-poppins" data-wow-delay="300ms">
                             Starlight adalah salah satu acara terbesar di Universitas Multimedia Nusantara sebagai tempat untuk menunjukkan bakat dan keterampilan.
                         </h5>
-                        <a href="{{ route('aboutus') }}" class="btn cvinsen-btn mt-50 wow bounceInLeft" data-wow-delay="300ms">Read more <i class="zmdi zmdi-long-arrow-right"></i></a>
+                        <a href="{{ route('aboutus') }}" class="btn starlight-btn mt-50 wow bounceInLeft" data-wow-delay="300ms">Read more <i class="zmdi zmdi-long-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -118,58 +117,58 @@
                 <div class="col-12">
                     <div class="featured-events-wrap flex flex-wrap justify-content-between">
                         <div class="event-content-wrap positioning-event-1 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL4.png') }}" alt="1"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL4.png') }}" alt="1"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-2 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL2.png') }}" alt="2"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL2.png') }}" alt="2"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-3 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL8.png') }}" alt="3"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL8.png') }}" alt="3"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-4 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL1.png') }}" alt="4"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL1.png') }}" alt="4"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-5 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL14.png') }}" alt="5"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL14.png') }}" alt="5"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-6 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL3.png') }}" alt="6"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL3.png') }}" alt="6"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-7 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL9.png') }}" alt="7"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL9.png') }}" alt="7"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-8 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL11.png') }}" alt="8"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL11.png') }}" alt="8"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-9 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL15.png') }}" alt="9"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL15.png') }}" alt="9"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-10 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL7.png') }}" alt="10"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL7.png') }}" alt="10"></a>
                             </figure>
                         </div>
                         <div class="event-content-wrap positioning-event-11 wow bounceInUp" data-wow-delay="300ms">
-                            <figure class="img-hover-zoom">
-                                <a href="javascript:void(0)"><img class="rounded shadow" src="{{ asset('images/gallery/SL12.png') }}" alt="11"></a>
+                            <figure class="rounded img-hover-zoom">
+                                <a href="javascript:void(0)"><img class="shadow" src="{{ asset('images/gallery/SL12.png') }}" alt="11"></a>
                             </figure>
                         </div>
                     </div>

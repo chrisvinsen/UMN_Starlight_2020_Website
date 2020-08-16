@@ -72,7 +72,7 @@
                     <!-- Copywrite Text -->
                     <div class="col-12">
                         <div class="copywrite-text text-center">
-                            <p> Copyright &copy; Starlight <span id="current_year"></span>. All rights reserved</p>
+                            <p> Copyright &copy; Starlight 2020. All rights reserved</p>
                         </div>
                     </div>
                 </div>

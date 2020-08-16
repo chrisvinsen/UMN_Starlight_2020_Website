@@ -38,7 +38,7 @@
                             <img width="25px" src="{{ asset('images/core-img/logo_line.png') }}"> Line
                         </div>
                         <div class="col-12 mb-2 wow bounceInUp" data-wow-delay="300ms">
-                            <a class="btn cvinsen-btn" href="http://line.me/ti/p/~@252uzsbl" >@252uzsbl</a>
+                            <a class="btn starlight-btn" href="http://line.me/ti/p/~@252uzsbl" >@252uzsbl</a>
                         </div>
                     </div>
                     <div class="row my-2">
@@ -46,7 +46,7 @@
                             <img width="25px" src="{{ asset('images/core-img/logo_instagram.png') }}"> Instagram
                         </div>
                         <div class="col-12 mb-2 wow bounceInUp" data-wow-delay="300ms">
-                            <a class="btn cvinsen-btn" href="http://www.instagram.com/starlightumn" >@starlightumn</a>
+                            <a class="btn starlight-btn" href="http://www.instagram.com/starlightumn" >@starlightumn</a>
                         </div>
                     </div>
                     <div class="row my-2">
@@ -54,7 +54,7 @@
                             <img width="25px" src="{{ asset('images/core-img/logo_email.png') }}"> Email
                         </div>
                         <div class="col-12 mb-2 wow bounceInUp" data-wow-delay="300ms">
-                            <a class="btn cvinsen-btn" href="mailto:starlight@umn.ac.id?subject='Hii Starlight'">starlight@umn.ac.id</a>
+                            <a class="btn starlight-btn" href="mailto:starlight@umn.ac.id?subject='Hii Starlight'">starlight@umn.ac.id</a>
                         </div>
                     </div>
                 </div>

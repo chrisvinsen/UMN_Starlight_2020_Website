@@ -22,13 +22,13 @@
             </div>
             <div class="mx-auto">
                 <div class="mt-3">
-                    <button class="btn cvinsen-btn" id = "download">Unduh</button>
+                    <button class="btn starlight-btn" id = "download">Unduh</button>
                 </div>
                 <label for="uploadphoto">
-                <span class="btn cvinsen-btn mt-3" >
+                <span class="btn starlight-btn mt-3" >
                 Unggah Foto Baru
                 </span>
-                <form action="{{url('/twibbonPost')}}" class="formfull" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('twibbonPost') }}" class="formfull" method="POST" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <input type="file" style="display:none;" accept="image/png, image/jpeg, image/jpg" name="uploadphoto" id="uploadphoto" />
                 </form>

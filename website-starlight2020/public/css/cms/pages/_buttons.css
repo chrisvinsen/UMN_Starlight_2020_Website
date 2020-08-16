@@ -2,7 +2,7 @@
  .btn:focus {
       box-shadow: none;
 }
- .cvinsen-btn {
+ .starlight-btn {
       position: relative;
       z-index: 1;
       height: 46px;
@@ -21,10 +21,10 @@
       overflow: hidden;
 }
 
- .cvinsen-btn i {
+ .starlight-btn i {
       margin-left: 5px;
 }
- .cvinsen-btn::before {
+ .starlight-btn::before {
       transition-duration: 800ms;
       position: absolute;
       width: 120%;
@@ -36,16 +36,16 @@
       background-image: linear-gradient(120deg, #EBB930 0%, #E9C734 50%,#FFFF93 100%);
       z-index: -2;
 }
- .cvinsen-btn:focus, .cvinsen-btn:hover {
+ .starlight-btn:focus, .starlight-btn:hover {
       font-weight: 500;
       background-color: #fff;
       color: #111343 !important;
       box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
 }
- .cvinsen-btn:focus i, .cvinsen-btn:hover i {
+ .starlight-btn:focus i, .starlight-btn:hover i {
       animation: buttonIcon 1s ease-in infinite;
 }
- .cvinsen-btn:focus::before, .cvinsen-btn:hover::before {
+ .starlight-btn:focus::before, .starlight-btn:hover::before {
       left: 110%;
 }
  @-webkit-keyframes buttonIcon {
@@ -64,7 +64,7 @@
            opacity: 0;
      }
 }
- .cvinsen-btn-2 {
+ .starlight-btn-2 {
       position: relative;
       z-index: 1;
       height: 46px;
@@ -80,19 +80,19 @@
       border-radius: 23px;
       transition-duration: 500ms;
 }
- .cvinsen-btn-2 i {
+ .starlight-btn-2 i {
       margin-left: 4px;
 }
- .cvinsen-btn-2.btn-2 {
+ .starlight-btn-2.btn-2 {
       color: #111343;
 }
- .cvinsen-btn-2:focus, .cvinsen-btn-2:hover {
+ .starlight-btn-2:focus, .starlight-btn-2:hover {
       font-weight: 500;
       box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
       background-color: #EBB930;
       color: #fff;
 }
- .cvinsen-btn-white {
+ .starlight-btn-white {
       position: relative;
       z-index: 1;
       height: 46px;
@@ -107,15 +107,15 @@
       font-weight: 500 !important;
       transition-duration: 500ms !important;
 }
- .cvinsen-btn-white i {
+ .starlight-btn-white i {
       margin-left: 5px;
 }
- .cvinsen-btn-white:hover, .cvinsen-btn-white:focus {
+ .starlight-btn-white:hover, .starlight-btn-white:focus {
       background-color: #EBB930;
       border-color: #EBB930;
       color: #000;
 }
- .cvinsen-btn-white-2 {
+ .starlight-btn-white-2 {
       position: relative;
       z-index: 1;
       height: 46px;
@@ -130,15 +130,15 @@
       font-weight: 500;
       transition-duration: 500ms;
 }
- .cvinsen-btn-white-2 i {
+ .starlight-btn-white-2 i {
       margin-left: 3px;
 }
- .cvinsen-btn-white-2:hover, .cvinsen-btn-white-2:focus {
+ .starlight-btn-white-2:hover, .starlight-btn-white-2:focus {
       background-color: #EBB930;
       border-color: #EBB930;
       color: #fff;
 }
- .cvinsen-gb-btn {
+ .starlight-gb-btn {
       position: relative;
       z-index: 1;
       color: #fff !important;
@@ -154,7 +154,7 @@
       border: none !important;
       overflow: hidden;
 }
- .cvinsen-gb-btn::before {
+ .starlight-gb-btn::before {
       transition-duration: 800ms;
       position: absolute;
       width: 120%;
@@ -166,7 +166,7 @@
       background-image: linear-gradient(120deg, #EBB930 0%, #E9C734 50%,#FFFF93 100%);
       z-index: -2;
 }
- .cvinsen-gb-btn::after {
+ .starlight-gb-btn::after {
       transition-duration: 500ms;
       position: absolute;
       width: calc(100% - 4px);
@@ -212,10 +212,10 @@
       z-index: -1;
 }
 
- .cvinsen-gb-btn:hover, .cvinsen-gb-btn:focus {
+ .starlight-gb-btn:hover, .starlight-gb-btn:focus {
       color: #fff;
 }
- .cvinsen-gb-btn:hover::after, .cvinsen-gb-btn:focus::after {
+ .starlight-gb-btn:hover::after, .starlight-gb-btn:focus::after {
       opacity: 0;
 }
 

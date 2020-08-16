@@ -27,12 +27,16 @@ Route::group(['prefix'=>'committee'], function(){
 
 Route::get('/contact','CMSController@contact')->name('contact');
 
-Route::get('/registration','RegistrationController@index')->name('registration');
-Route::post('/registrationPost', 'RegistrationController@registrationPost')->name('registrationPost');
+Route::group(['prefix'=>'registration'], function(){
+	Route::get('','RegistrationController@index')->name('registration');
+	Route::post('/post', 'RegistrationController@registrationPost')->name('registrationPost');
+	Route::group(['prefix'=>'result'], function(){
+		Route::get('','RegistrationResultCheckController@index')->name('search');
+		Route::post('post', 'RegistrationResultCheckController@searchPost')->name('searchPost');
+	});
+});
 
-
-Route::get('/search','SearchController@index')->name('search');
-Route::post('/searchPost', 'SearchController@searchPost')->name('searchPost');
-
-Route::get('/twibbon','TwibbonController@index')->name('twibbon');
-Route::post('/twibbonPost', 'TwibbonController@twibbonPost')->name('twibbonPost');
+Route::group(['prefix'=>'twibbon'], function(){
+	Route::get('','TwibbonController@index')->name('twibbon');
+	Route::post('post', 'TwibbonController@twibbonPost')->name('twibbonPost');
+});

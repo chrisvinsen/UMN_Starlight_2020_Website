@@ -158,11 +158,11 @@
  .post-details-content img {
      border-radius: 10px;
 }
- .cvinsen-blockquote {
+ .starlight-blockquote {
      padding-left: 10%;
      margin: 30px 0;
 }
- .cvinsen-blockquote h5 {
+ .starlight-blockquote h5 {
      font-size: 18px;
      font-style: italic;
      font-weight: 400;
@@ -507,11 +507,11 @@
          margin-right: 10px;
     }
 }
- .cvinsen-leave-a-reply-form {
+ .starlight-leave-a-reply-form {
      position: relative;
      z-index: 1;
 }
- .cvinsen-leave-a-reply-form h4 {
+ .starlight-leave-a-reply-form h4 {
      text-transform: uppercase;
      letter-spacing: 0.5px;
      font-size: 25px;
