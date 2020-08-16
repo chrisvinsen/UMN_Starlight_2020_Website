@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -41,22 +42,27 @@ class RegistrationController extends Controller
             $path_payment = '/images/Registration/Payment/' . $filename;
             $request->file('payment')->move($path, $filename);
 
-            $data_umum = DB::insert('insert into data_umum (stagename, membersvalue, line, phonenumber, instagram, stagedescription, payment, payment_name, payment_bank, payment_number, token, stage, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-            [
-                $request->stagename,
-                $request->membersvalue,
-                $request->line,
-                $request->phonenumber,
-                $request->instagram,
-                $request->stagedescription,
-                $path_payment,
-                $request->payment_name,
-                $request->payment_bank,
-                $request->payment_number,
-                strtoupper(Str::random(6)),
-                'Caribana',
-                'Pending'
-            ]);
+            try {
+                $data_umum = DB::insert('insert into data_umum (stagename, membersvalue, line, phonenumber, instagram, stagedescription, payment, payment_name, payment_bank, payment_number, token, stage, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                [
+                    $request->stagename,
+                    $request->membersvalue,
+                    $request->line,
+                    $request->phonenumber,
+                    $request->instagram,
+                    $request->stagedescription,
+                    $path_payment,
+                    $request->payment_name,
+                    $request->payment_bank,
+                    $request->payment_number,
+                    strtoupper(Str::random(6)),
+                    'Caribana',
+                    'Pending'
+                ]);
+            } catch(QueryException $e) {
+                session()->flash('status', 'fail');
+                return redirect('registration');
+            }
         }
 
         if (strcmp($type, 'solo') == 0) {

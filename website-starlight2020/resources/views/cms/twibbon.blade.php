@@ -18,7 +18,7 @@
             <pre style="color: #ffffff;">
 <b>ONE STEP CLOSER TO BE A VERGILIA!🌟</b>
 
-Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪 
+Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪
 dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨
 
 Semangat! ✨</pre>
@@ -58,7 +58,7 @@ Semangat! ✨</pre>
 
 Hello! My name is (name) and I'm ready to join STARLIGHT 2020 🌟as a vergillia,
 where I would like to proudly show you my marvelous (voice/movement/magic/...)✨
-I would like to invite all of you to join our special Starlight Carnival Stage: 
+I would like to invite all of you to join our special Starlight Carnival Stage:
 Venicea🎪, Mardi Gras🎪, and Rio de Janeiro🎪 to support (me/us).
 
 So stay tune on @starlightumn for any updates and pack your bags for a journey with (me/us)!✨
@@ -78,7 +78,7 @@ E-mail: starlight@umn.ac.id⁣⁣
 
 <b>ONE STEP CLOSER TO BE A VERGILIA!🌟</b>
 
-Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪 
+Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪
 dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨
 
 Semangat! ✨
