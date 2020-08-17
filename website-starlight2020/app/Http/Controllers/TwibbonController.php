@@ -7,7 +7,6 @@ use File;
 
 class TwibbonController extends Controller
 {
-    //
     public function index(){
         $title = "Twibbon";
         $nav_menu = "";
@@ -21,7 +20,7 @@ class TwibbonController extends Controller
 
         $filename = 'default-user';
         if ($request->hasFile('uploadphoto')) {
-            $path = public_path('images/user');
+            $path = public_path('images/twibbon');
             if (!File::exists($path)) {
                 File::makeDirectory($path, $mode = 0777, true, true);
             }
@@ -30,7 +29,7 @@ class TwibbonController extends Controller
             $filename = $image->getClientOriginalName();
             $request->file('uploadphoto')->move($path, $filename);
         }
-        $photo = 'images/user/' . $filename;
+        $photo = 'images/twibbon/' . $filename;
 
         return view('cms.twibbon_result', compact('title', 'nav_menu', 'photo'));
     }

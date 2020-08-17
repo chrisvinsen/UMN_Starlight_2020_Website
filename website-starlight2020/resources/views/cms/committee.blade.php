@@ -4,7 +4,7 @@
 <!-- Custom CSS -->
 <style>
     #banner-committee{
-        background-image: url('{{ asset('images/bg-img/H1.png') }}');
+        background-image: url('{{ asset('images/bg-img/bg_5.png') }}');
     }
 </style>
 @endsection
@@ -38,14 +38,13 @@
                             <div class="row rounded">
                                 <div class="col-md-6 col-12 d-flex justify-content-center align-items-center rounded">
                                     <div class="single-blog-thumb rounded">
-                                        <img class="rounded my-auto" src="{{ asset('images/bg-img/logo_achernar.png') }}" alt="">
+                                        <img class="rounded my-auto" src="{{ asset('images/committee/logo_achernar.png') }}" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 rounded">
                                     <div class="single-blog-text text-center cus-pad">
                                         <a class="blog-title">Archernar</a>
                                         <div class="post-meta">
-                                        <!--<a class="post-date"><i class="zmdi zmdi-alarm-check"></i>January 14, 2019</a>-->
                                             <a class="post-author"><i class="zmdi zmdi-star"></i> BPH <i class="zmdi zmdi-star"></i></a>
                                         </div>
                                         <p>Bintang cemerlang yang berarti akar dari semua divisi. 
@@ -60,7 +59,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 rounded wow bounceInUp" data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_centauri.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_centauri.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Centauri</a>
@@ -82,7 +81,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp" data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_procyon.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_procyon.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Procyon</a>
@@ -105,7 +104,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp"  data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_alpheratz.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_alpheratz.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Alpheratz</a>
@@ -126,7 +125,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp"  data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_acturus.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_acturus.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Acturus</a>
@@ -148,7 +147,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp" data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_vega.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_vega.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Vega</a>
@@ -169,7 +168,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp" data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_orion.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_orion.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Orion</a>
@@ -191,7 +190,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp" data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_columba.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_columba.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Columba</a>
@@ -210,7 +209,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp" data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_polaris.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_polaris.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Polaris</a>
@@ -230,7 +229,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp"  data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_altair.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_altair.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Altair</a>
@@ -249,7 +248,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp" data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_aldebaran.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_aldebaran.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Aldebaran</a>
@@ -268,7 +267,7 @@
                 <div class="rounded col-sm-6 col-md-4 col-lg-4 col-xl-3 equal">
                     <div class="rounded single-blog-area style-2 wow bounceInUp" data-wow-delay="300ms">
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_wirastri.jpg') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_wirastri.jpg') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Wirastri</a>
@@ -290,7 +289,7 @@
                     <div class="rounded single-blog-area style-2 wow bounceInUp" data-wow-delay="300ms">
                         <!-- <div class="single-blog-thumb"> -->
                         <div class="rounded img-hover-zoom">
-                            <img class="rounded" src="{{ asset('images/bg-img/logo_antares.png') }}" alt="">
+                            <img class="rounded" src="{{ asset('images/committee/logo_antares.png') }}" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <a class="blog-title">Antares</a>

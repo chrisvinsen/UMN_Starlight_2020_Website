@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://unpkg.com/jcrop/dist/jcrop.css">
 <style>
     body{
-        background: url("{{ asset('images/bg-img/twibbon_result.jpg') }}");
+        background: url("{{ asset('images/bg-img/background_4.jpg') }}");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -13,7 +13,7 @@
 @endsection
 @section('content')
 <div class="container col-sm-8 pt-5 pb-5">
-    <div style="margin-top:100px;text-align:center;">
+    <div style="margin-top: 100px; text-align: center;">
         <h1>Twibbon Starlight 2020</h1>
         <div class="mt-5">
             <div class="container mx-auto" style = "position: relative" id = "frame" >
@@ -51,7 +51,7 @@
     });
 
     const img = new Image();
-    img.src = 'images/gallery/twibbon1kx1k.png';
+    img.src = 'images/gallery/twibbon_venicea.png';
     const photo = document.getElementById('photo');
     const min = Math.min(photo.width, photo.height);
 
@@ -98,7 +98,6 @@
             photo.toBlobHD((blob) => {
                 saveAs(blob, "STARLIGHT2020.png");
             }, "image/png");
-            // Miichael males nih 😣... hehehe
         } else {
             const photo = document.createElement('canvas');
             photo.width = 1000;
@@ -111,6 +110,5 @@
         }
     });
 
-    // Happy Hacking! - Miichael 😎
 </script>
 @endsection

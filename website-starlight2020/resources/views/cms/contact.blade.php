@@ -4,7 +4,7 @@
 <!-- Custom CSS -->
 <style>
     #banner-contact{
-        background-image: url('{{ asset('images/bg-img/H3.png') }}');
+        background-image: url('{{ asset('images/bg-img/bg_6.png') }}');
     }
 </style>
 @endsection
@@ -51,7 +51,7 @@
                     </div>
                     <div class="row my-2">
                         <div class="col-12 my-2 wow bounceInUp" data-wow-delay="300ms">
-                            <img width="25px" src="{{ asset('images/core-img/logo_email.png') }}"> Email
+                            <img width="25px" src="{{ asset('images/core-img/logo_gmail.png') }}"> Email
                         </div>
                         <div class="col-12 mb-2 wow bounceInUp" data-wow-delay="300ms">
                             <a class="btn starlight-btn" href="mailto:starlight@umn.ac.id?subject='Hii Starlight'">starlight@umn.ac.id</a>

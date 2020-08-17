@@ -52,10 +52,10 @@
                         <div class="footer-gallery">
                             <div class="row justify-content-center">
                                 <div class="col-4" style="max-width:50px;">
-                                    <a href="http://bem.umn.ac.id/"><img src="{{ asset('/images/core-img/bemumn.png') }}" alt=""></a>
+                                    <a href="http://bem.umn.ac.id/"><img src="{{ asset('/images/core-img/logo_bem.png') }}" alt=""></a>
                                 </div>
                                 <div class="col-4" style="max-width:50px;">
-                                    <a href="https://umn.ac.id/"><img src="{{ asset('images/core-img/whiteumn.png') }}" alt=""></a>
+                                    <a href="https://umn.ac.id/"><img src="{{ asset('images/core-img/logo_umn.png') }}" alt=""></a>
                                 </div>
                             </div>
                         </div>

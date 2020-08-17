@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="{{ asset('css/cms/registration.css') }}">
 <style>
     body{
-        background: url("{{ asset('images/bg-img/register.jpg') }}");
+        background: url("{{ asset('images/bg-img/background_1.jpg') }}");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -766,7 +766,7 @@
 @endif
 @if (session('status') == 'fail')
 <script>
-    Swal.fire("Registrasi gagal", "Silahkan registrasi ulang", "error");
+    Swal.fire("Registrasi gagal", "Terjadi kesalahan saat registrasi, silahkan coba lagi.", "error");
 </script>
 @endif
 @endsection

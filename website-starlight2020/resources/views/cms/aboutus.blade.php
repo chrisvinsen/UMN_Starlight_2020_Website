@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{ asset('css/cms/aboutus.css') }}">  
 <style>
     #banner-aboutus{
-        background-image: url('{{ asset('images/bg-img/H7.png') }}');
+        background-image: url('{{ asset('images/bg-img/bg_4.png') }}');
     }
 </style>
 @endsection
@@ -75,7 +75,7 @@
                 <div class="col-12 col-md-6 col-xl-6 equal">
                     <div class="single-we-offer-content text-center wow bounceInLeft f-poppins" data-wow-delay="0.3s">
                         <div class="offer-icon">
-                            <img src="{{ asset('images/core-img/icon.png') }}" alt="Our Vision">
+                            <img src="{{ asset('images/core-img/icon_vision.png') }}" alt="Our Vision">
                         </div>
                         <h5>Vision</h5>
                         <p>
@@ -86,7 +86,7 @@
                 <div class="col-12 col-md-6 col-xl-6 equal">
                     <div class="single-we-offer-content text-center wow bounceInRight" data-wow-delay="0.3s">
                         <div class="offer-icon">
-                            <img src="{{ asset('images/core-img/icon-2.png') }}" alt="Our Mission">
+                            <img src="{{ asset('images/core-img/icon_mission.png') }}" alt="Our Mission">
                         </div>
                         <h5>Mission</h5>
                         <p>

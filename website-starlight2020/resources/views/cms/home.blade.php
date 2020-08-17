@@ -11,7 +11,7 @@
     <section class="welcome-area" id="welcome">
         <div class="welcome-slides owl-carousel">
             <div class="single-welcome-slide bg-img bg-overlay jarallax"
-            style="background-image: url('{{ asset('images/bg-img/G2.JPG') }}');">
+            style="background-image: url('{{ asset('images/bg-img/bg_1.JPG') }}');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -29,12 +29,11 @@
                     </div>
                 </div>
             </div>
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url('{{ asset('images/bg-img/carousel_2.jpg') }}');">
+            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url('{{ asset('images/bg-img/bg_2.jpg') }}');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <div class="welcome-text text-right row justify-content-center overflow-visible">
-                                <!-- <h2 data-animation="fadeInUp" data-delay="300ms">Starlight</h2> -->
                                 <div class="offset-sm-6 col-8 col-sm-6 float-right text-center d-block img-hover-zoom overflow-visible" data-animation="fadeInUp" data-delay="300ms">
                                     <img src="{{ asset('images/core-img/Font_starlight_2.png') }}" class="img-responsive">
                                     <h6 class="f-carneval" data-animation="fadeInUp" data-delay="300ms">Extend Your Light</h6>
@@ -47,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url('{{ asset('images/bg-img/H2.png') }}');">
+            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url('{{ asset('images/bg-img/bg_3.png') }}');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12 overflow-visible">
