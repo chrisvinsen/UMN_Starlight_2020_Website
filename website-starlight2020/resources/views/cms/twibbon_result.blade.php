@@ -17,7 +17,7 @@
         <h1>Twibbon Starlight 2020</h1>
         <div class="mt-5">
             <div class="container mx-auto" style = "position: relative" id = "frame" >
-                <img id = "photo" src = "{{ $photo }}" alt = "photo">
+                <img id = "photo" src = "{{ asset($photo) }}" alt = "photo">
                 <canvas id = "canvas" style = "display: block"></canvas>
             </div>
             <div class="mx-auto">
@@ -51,7 +51,8 @@
     });
 
     const img = new Image();
-    img.src = 'images/gallery/twibbon_venicea.png';
+    const APP_URL = {!! json_encode(url('/')) !!}
+    img.src = `${APP_URL}/images/gallery/twibbon_venicea.png`;
     const photo = document.getElementById('photo');
     const min = Math.min(photo.width, photo.height);
 
