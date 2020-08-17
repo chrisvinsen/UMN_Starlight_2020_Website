@@ -37,7 +37,14 @@ searchVisible = 0;
 transparent = true;
 
         $(document).ready(function(){
-
+            jQuery.validator.addMethod("optdate", function(value, element) {
+                var startDate= new Date("1900-01-01");
+                var endDate= new Date("2019-12-31");
+                var d = new Date(value);
+                console.log(d)
+                return (d.getTime() <= endDate.getTime() && d.getTime() >= startDate.getTime())
+            }, "Masukkan tahun yang sah."
+            );
             /*  Activate the tooltips      */
             $('[rel="tooltip"]').tooltip();
             $.validator.messages.required = "Kamu perlu memasukkan data ini.";
@@ -97,7 +104,7 @@ transparent = true;
                         }
                     },
                     messages: {
-                        payment:{
+                        payment_number:{
                             minlength: "Kamu harus memasukkan setidaknya 10 nomor.",
                             maxlength: "Kamu tidak boleh memasukkan lebih dari 18 nomor."
                         },

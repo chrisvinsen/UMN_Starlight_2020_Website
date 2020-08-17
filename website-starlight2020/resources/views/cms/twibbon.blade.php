@@ -21,7 +21,7 @@
                 Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪 dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨ Semangat! ✨
             </p>
         </div>
-        <div class="mt-5">
+        <div class="mt-3">
             <div class="polaroid-wrapper">
                 <div class="item">
                     <div class="polaroid">
