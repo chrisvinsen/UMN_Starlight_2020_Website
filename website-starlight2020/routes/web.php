@@ -40,3 +40,7 @@ Route::group(['prefix'=>'twibbon'], function(){
 	Route::get('','TwibbonController@index')->name('twibbon');
 	Route::post('post', 'TwibbonController@twibbonPost')->name('twibbonPost');
 });
+
+Route::any('{query}', 
+  function() { return redirect('/'); })
+  ->where('query', '.*');

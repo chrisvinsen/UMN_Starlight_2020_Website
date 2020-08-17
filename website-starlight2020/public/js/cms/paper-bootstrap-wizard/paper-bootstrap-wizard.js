@@ -38,10 +38,9 @@ transparent = true;
 
         $(document).ready(function(){
             jQuery.validator.addMethod("optdate", function(value, element) {
-                var startDate= new Date("1900-01-01");
-                var endDate= new Date("2019-12-31");
+                var startDate= new Date("1970-01-01");
+                var endDate= new Date("2009-12-31");
                 var d = new Date(value);
-                console.log(d)
                 return (d.getTime() <= endDate.getTime() && d.getTime() >= startDate.getTime())
             }, "Masukkan tahun yang sah."
             );
