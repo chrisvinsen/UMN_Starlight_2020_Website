@@ -41,6 +41,12 @@ Route::group(['prefix'=>'twibbon'], function(){
 	Route::post('post', 'TwibbonController@twibbonPost')->name('twibbonPost');
 });
 
+Route::group(['prefix'=>'login'], function(){
+	Route::get('','PanelController@index')->name('login');
+});
+
+Route::get('/admin','PanelController@admin')->name('admin');
+
 Route::any('{query}', 
   function() { return redirect('/'); })
   ->where('query', '.*');
