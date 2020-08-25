@@ -41,6 +41,8 @@ Route::group(['prefix'=>'twibbon'], function(){
 	Route::post('post', 'TwibbonController@twibbonPost')->name('twibbonPost');
 });
 
+Route::get('/event','EventController@index')->name('Event');
+
 Route::any('{query}', 
   function() { return redirect('/'); })
   ->where('query', '.*');

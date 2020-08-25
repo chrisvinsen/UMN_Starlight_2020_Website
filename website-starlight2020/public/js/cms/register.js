@@ -1,3 +1,12 @@
+function bankCheck(input){
+    if(input.options[input.selectedIndex].value == "Others"){
+        $(".bank_others").css("display","block");
+    }
+    else{
+        $(".bank_others").css("display","none");
+    }
+    console.log(input.options[input.selectedIndex].value);
+}
 function nextMember() {
     if ($(".formfull").valid()) {
         $(".previous").removeClass("disable");
