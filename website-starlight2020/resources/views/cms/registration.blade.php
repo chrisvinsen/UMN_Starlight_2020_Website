@@ -803,4 +803,9 @@
     Swal.fire("Registrasi gagal", "Terjadi kesalahan saat registrasi, silahkan coba lagi.", "error");
 </script>
 @endif
+@if (session('status') == 'kosong')
+<script>
+    Swal.fire("Registrasi gagal", "Harap isi semua data yang dibutuhkan!", "error");
+</script>
+@endif
 @endsection
