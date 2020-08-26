@@ -11,6 +11,7 @@ class DataUmum extends Model
     protected $fillable = [
         'stagename',
         'membersvalue',
+        'email',
         'line',
         'phonenumber',
         'instagram',

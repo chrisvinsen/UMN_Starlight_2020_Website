@@ -98,8 +98,12 @@
                                         <input name="stagename" type="text" class="form-control" placeholder="Starlighters" maxlength="50" required>
                                     </div>
                                     <div class="form-group" id="membersvalue">
-                                        <label>Jumlah Anggota<span class="text-danger">*</span><small> (maksimal 8 anggota) </small></label>
+                                        <label>Jumlah Anggota BB<span class="text-danger">*</span><small> (maksimal 8 anggota) </small></label>
                                         <input name="membersvalue" id="membersvalueinput" type="number" class="form-control" placeholder="5" min="2" max="8" required onchange="changeMembers()" onkeypress="return event.charCode >= 50 && event.charCode <= 56 && $(this).val().length < 1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email<span class="text-danger">*</span><small> (perwakilan) </small></label>
+                                        <input name="email" type="email" class="form-control" placeholder="starlight@umn.ac.id" maxlength="50" minlength="6" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span><small> (perwakilan) </small></label>

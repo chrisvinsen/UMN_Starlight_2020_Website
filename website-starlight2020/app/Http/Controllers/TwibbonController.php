@@ -9,7 +9,7 @@ class TwibbonController extends Controller
 {
     public function index(){
         $title = "Twibbon";
-        $nav_menu = "";
+        $nav_menu = "twibbon";
 
         return view('cms.twibbon', compact('title', 'nav_menu'));
     }

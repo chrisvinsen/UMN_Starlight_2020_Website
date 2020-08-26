@@ -18,12 +18,12 @@
                                         </tr>
                                         <tr>
                                             <td align="center" style="font-family: 'Raleway', sans-serif; font-size:28px; color:#ffffff; line-height:32px; font-weight: bold; letter-spacing: 7px; padding: 0 1rem">
-                                                SELAMAT DATANG VERGILIA! 
+                                                SELAMAT DATANG VERGILIA!
                                             </td>
                                         </tr>
                                         <tr>
                                             <td align="center" style="font-family: 'Lato', sans-serif; font-size:15px; color:#ffffff; line-height:24px; font-weight: 300; padding: 0 3rem">
-                                                Halo, [Nama]! Selamat! Anda sudah berhasil mendaftarkan diri untuk menjadi Vergilia (peserta) dalam Starlight 2020 🌟.
+                                                Halo, {{ $nama }}! Selamat! Anda sudah berhasil mendaftarkan diri untuk menjadi Vergilia (peserta) dalam Starlight 2020 🌟.
                                             </td>
                                         </tr>
                                         <tr>

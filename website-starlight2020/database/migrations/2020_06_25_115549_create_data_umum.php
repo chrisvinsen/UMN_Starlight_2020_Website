@@ -17,6 +17,7 @@ class CreateDataUmum extends Migration
             $table->increments('id');
             $table->string('stagename', 50)->unique();
             $table->integer('membersvalue')->default(1);
+            $table->string('email', 50)->unique();
             $table->string('line', 30);
             $table->string('phonenumber', 20);
             $table->string('instagram', 30);

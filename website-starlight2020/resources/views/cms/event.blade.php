@@ -153,6 +153,9 @@
 <script>
 	document.addEventListener( 'DOMContentLoaded', function () {
     new Splide( '.splide', {
+      type        : 'loop',
+      autoplay    : true,
+      pauseOnHover: false,
       perPage   : 6,
       fixedHeight    : '9rem',
       fixedWidth  : '9rem',

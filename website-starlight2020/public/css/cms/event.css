@@ -89,7 +89,7 @@ h4{
   position: absolute;
   text-align: center;
   width: 80%;
-  max-width: 310px;
+  max-width: 400px;
   right: 50%;
   top: 13%;
   -webkit-transform: translate(50%, 0);
@@ -100,8 +100,8 @@ h4{
 .timeline .swiper-slide .timeline-year {
   display: block;
   font-style: italic;
-  font-size: 42px;
-  margin-bottom: 50px;
+  font-size: 32px;
+  margin-bottom: 30px;
   -webkit-transform: translate3d(20px, 0, 0);
           transform: translate3d(20px, 0, 0);
   color: #d4a024;
@@ -248,13 +248,13 @@ h4{
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 310px;
+    width: 400px;
     font-size: 11px;
     text-align: right;
   }
   .timeline .swiper-slide .timeline-year {
     margin-bottom: 0;
-    font-size: 32px;
+    font-size: 25px;
   }
   .timeline .swiper-slide .timeline-title {
     font-size: 46px;

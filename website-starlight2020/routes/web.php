@@ -41,7 +41,8 @@ Route::group(['prefix'=>'twibbon'], function(){
 	Route::post('post', 'TwibbonController@twibbonPost')->name('twibbonPost');
 });
 Route::get('/email','CMSController@email')->name('email');
-Route::get('/event','EventController@index')->name('Event');
+
+Route::get('/event','CMSController@event')->name('event');
 Route::group(['prefix'=>'login'], function(){
 	Route::get('','PanelController@index')->name('login');
 });

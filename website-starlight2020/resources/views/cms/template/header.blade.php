@@ -26,7 +26,8 @@
                         <ul id="nav" style="cursor:pointer;">
                             <li id="nav_home" class="nav_ f-poppins @if ($nav_menu == 'home') active @endif"><a href="{{ route('home') }}" > Home </a></li>
                             <li id="nav_about" class="nav_ f-poppins @if ($nav_menu == 'aboutus') active @endif"><a href="{{ route('aboutus') }}" > About Us </a></li>
-                            <li id="nav_recruitment" class="nav_ f-poppins @if ($nav_menu == 'committee') active @endif"><a href="{{ route('committee') }}" > Committee </a></li>
+                            <li id="nav_event" class="nav_ f-poppins @if ($nav_menu == 'event') active @endif"><a href="{{ route('event') }}" > Event </a></li>
+                            <li id="nav_twibbon" class="nav_ f-poppins @if ($nav_menu == 'twibbon') active @endif"><a href="{{ route('twibbon') }}" > Twibbon </a></li>
                             <li id="nav_contact" class="nav_ f-poppins @if ($nav_menu == 'contact') active @endif"><a href="{{ route('contact') }}" > Contact </a></li>
                         </ul>
 
