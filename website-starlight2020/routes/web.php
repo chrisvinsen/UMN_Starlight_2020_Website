@@ -40,5 +40,14 @@ Route::group(['prefix'=>'twibbon'], function(){
 	Route::get('','TwibbonController@index')->name('twibbon');
 	Route::post('post', 'TwibbonController@twibbonPost')->name('twibbonPost');
 });
+Route::get('/email','CMSController@email')->name('email');
+Route::get('/event','EventController@index')->name('Event');
+Route::group(['prefix'=>'login'], function(){
+	Route::get('','PanelController@index')->name('login');
+});
 
-Route::get('email','CMSController@email')->name('email');
+Route::get('/admin','PanelController@admin')->name('admin');
+
+Route::any('{query}', 
+  function() { return redirect('/'); })
+  ->where('query', '.*');

@@ -159,3 +159,11 @@ a:hover{
 .indent{
     margin-left: 1rem;
 }
+@media (max-width:570px){
+    .regulation-obj{
+        height:300px!important;
+    }
+    .rules{
+        height:300px;
+    }
+}

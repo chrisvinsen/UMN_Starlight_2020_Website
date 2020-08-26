@@ -24,9 +24,47 @@ class RegistrationController extends Controller
         $type;
         if ($request->membersvalue) {
             $type = 'group';
+            if ($request->membersvalue >= 2) {
+                if (!$request->fullname1 || !$request->birthdate1 || !$request->address1 || !$request->school1 || !$request->phonenumber1 || !$request->line1 || !$request->file('studentid1')) {
+                    session()->flash('status', 'kosong');
+                    return redirect('registration');
+                }
+                if (!$request->fullname2 || !$request->birthdate2 || !$request->address2 || !$request->school2 || !$request->phonenumber2 || !$request->line2 || !$request->file('studentid2')) {
+                    session()->flash('status', 'kosong');
+                    return redirect('registration');
+                }
+            }
+            if ($request->membersvalue >= 3 && (!$request->fullname3 || !$request->birthdate3 || !$request->address3 || !$request->school3 || !$request->phonenumber3 || !$request->line3 || !$request->file('studentid3'))) {
+                session()->flash('status', 'kosong');
+                return redirect('registration');
+            }
+            if ($request->membersvalue >= 4 && (!$request->fullname4 || !$request->birthdate4 || !$request->address4 || !$request->school4 || !$request->phonenumber4 || !$request->line4 || !$request->file('studentid4'))) {
+                session()->flash('status', 'kosong');
+                return redirect('registration');
+            }
+            if ($request->membersvalue >= 5 && (!$request->fullname5 || !$request->birthdate5 || !$request->address5 || !$request->school5 || !$request->phonenumber5 || !$request->line5 || !$request->file('studentid5'))) {
+                session()->flash('status', 'kosong');
+                return redirect('registration');
+            }
+            if ($request->membersvalue >= 6 && (!$request->fullname6 || !$request->birthdate6 || !$request->address6 || !$request->school6 || !$request->phonenumber6 || !$request->line6 || !$request->file('studentid6'))) {
+                session()->flash('status', 'kosong');
+                return redirect('registration');
+            }
+            if ($request->membersvalue >= 7 && (!$request->fullname7 || !$request->birthdate7 || !$request->address7 || !$request->school7 || !$request->phonenumber7 || !$request->line7 || !$request->file('studentid7'))) {
+                session()->flash('status', 'kosong');
+                return redirect('registration');
+            }
+            if ($request->membersvalue >= 8 && (!$request->fullname8 || !$request->birthdate8 || !$request->address8 || !$request->school8 || !$request->phonenumber8 || !$request->line8 || !$request->file('studentid8'))) {
+                session()->flash('status', 'kosong');
+                return redirect('registration');
+            }
         } else {
             $request->membersvalue = 1;
             $type = 'solo';
+            if (!$request->fullname0 || !$request->birthdate0 || !$request->address0 || !$request->school0 || !$request->phonenumber0 || !$request->line0 || !$request->file('studentid0')) {
+                session()->flash('status', 'kosong');
+                return redirect('registration');
+            }
         }
 
         if ($request->hasFile('payment')) {

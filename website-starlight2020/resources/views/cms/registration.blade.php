@@ -131,11 +131,25 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Nama bank<span class="text-danger">*</span></label>
-                                        <input name="payment_bank" type="text" class="form-control" placeholder="BCA" maxlength="50" required>
+                                        <select name="payment_bank" class="custom-select" onchange="bankCheck(this)">
+                                            <option selected value="BCA">Bank Central Asia (BCA)</option>
+                                            <option value="BRI">Bank Rakyat Indonesia (BRI)</option>
+                                            <option value="Mandiri">Bank Mandiri</option>
+                                            <option value="BNI">Bank Negara Indonesia (BNI)</option>
+                                            <option value="CIMB">BANK CIMB Niaga</option>
+                                            <option value="BRI">Bank Rakyat Indonesia (BRI)</option>
+                                            <option value="BTPN">Bank Tabungan Pensiunan Nasional (BTPN)</option>
+                                            <option value="Danamon">Bank Danamon</option>
+                                            <option value="Others">Bank lainnya</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group bank_others" style="display:none;">
+                                        <label>Nama bank lainnya<span class="text-danger">*</span></label>
+                                        <input name="payment_bank_others" type="text" class="form-control" placeholder="Bank lainnya" maxlength="50" required>
                                     </div>
                                     <div class="form-group">
                                         <label>No rekening pengirim<span class="text-danger">*</span></label>
-                                        <input name="payment_number" type="text" class="form-control" placeholder="111 111 1111" required onkeypress="return event.charCode >= 48 && event.charCode <= 57 && $(this).val().length < 18">
+                                        <input name="payment_number" type="text" class="form-control" placeholder="1234567890" required onkeypress="return event.charCode >= 48 && event.charCode <= 57 && $(this).val().length < 18">
                                     </div>
                                 </div>
                             </div>
@@ -573,13 +587,13 @@
                             <h5 class="info-text" style="font-weight:bold;">
                                 Peraturan Performance Starlight
                             </h5>
-                            <div class="col-lg-12 mt-5">
+                            <div class="col-lg-12 mt-3">
                                 <div class="row">
-                                    <object data="{{ asset('files/Regulasi Pendaftaran Peserta Starlight 2020.pdf') }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="500px">
+                                    <object class="regulation-obj" data="{{ asset('files/Regulasi Venicea Starlight UMN 2020.pdf') }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" style="width:100%; height:500px">
                                         <div class="rules">
                                             <h5><b>A. Ketentuan Umum Vergilia (Peserta) Lomba :</b></h5>
-                                            1. Starlight 2020 terdiri atas 3 rangkaian mulai dari Venicea, Mardi Gras, hingga Rio de Janeiro. <br>
-                                            2. Pendaftaran tahap Venicea dibuka melalui website (starlight.umn.ac.id) yang diselenggarakan mulai dari <b>Senin, 31 Agustus 2020</b> sampai dengan <b>Sabtu, 10 Oktober 2020</b> Pk 23.59 WIB. <br>
+                                            1. Starlight 2020 terdiri atas 3 rangkaian acara; mulai dari Venicea, Mardi Gras, hingga Rio de Janeiro. <br>
+                                            2. Pendaftaran tahap Venicea dibuka melalui website (starlight.umn.ac.id) yang akan diselenggarakan mulai dari <b>Senin, 31 Agustus 2020</b> sampai dengan <b>Sabtu, 10 Oktober 2020</b> Pk 23.59 WIB. <br>
                                             3. Bakat yang ditampilkan dapat berupa <b>APAPUN</b>, dengan syarat <b>BUKAN</b> berupa editing dan animasi. <br>
                                             4. Peserta <b>WAJIB</b> secara resmi terdaftar dalam instansi pendidikan pada tingkat SMA/SMK/MA (Sekolah Menengah Atas/ Sekolah Menengah Kejuruan/ Madrasah Aliyah) atau Perguruan Tinggi se-Indonesia. <br>
                                             5. Peserta dapat mengatasnamakan atau menjadi perwakilan dari instansi pendidikan mereka masing-masing atau mendaftar tanpa instansi <b>(membawa nama tim pribadi).</b> <br>
@@ -593,7 +607,27 @@
                                             11. Pihak Panitia Starlight 2020 berhak menggunakan dan meminta video audisi peserta untuk kebutuhan publikasi dan promosi acara Starlight 2020. <br>
                                             12. Seluruh peserta audisi online <b>WAJIB mengikuti</b> seluruh ketentuan dan aturan yang berlaku di Starlight 2020. <br>
                                             13. Jika peserta tidak mengikuti regulasi yang telah ditetapkan oleh pihak panitia Starlight 2020, maka pihak panitia berhak <b>mendiskualifikasi</b> peserta. <br><br>
-                                            <h5><b>B. List Juara dan Hadiah Pemenang</b></h5>
+                                            <h5><b>B. Aspek Penilaian</b></h5>
+                                            Berikut adalah persentase untuk penilaian peserta :<br>
+                                            <div class="indent">
+                                                <b>a. Penguasaan Skill (35%)</b> <br>
+                                                <div class="indent">
+                                                    <i>*Memiliki keahlian dalam bakat yang ditampilkan.</i> <br>
+                                                </div>
+                                                <b>b. Keunikan (25%)</b> <br>
+                                                <div class="indent">
+                                                    <i>*Keistimewaan bakat yang ditampilkan dan seberapa jarang bakat ditemukan.</i> <br>
+                                                </div>
+                                                <b>c. Konsep (25%)</b> <br>
+                                                <div class="indent">
+                                                    <i>*Menampilkan suatu hal yang menarik dan menghibur sertadengan penyampaian yang kreatif.</i> <br>
+                                                </div>
+                                                <b>d. Kostum (15%)</b> <br>
+                                                <div class="indent">
+                                                    <i>*Atribut yang mendukung konsep dan kreativitas penampilan serta mampu menghidupkan karakter yang ditampilkan.</i> <br>
+                                                </div>
+                                            </div> <br><br>
+                                            <h5><b>C. List Juara dan Hadiah Pemenang</b></h5>
                                             Berikut ini merupakan kategori pemenang beserta hadiah dari Starlight 2020 : <br><br>
                                             <table class="table table-bordered">
                                                 <tr>
@@ -621,7 +655,7 @@
                                                     <td>Rp 125.000 + E-Sertifikat</td>
                                                 </tr>
                                             </table> <br>
-                                            <h5><b>C. Ketentuan Pendaftaran :</b></h5>
+                                            <h5><b>D. Ketentuan Pendaftaran :</b></h5>
                                             1. Peserta terdiri dari <b>minimal</b> 1 orang dan <b>maksimal</b> 8 orang.  <br>
                                             2. Peserta dianggap <b>resmi terdaftar</b> dalam perlombaan apabila <b>sudah memenuhi ketentuan biaya pendaftaran</b> sejumlah : <br>
                                             <div class="indent">
@@ -636,14 +670,14 @@
                                                     New Normal 	: Rp 160.000,-  <br>
                                                 </div>
                                                 <div style="font-style:italic;color:red;"><b>*Early Bird</b>: 31 Agustus - 13 September 2020. <br></div>
-                                                <div style="font-style:italic;color:red;"><b>*New Normal</b>: 14 September - 20 Oktober 2020. <br></div>
+                                                <div style="font-style:italic;color:red;"><b>*New Normal</b>: 14 September - 10 Oktober 2020. <br></div>
                                             </div>
                                             3. Biaya pendaftaran ditransfer ke rekening dengan nomor rekening <b>BCA 8831372281 atas nama JONATHAN NITISANJAYA</b> dengan berita : Venicea_Nama Panggung.  <br>
 
                                             Nominal yang ditransfer oleh peserta <b>WAJIB</b> menggunakan kode unik di belakangnya, yaitu ‘005’. Contoh: Transfer biaya pendaftaran sebesar Rp 125.005,00. <br>
                                             4. Ketentuan uang pendaftaran bagi <b>peserta yang tidak lolos</b> pada Venicea Stage akan dikembalikan sebesar <b>25%</b> dari uang pendaftaran. <br>
-                                            5. Bagi <b>peserta yang berasal dari Mahasiswa Universitas Multimedia Nusantara</b>, akan mendapatkan potongan sebesar <b>30%</b> dari biaya pendaftaran (dengan syarat apabila <b>SELURUH</b> anggota tim merupakan mahasiswa Universitas Multimedia Nusantara dan memasukkan bukti berupa scan foto Kartu Tanda Mahasiswa). <br><br>
-                                            <h5><b>D. Ketentuan Konten Video Penampilan Vergilia (Peserta) :</b></h5>
+                                            5. Bagi <b>peserta yang berasal dari Mahasiswa Universitas Multimedia Nusantara</b>, akan mendapatkan potongan sebesar <b>30%</b> dari biaya pendaftaran (dengan syarat apabila <b>SELURUH</b> anggota tim merupakan mahasiswa Universitas Multimedia Nusantara dan diwajibkan untuk memasukkan bukti berupa scan foto Kartu Tanda Mahasiswa). <br><br>
+                                            <h5><b>E. Ketentuan Konten Video Penampilan Vergilia (Peserta) :</b></h5>
                                             1. Video berdurasi <b>minimal</b> 2 menit 30 detik dan <b>maksimal</b> 4 menit. <br>
                                             2. Peserta <b>DILARANG</b> melakukan tahap editing seperti color grading, penggunaan autotune, atau penggunaan efek-efek visual dan audio lainnya, <b>terkecuali</b> untuk penggabungan beberapa footage video yang <b>TETAP</b> direkam secara one-take. <br>
                                             <div class="indent">
@@ -673,7 +707,7 @@
                                             11. Peserta <b>DILARANG</b> menampilkan brand produk atau jasa dalam video penampilan. <br>
                                             12. Peserta <b>DILARANG</b> membawa atau menampilkan unsur SARA, Asusila, Kekerasan, dan Pornografi dalam konten video. <br>
                                             13. Peserta <b>DILARANG</b> menggunakan konten video yang menyinggung dan merugikan orang lain.  <br><br>
-                                            <h5><b>E. Ketentuan Submisi Video :</b></h5>
+                                            <h5><b>F. Ketentuan Submisi Video :</b></h5>
                                             1. Submisi dikumpulkan dalam bentuk <b>video</b> dan diunggah ke Instagram (IGTV). <br>
                                             2. Peserta <b>WAJIB</b> mengunggah video melalui Instagram, dengan menggunakan hashtag <b>#Starlight2020 #ExtendYourLight #AudisiVeniceaStarlight</b>, mention <b>@starlightumn</b>, dan tag <b>@starlightumn</b>. <br>
                                             <div class="indent">
@@ -729,7 +763,7 @@
                 </div>
                 <div class="wizard-footer">
                     <div class="pull-right">
-                        <a href="{{ asset('files/Regulasi Pendaftaran Peserta Starlight 2020.pdf') }}" class='btn btn-next btn-fill btn-danger btn-wd' id="downloadbtn" onclick="donwloadCheck()" name="next" download>Next</a>
+                        <a href="{{ asset('files/Regulasi Venicea Starlight UMN 2020.pdf') }}" class='btn btn-next btn-fill btn-danger btn-wd' id="downloadbtn" onclick="donwloadCheck()" name="next" download>Next</a>
                         <input type='button' class='btn btn-next btn-fill btn-danger btn-wd hideBtn' onclick="nextcheck()" name='next' value='Next' id="nextbtn"/>
                         <input type='submit' class='btn btn-finish btn-fill btn-danger btn-wd' onclick="finishcheck()" value='Finish' id="finishbtn" />
                     </div>
@@ -767,6 +801,11 @@
 @if (session('status') == 'fail')
 <script>
     Swal.fire("Registrasi gagal", "Terjadi kesalahan saat registrasi, silahkan coba lagi.", "error");
+</script>
+@endif
+@if (session('status') == 'kosong')
+<script>
+    Swal.fire("Registrasi gagal", "Harap isi semua data yang dibutuhkan!", "error");
 </script>
 @endif
 @endsection

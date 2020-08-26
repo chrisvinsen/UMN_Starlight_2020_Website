@@ -15,8 +15,8 @@
 <div class="container col-sm-8 pt-5 pb-5">
     <div style="margin-top: 100px; text-align: center;">
         <h1>Twibbon Starlight 2020</h1>
-        <div class="mt-5">
-            <div class="container mx-auto" style = "position: relative" id = "frame" >
+        <div class="mt-5 mx-3">
+            <div style ="max-width:400px;position: relative;margin:auto;padding:0;" id = "frame" >
                 <img id = "photo" src = "{{ asset($photo) }}" alt = "photo">
                 <canvas id = "canvas" style = "display: block"></canvas>
             </div>
@@ -49,67 +49,71 @@
     $('form input').change(function() {
         $(this).closest('form').submit();
     });
+    window.onload = function () {
 
-    const img = new Image();
-    const APP_URL = {!! json_encode(url('/')) !!}
-    img.src = `${APP_URL}/images/gallery/twibbon_venicea.png`;
-    const photo = document.getElementById('photo');
-    const min = Math.min(photo.width, photo.height);
+        const img = new Image();
+        const APP_URL = {!! json_encode(url('/')) !!}
+        img.src = `${APP_URL}/images/gallery/twibbon_venicea.png`;
+        const photo = document.getElementById('photo');
+        const min = Math.min(photo.width, photo.height);
 
-    const canvas = document.getElementById('canvas');
-    canvas.width = photo.width;
-    canvas.height = photo.height;
-    const context = canvas.getContext('2d');
-    context.drawImage(photo, 0, 0, photo.width, photo.height);
-    photo.style.display = 'none';
+        const canvas = document.getElementById('canvas');
+        canvas.width = photo.width;
+        canvas.height = photo.height;
+        const context = canvas.getContext('2d');
+        context.drawImage(photo, 0, 0, photo.width, photo.height);
+        photo.style.display = 'none';
 
-    class SvgWidget extends Jcrop.Widget {
-        init () {
-            super.init();
-            this.el.appendChild(img);
+        class SvgWidget extends Jcrop.Widget {
+            init () {
+                super.init();
+                this.el.appendChild(img);
+            }
         }
-    }
 
-    const jcrop = Jcrop.attach('frame',{
-        aspectRatio: 1,
-        allowResize: false,
-        allowSelect: false,
-        widgetConstructor: SvgWidget,
-        setSelect: [0, 0, min, min]
-    });
-    jcrop.addClass('jcrop-ux-keep-current');
+        const jcrop = Jcrop.attach('frame',{
+            aspectRatio: 1,
+            allowResize: false,
+            allowSelect: false,
+            widgetConstructor: SvgWidget,
+            setSelect: [0, 0, min, min]
+        });
+        jcrop.addClass('jcrop-ux-keep-current');
 
-    const rect = Jcrop.Rect.create(0, 0, min, min);
-    const options = { allowResize: false };
-    jcrop.newWidget(rect, options);
+        const rect = Jcrop.Rect.create(0, 0, min, min);
+        const options = { allowResize: false };
+        jcrop.newWidget(rect, options);
 
-    let flag = false;
-    jcrop.listen('crop.update', (widget, e) => {
-        const preview_canvas = document.getElementById('preview_canvas');
-        preview_canvas.width = 1000;
-        preview_canvas.height = 1000;
-        preview_canvas.getContext('2d').drawImage(canvas, widget.pos.x, widget.pos.y, widget.pos.w, widget.pos.h, 0, 0, 1000, 1000);
-        preview_canvas.getContext('2d').drawImage(img, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
-        flag = true;
-    });
+        let flag = false;
+        jcrop.listen('crop.update', (widget, e) => {
+            const preview_canvas = document.getElementById('preview_canvas');
+            preview_canvas.width = 1000;
+            preview_canvas.height = 1000;
+            preview_canvas.getContext('2d').drawImage(canvas, widget.pos.x, widget.pos.y, widget.pos.w, widget.pos.h, 0, 0, 1000, 1000);
+            preview_canvas.getContext('2d').drawImage(img, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
+            flag = true;
+        });
 
-    document.getElementById('download').addEventListener('click', () => {
-        if (flag) {
-            const photo = document.getElementById('preview_canvas');
-            photo.toBlobHD((blob) => {
-                saveAs(blob, "STARLIGHT2020.png");
-            }, "image/png");
-        } else {
-            const photo = document.createElement('canvas');
-            photo.width = 1000;
-            photo.height = 1000;
-            photo.getContext('2d').drawImage(canvas, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
-            photo.getContext('2d').drawImage(img, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
-            photo.toBlobHD((blob) => {
-                saveAs(blob, "STARLIGHT2020.png");
-            }, "image/png");
-        }
-    });
+        document.getElementById('download').addEventListener('click', () => {
+            if (flag) {
+                const photo = document.getElementById('preview_canvas');
+                photo.toBlobHD((blob) => {
+                    saveAs(blob, "STARLIGHT2020.png");
+                }, "image/png");
+            } else {
+                const photo = document.createElement('canvas');
+                photo.width = 1000;
+                photo.height = 1000;
+                photo.getContext('2d').drawImage(canvas, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
+                photo.getContext('2d').drawImage(img, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
+                photo.toBlobHD((blob) => {
+                    saveAs(blob, "STARLIGHT2020.png");
+                }, "image/png");
+            }
+        });
+    
+
+    };
 
 </script>
 @endsection
