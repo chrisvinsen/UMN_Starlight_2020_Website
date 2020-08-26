@@ -25,12 +25,6 @@ h4{
   /* overflow: hidden; */
   color: #333
 }
-@media only screen and (max-width: 420px){
-  .title-top h1{
-    font-size: 24px;
-    line-height: 1.05!important;
-  }
-}
 .time-container {
   display: -webkit-box;
   display: flex;
@@ -315,4 +309,7 @@ h4{
   .swiper-pagination-bullet{
     font-size:10px;
   }
+}
+.splide__arrows {
+  display: none!important;
 }

@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Response;
 use File;
-use Maill;
+use Mail;
 
 class RegistrationController extends Controller
 {
@@ -80,9 +80,14 @@ class RegistrationController extends Controller
             $filename = 'payment_' . $request->stagename . '.' . $extension;
             $path_payment = '/images/Registration/Payment/' . $filename;
             $request->file('payment')->move($path, $filename);
-
+            if($request->payment_bank == "Others"){
+                $bankname = $request->payment_bank_others;
+            }
+            else{
+                $bankname = $request->payment_bank;
+            }
             try {
-                $data_umum = DB::insert('insert into data_umum (stagename, membersvalue, email, line, phonenumber, instagram, stagedescription, payment, payment_name, payment_bank, payment_number, token, stage, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                $data_umum = DB::insert('insert into data_umum (stagename, membersvalue, email, line, phonenumber, instagram, stagedescription, payment, payment_name, payment_bank, payment_number, token, stage, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
                 [
                     $request->stagename,
                     $request->membersvalue,
@@ -93,7 +98,8 @@ class RegistrationController extends Controller
                     $request->stagedescription,
                     $path_payment,
                     $request->payment_name,
-                    $request->payment_bank,
+                    $bankname,
+                    // $request->payment_bank,
                     $request->payment_number,
                     strtoupper(Str::random(6)),
                     'Caribana',
@@ -501,13 +507,14 @@ class RegistrationController extends Controller
         }
 
         $nama = $request->stagename;
+        $email = $request->email;
 
-        Mail::send('cms.template.email', compact('nama'), function ($message)
+        Mail::send('cms.template.email', compact('nama'), function ($message) use($email)
         {
             $message->subject("Thank you for Being a Vergilia!");
             $message->from('starlight@umn.ac.id', 'Starlight 2020');
             // $message->attach("https://starlight.umn.ac.id/files/Committee Recruitment/CENTAURI.pdf");
-            $message->to($request->email);
+            $message->to($email);
         });
 
         return redirect('registration');

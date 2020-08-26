@@ -17,7 +17,7 @@
             <img class="mx-auto d-block" src="{{ asset('images/core-img/Logo_starlight_fix.png') }}" alt="Logo Starlight" width="400px">
         </div>
         <div class="mx-auto" style="text-align:center;" >
-            <h1 style="color:white;">Starlight Registration Check</h1>
+            <h1 class="f-carneval" style="color:white;letter-spacing: 5px;font-size: 55px;">STARLIGHT REGISTRATION CHECK</h1>
         </div>
         <form name="searchform" action="{{ route('searchPost') }}" method="post">
             {{csrf_field()}}
@@ -25,7 +25,7 @@
                 <input class="input @if (Session::has('msg')) input-focus @endif" name="search" id="inputFocus" type="text" placeholder="Masukkan kode pendaftaran anda" />
             </div>
             @if (session('feedback'))
-                <div class="invalid-feedback mt-2" role="alert" style="display:block;text-align:center;font-weight:bold;font-size: 1.5rem;">
+                <div class="invalid-feedback mt-3" role="alert" style="display:block;text-align:center;font-weight:bold;font-size: 1.5rem;">
                     {{ session('feedback') }}
                 </div>
             @endif

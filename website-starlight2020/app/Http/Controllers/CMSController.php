@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Response;
 use DB;
+use Mail;
 
 class CMSController extends Controller
 {
@@ -48,7 +49,8 @@ class CMSController extends Controller
     public function event(){
         $title = "Event";
         $nav_menu = "event";
-
+        
         return view('cms.event', compact('title', 'nav_menu'));
+        
     }
 }

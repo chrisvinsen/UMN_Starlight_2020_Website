@@ -5,7 +5,6 @@ function bankCheck(input){
     else{
         $(".bank_others").css("display","none");
     }
-    console.log(input.options[input.selectedIndex].value);
 }
 function nextMember() {
     if ($(".formfull").valid()) {
@@ -254,23 +253,6 @@ function changeMembers() {
                     }
                 }
             });
-            $(this).on("keypress", function (e) {
-                if (
-                    e.which != 8 &&
-                    e.which != 0 &&
-                    (e.which < 48 || e.which > 57)
-                ) {
-                    return false;
-                }
-                var curchr = this.value.length;
-                var curval = $(this).val();
-                if (curchr == 3) {
-                    $(this).val(curval + "-");
-                } else if (curchr == 7) {
-                    $(this).val(curval + "-");
-                }
-                $(this).attr("maxlength", "12");
-            });
         } else if (params.format === "xxxx-xxxx-xxx") {
             $(this).on("keypress", function (e) {
                 if (
@@ -305,6 +287,18 @@ function changeMembers() {
                     $(this).val(inputValue);
                 }
             });
+        } else if(params.format === "xx") {
+            $(this).bind("paste", function (e) {
+                e.preventDefault();
+                var inputValue = e.originalEvent.clipboardData.getData("Text");
+                if (!$.isNumeric(inputValue)) {
+                    return false;
+                } else {
+                    if(inputValue.length >= 10 && inputValue.length <= 18){
+                        $(this).val(inputValue);
+                    }
+                }
+            });
         }
     };
 })(jQuery);
@@ -314,6 +308,9 @@ $(document).ready(function () {
     });
     $("#membersvalueinput").usPhoneFormat({
         format: "x",
+    });
+    $("#payment_numberinput").usPhoneFormat({
+        format: "xx",
     });
     $("#validaterules").required = true;
 });

@@ -98,7 +98,7 @@
                                         <input name="stagename" type="text" class="form-control" placeholder="Starlighters" maxlength="50" required>
                                     </div>
                                     <div class="form-group" id="membersvalue">
-                                        <label>Jumlah Anggota BB<span class="text-danger">*</span><small> (maksimal 8 anggota) </small></label>
+                                        <label>Jumlah Anggota<span class="text-danger">*</span><small> (maksimal 8 anggota) </small></label>
                                         <input name="membersvalue" id="membersvalueinput" type="number" class="form-control" placeholder="5" min="2" max="8" required onchange="changeMembers()" onkeypress="return event.charCode >= 50 && event.charCode <= 56 && $(this).val().length < 1" required>
                                     </div>
                                     <div class="form-group">
@@ -153,7 +153,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>No rekening pengirim<span class="text-danger">*</span></label>
-                                        <input name="payment_number" type="text" class="form-control" placeholder="1234567890" required onkeypress="return event.charCode >= 48 && event.charCode <= 57 && $(this).val().length < 18">
+                                        <input name="payment_number" id="payment_numberinput" type="text" class="form-control" placeholder="1234567890" required onkeypress="return event.charCode >= 48 && event.charCode <= 57 && $(this).val().length < 18">
                                     </div>
                                 </div>
                             </div>
@@ -797,7 +797,7 @@
 <script>
     Swal.fire(
         'Registrasi berhasil',
-        'Mohon tunggu email konfirmasi dari Starlight untuk mendapatkan kode registrasi',
+        'Mohon menunggu e-mail dari Starlight untuk informasi selanjutnya',
         'success'
     )
 </script>

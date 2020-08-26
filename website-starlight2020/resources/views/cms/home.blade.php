@@ -38,7 +38,7 @@
                                     <img src="{{ asset('images/core-img/Font_starlight_2.png') }}" class="img-responsive">
                                     <h6 class="f-carneval" data-animation="fadeInUp" data-delay="300ms">Extend Your Light</h6>
                                     <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                        <a routerLink="/about" class="btn starlight-btn">More Information <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                        <a href="/event" class="btn starlight-btn">More Information  <i class="fas fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>

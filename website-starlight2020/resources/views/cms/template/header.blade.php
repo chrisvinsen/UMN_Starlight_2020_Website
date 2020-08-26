@@ -26,13 +26,13 @@
                         <ul id="nav" style="cursor:pointer;">
                             <li id="nav_home" class="nav_ f-poppins @if ($nav_menu == 'home') active @endif"><a href="{{ route('home') }}" > Home </a></li>
                             <li id="nav_about" class="nav_ f-poppins @if ($nav_menu == 'aboutus') active @endif"><a href="{{ route('aboutus') }}" > About Us </a></li>
+                            <li id="nav_contact" class="nav_ f-poppins @if ($nav_menu == 'contact') active @endif"><a href="{{ route('contact') }}" > Contact </a></li>
                             <li id="nav_event" class="nav_ f-poppins @if ($nav_menu == 'event') active @endif"><a href="{{ route('event') }}" > Event </a></li>
                             <li id="nav_twibbon" class="nav_ f-poppins @if ($nav_menu == 'twibbon') active @endif"><a href="{{ route('twibbon') }}" > Twibbon </a></li>
-                            <li id="nav_contact" class="nav_ f-poppins @if ($nav_menu == 'contact') active @endif"><a href="{{ route('contact') }}" > Contact </a></li>
                         </ul>
 
                         <!-- Get Tickets Button -->
-                        <a class="btn starlight-btn mt-3 mt-lg-0 ml-3 ml-lg-5" href="{{ route('registration') }}"> Registration <i class="zmdi zmdi-long-arrow-right"></i></a>
+                        <a class="btn starlight-btn mt-3 mt-lg-0 ml-3 ml-lg-5" href="{{ route('registration') }}"> Registration <i class="fas fa-angle-right"></i></a>
                     </div>
                     <!-- Nav End -->
                 </div>
