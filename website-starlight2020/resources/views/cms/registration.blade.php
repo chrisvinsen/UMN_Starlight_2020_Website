@@ -19,10 +19,8 @@
         <div class="wizard-card card py-4" data-color="red" id="wizard">
             <form action="{{ route('registrationPost') }}" class="formfull" method="POST" enctype="multipart/form-data">
             {{csrf_field()}}
-                <div class="wizard-header">
-                    <h3 class="wizard-title mb-4">
-                        Pendaftaran Peserta
-                    </h3>
+                <div class="wizard-header text-center">
+                    <h2 class="wizard-title mb-4 f-carneval"> PENDAFTARAN PESERTA </h2>
                 </div>
                 <div class="wizard-navigation">
                     <div class="progress-with-circle">
