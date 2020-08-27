@@ -22,9 +22,9 @@
             </div>
             
             <div class="mt-3">
-                    <button class="btn starlight-btn mx-2 px-4 mb-3" id = "download"><i class="fas fa-download"></i> Unduh Twibbon</button>
+                <button class="btn starlight-btn mx-2 px-4 mb-3 mt-2" id = "download"><i class="fas fa-download"></i> Unduh Twibbon</button>
                 <label for="uploadphoto">
-                <span class="btn starlight-btn mx-1 mb-3" >
+                <span class="btn starlight-btn mx-1 mb-3 mt-2" >
                 <i class="fas fa-upload"></i> Unggah Foto Baru
                 </span>
                 <form action="{{ route('twibbonPost') }}" class="formfull" method="POST" enctype="multipart/form-data">
