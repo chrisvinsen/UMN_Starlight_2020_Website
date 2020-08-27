@@ -450,8 +450,14 @@ span.circle {
             </svg>
           </div>
         </div><!--Date-->
-
+        <br>
+        <div class="insight">
+          <p>Full Name      : Starlighters</p>
+          <p>Birth of Date  : 24 Juli 2000</p>
+          <p>School         : UMN</p>
+        </div>
         <div class="insights">
+
 
           <div class="insight">
             <div class="heading">
@@ -466,25 +472,40 @@ span.circle {
 
           <div class="insight">
             <div class="heading">
-              Token :
+              Address :
             </div>
             <div class="number">
-              AKU252
+              <p style="text-decoration: none; font-size: 16px;">Scientia Boulevard, Tangerang Selatan.</p>
             </div>
-          </div><!--Token-->
+          </div><!--Alamat-->
 
           <div class="insight">
             <div class="heading">
-              Stage :
+              Bukti KTP :
             </div>
             <div class="number">
-              Caribana
+                <img
+                src="#"
+              
+              />
               <div class="info">
-                Status : Pending
-                </svg>
               </div>
             </div>
-          </div><!--Stage-->
+          </div><!--KTP-->
+
+          <div class="insight">
+            <div class="heading">
+              Kartu Pelajar :
+            </div>
+            <div class="number">
+                <img
+                src="#"
+              
+              />
+              <div class="info">
+              </div>
+            </div>
+          </div><!--Bukti Kartu Pelajar-->
 
         </div>
       </div>

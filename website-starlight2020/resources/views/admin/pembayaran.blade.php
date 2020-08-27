@@ -455,36 +455,37 @@ span.circle {
 
           <div class="insight">
             <div class="heading">
-              Contact :
+              Nama Pengirim :
             </div>
             <div class="number" style="font-size: 16px;">
-            <p><a style="text-decoration: none;" href="http://line.me/ti/p/~@dmn8577"><i class="lni lni-line"></i> @252uzsbl</a></p>
+            <p>Starlight</p>
            
-            <p style="text-decoration: none;" class="lni lni-phone">08999838085</p>
             </div>
           </div><!--Contact-->
 
           <div class="insight">
             <div class="heading">
-              Token :
+              Nama & No. Bank :
             </div>
             <div class="number">
-              AKU252
+              <p>BCA</p>
+              <p>00000272789</p>
             </div>
-          </div><!--Token-->
+          </div><!--Nama dan Nomor Bank-->
 
           <div class="insight">
             <div class="heading">
-              Stage :
+              Bukti Transfer :
             </div>
             <div class="number">
-              Caribana
+                <img
+                src="#"
+              
+              />
               <div class="info">
-                Status : Pending
-                </svg>
               </div>
             </div>
-          </div><!--Stage-->
+          </div><!--bukti transfer-->
 
         </div>
       </div>
