@@ -2,6 +2,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 :root {
@@ -71,6 +74,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 3px;
+  font-size: 1.3rem;
 }
 
 .card__button svg {
@@ -90,7 +94,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   background-color: var(--primary);
   color: white;
   font-weight: bold;
@@ -143,6 +147,7 @@ span.circle {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .navlinks li {
@@ -172,7 +177,7 @@ span.circle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.85rem;
+  font-size: 2rem;
 }
 
 .date svg {
@@ -183,7 +188,7 @@ span.circle {
 
 .heading {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .insights {
@@ -242,7 +247,7 @@ span.circle {
 }
 
 .number {
-  font-size: 1.4rem;
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,7 +259,7 @@ span.circle {
 }
 
 .number .info {
-  font-size: 0.75rem;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,8 +301,8 @@ span.circle {
   .card {
     width: 90%;
   }
-  .navlinks {
-    display: none;
+  .navlinks{
+    font-size: 1.1rem;
   }
 }
 
@@ -347,9 +352,9 @@ span.circle {
         <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
-          <div class="navbar-wrapper">
+          <!-- <div class="navbar-wrapper">
             <a class="navbar-brand" href="#pablo">Dashboard</a>
-          </div>
+          </div> -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
@@ -357,7 +362,7 @@ span.circle {
             <span class="navbar-toggler-icon icon-bar"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end">
-            <form class="navbar-form">
+            <!-- <form class="navbar-form">
               <div class="input-group no-border">
                 <input type="text" value="" class="form-control" placeholder="Search...">
                 <button type="submit" class="btn btn-white btn-round btn-just-icon">
@@ -365,7 +370,7 @@ span.circle {
                   <div class="ripple-container"></div>
                 </button>
               </div>
-            </form>
+            </form> -->
             
           </div>
         </div>
@@ -420,15 +425,17 @@ span.circle {
       <hr class="border" />
       <nav>
         <ul class="navlinks">
-          <li class="link__item">Data Umum</li>
-          <li class="link__item" href="../admin/pembayaran">Pembayaran</li>
-          <li class="link__item">Anggota 1</li>
-          <li class="link__item">Anggota 2</li>
-          <li class="link__item">Anggota 3</li>
+          <li class="link__item active"><a data-toggle="tab" href="#data-umum">Data Umum</a></li>
+          <li class="link__item" ><a data-toggle="tab" href="#pembayarann">Pembayaran</a></li>
+          <li class="link__item" ><a data-toggle="tab" href="#anggota">Anggota 1</a></li>
+          <li class="link__item" ><a data-toggle="tab" href="#anggota">Anggota 2</a></li>
+          <li class="link__item" ><a data-toggle="tab" href="#anggota">Anggota 3</a></li>
         </ul>
       </nav>
 
-      <div class="card__insights">
+<div class="tab-content">
+  <!-- dataumum -->
+      <div class="card__insights tab-pane fade in active" id="data-umum">
 
         <div class="card__heading">
           <div class="heading">Register Date :</div>
@@ -487,8 +494,155 @@ span.circle {
           </div><!--Stage-->
 
         </div>
-      </div>
-    </div>
+      </div><!--id-->
+      <!-- pembayaran -->
+      <div class="card__insights tab-pane fade" id="pembayarann">
+
+        <div class="card__heading">
+          <div class="heading">Register Date :</div>
+          <div class="date">
+          32 Juli 2020
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-chevron-down"
+          >
+          <!-- <polyline points="6 9 12 15 18 9"></polyline> -->
+          </svg>
+          </div>
+        </div><!--Date-->
+
+        <div class="insights">
+
+        <div class="insight">
+          <div class="heading">
+          Nama Pengirim :
+          </div>
+          <div class="number" style="font-size: 16px;">
+          <p>Starlight</p>
+
+        </div>
+        </div><!--Contact-->
+
+        <div class="insight">
+          <div class="heading">
+          Nama & No. Bank :
+          </div>
+          <div class="number">
+          <p>BCA</p>
+          <p>00000272789</p>
+          </div>
+        </div><!--Nama dan Nomor Bank-->
+
+        <div class="insight">
+          <div class="heading">
+          Bukti Transfer :
+          </div>
+        <div class="number">
+            <img
+            src="#"
+
+          />
+          <div class="info">
+          </div>
+        </div>
+        </div><!--bukti transfer-->
+
+        </div>
+      </div><!--id2-->
+
+      <!-- anggota -->
+      <div class="card__insights tab-pane fade" id="anggota">
+
+        <div class="card__heading">
+          <div class="heading">Register Date :</div>
+          <div class="date">
+            32 Juli 2020
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <!-- <polyline points="6 9 12 15 18 9"></polyline> -->
+            </svg>
+          </div>
+        </div><!--Date-->
+        <br>
+        <div class="insight" style="font-size: 2rem;">
+          <p>Full Name      : Starlighters</p>
+          <p>Birth of Date  : 24 Juli 2000</p>
+          <p>School         : UMN</p>
+        </div>
+        <div class="insights">
+
+
+          <div class="insight">
+            <div class="heading">
+              Contact :
+            </div>
+            <div class="number" style="font-size: 16px;">
+            <p><a style="text-decoration: none;" href="http://line.me/ti/p/~@dmn8577"><i class="lni lni-line"></i> @252uzsbl</a></p>
+           
+            <p style="text-decoration: none;" class="lni lni-phone">08999838085</p>
+            </div>
+          </div><!--Contact-->
+
+          <div class="insight">
+            <div class="heading">
+              Address :
+            </div>
+            <div class="number">
+              <p style="text-decoration: none; font-size: 16px;">Scientia Boulevard, Tangerang Selatan.</p>
+            </div>
+          </div><!--Alamat-->
+
+          <div class="insight">
+            <div class="heading">
+              Bukti KTP :
+            </div>
+            <div class="number">
+                <img
+                src="#"
+              
+              />
+              <div class="info">
+              </div>
+            </div>
+          </div><!--KTP-->
+
+          <div class="insight">
+            <div class="heading">
+              Kartu Pelajar :
+            </div>
+            <div class="number">
+                <img
+                src="#"
+              
+              />
+              <div class="info">
+              </div>
+            </div>
+          </div><!--Bukti Kartu Pelajar-->
+
+        </div>
+      </div><!--end anggota-->
+    
+
+      </div> <!--end tab content-->
       </div><!--End Content-->
 
     </div>
