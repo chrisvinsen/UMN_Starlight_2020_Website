@@ -2,6 +2,7 @@
 
 @section('custom_css')
 <!-- Custom CSS -->
+<link rel="stylesheet" href="{{ asset('css/cms/jquery-ui.css') }}">
 <link rel="stylesheet" href="{{ asset('css/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.css') }}">
 <link rel="stylesheet" href="{{ asset('css/cms/registration.css') }}">
 <style>
@@ -101,11 +102,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Email<span class="text-danger">*</span><small> (perwakilan) </small></label>
-                                        <input name="email" type="email" class="form-control" placeholder="starlight@umn.ac.id" maxlength="50" minlength="6" required>
+                                        <input name="email" type="email" class="form-control" placeholder="starlight@gmail.com" maxlength="50" minlength="6" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span><small> (perwakilan) </small></label>
-                                        <input name="line" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Nomor Telepon<span class="text-danger">*</span><small> (perwakilan) </small></label>
@@ -171,7 +172,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate0" data-rule-optdate="true" type="text" onfocus="(this.type='date')" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate0" data-rule-optdate="true" type="text" class="form-control date-picker" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -187,7 +188,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span></label>
-                                        <input name="line0" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line0" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
@@ -228,7 +229,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate1" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate1" type="text" data-rule-optdate="true" class="form-control date-picker" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -244,7 +245,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span></label>
-                                        <input name="line1" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line1" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Scan Foto KTP<small>(jika telah berumur 18 tahun)</small></label>
@@ -273,7 +274,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate2" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate2" type="text" data-rule-optdate="true" class="form-control date-picker" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -289,7 +290,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span></label>
-                                        <input name="line2" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line2" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
@@ -318,7 +319,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate3" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate3" type="text" data-rule-optdate="true" class="form-control date-picker" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -334,7 +335,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span></label>
-                                        <input name="line3" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line3" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
@@ -363,7 +364,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate4" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate4" type="text" data-rule-optdate="true" class="form-control date-picker" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -379,7 +380,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span></label>
-                                        <input name="line4" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line4" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
@@ -408,7 +409,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate5" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate5" type="text" data-rule-optdate="true" class="form-control date-picker" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -424,7 +425,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span></label>
-                                        <input name="line5" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line5" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
@@ -453,7 +454,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate6" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate6" type="text" data-rule-optdate="true" class="form-control date-picker" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -469,7 +470,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span></label>
-                                        <input name="line6" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line6" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
@@ -498,7 +499,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate7" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate7" type="text" data-rule-optdate="true" class="form-control date-picker" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -514,7 +515,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span></label>
-                                        <input name="line7" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line7" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
@@ -543,7 +544,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                        <input name="birthdate8" type="text" onfocus="(this.type='date')" data-rule-optdate="true" class="form-control" placeholder="25 November 2005" required>
+                                        <input name="birthdate8" type="text" data-rule-optdate="true" class="form-control date-picker" placeholder="25 November 2005" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Alamat<span class="text-danger">*</span></label>
@@ -559,7 +560,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span></label>
-                                        <input name="line8" type="text" class="form-control" placeholder="@252uzsbl" maxlength="30" required>
+                                        <input name="line8" type="text" class="form-control" placeholder="starlight2020" maxlength="30" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
@@ -787,10 +788,16 @@
 @section('custom_js')
 <!-- Custom js -->
 <script src="{{ asset('js/cms/register.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/cms/jquery-ui.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/jquery.bootstrap.wizard.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/jquery.validate.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/sweetalert/sweetalert.js') }}"></script>
+<script>
+    $(document).ready(function(){
+        $('.date-picker').datepicker();
+    })
+</script>
 @if (session('status') == 'success')
 <script>
     Swal.fire(
@@ -802,7 +809,7 @@
 @endif
 @if (session('status') == 'fail_dataumum')
 <script>
-    Swal.fire("Registrasi gagal", "Terjadi kesalahan saat registrasi, silahkan coba lagi dengan stage name atau email lain.", "error");
+    Swal.fire("Registrasi gagal", "Terjadi kesalahan saat registrasi, silahkan coba menggunakan nama panggung atau email lain.", "error");
 </script>
 @endif
 @if (session('status') == 'fail')

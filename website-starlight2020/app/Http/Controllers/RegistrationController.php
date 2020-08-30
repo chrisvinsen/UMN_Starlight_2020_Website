@@ -141,10 +141,11 @@ class RegistrationController extends Controller
                 $path_studentid0 = '/images/Registration/StudentID/' . $filename;
                 $request->file('studentid0')->move($path, $filename);
             }
+
             $data_individu0 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
             [
                 $request->fullname0,
-                $request->birthdate0,
+                date('Y-m-d', strtotime($request->birthdate0)),
                 $request->address0,
                 $request->school0,
                 $request->phonenumber0,
@@ -155,9 +156,7 @@ class RegistrationController extends Controller
             ]);
 
             if ($data_umum && $data_individu0) {
-                $admin = DB::insert('insert into admin (username, password, stagename) values (?, ?, ?)', [$request->stagename, Hash::make($request->stagename), $request->stagename]);
-                if ($admin)
-                    session()->flash('status', 'success');
+                session()->flash('status', 'success');
             } else {
                 session()->flash('status', 'fail');
             }
@@ -193,7 +192,7 @@ class RegistrationController extends Controller
             $data_individu1 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
             [
                 $request->fullname1,
-                $request->birthdate1,
+                date('Y-m-d', strtotime($request->birthdate1)),
                 $request->address1,
                 $request->school1,
                 $request->phonenumber1,
@@ -234,7 +233,7 @@ class RegistrationController extends Controller
             $data_individu2 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
             [
                 $request->fullname2,
-                $request->birthdate2,
+                date('Y-m-d', strtotime($request->birthdate2)),
                 $request->address2,
                 $request->school2,
                 $request->phonenumber2,
@@ -276,7 +275,7 @@ class RegistrationController extends Controller
                 $data_individu3 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
                 [
                     $request->fullname3,
-                    $request->birthdate3,
+                    date('Y-m-d', strtotime($request->birthdate3)),
                     $request->address3,
                     $request->school3,
                     $request->phonenumber3,
@@ -319,7 +318,7 @@ class RegistrationController extends Controller
                 $data_individu4 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
                 [
                     $request->fullname4,
-                    $request->birthdate4,
+                    date('Y-m-d', strtotime($request->birthdate4)),
                     $request->address4,
                     $request->school4,
                     $request->phonenumber4,
@@ -362,7 +361,7 @@ class RegistrationController extends Controller
                 $data_individu5 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
                 [
                     $request->fullname5,
-                    $request->birthdate5,
+                    date('Y-m-d', strtotime($request->birthdate5)),
                     $request->address5,
                     $request->school5,
                     $request->phonenumber5,
@@ -405,7 +404,7 @@ class RegistrationController extends Controller
                 $data_individu6 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
                 [
                     $request->fullname6,
-                    $request->birthdate6,
+                    date('Y-m-d', strtotime($request->birthdate6)),
                     $request->address6,
                     $request->school6,
                     $request->phonenumber6,
@@ -448,7 +447,7 @@ class RegistrationController extends Controller
                 $data_individu7 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
                 [
                     $request->fullname7,
-                    $request->birthdate7,
+                    date('Y-m-d', strtotime($request->birthdate7)),
                     $request->address7,
                     $request->school7,
                     $request->phonenumber7,
@@ -491,7 +490,7 @@ class RegistrationController extends Controller
                 $data_individu8 = DB::insert('insert into data_individu (fullname, birthdate, address, school, phonenumber, line, ktp, studentid, stagename) values (?, ?, ?, ?, ?, ?, ?, ?, ?)',
                 [
                     $request->fullname8,
-                    $request->birthdate8,
+                    date('Y-m-d', strtotime($request->birthdate8)),
                     $request->address8,
                     $request->school8,
                     $request->phonenumber8,
@@ -503,9 +502,7 @@ class RegistrationController extends Controller
             }
 
             if ($data_umum && $data_individu1 && $data_individu2) {
-                $admin = DB::insert('insert into admin (username, password, stagename) values (?, ?, ?)', [$request->stagename, Hash::make($request->stagename), $request->stagename]);
-                if ($admin)
-                    session()->flash('status', 'success');
+                session()->flash('status', 'success');
             } else {
                 session()->flash('status', 'fail');
             }
