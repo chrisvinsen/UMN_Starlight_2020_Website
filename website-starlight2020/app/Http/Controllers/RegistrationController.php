@@ -154,7 +154,9 @@ class RegistrationController extends Controller
             ]);
 
             if ($data_umum && $data_individu0) {
-                session()->flash('status', 'success');
+                $admin = DB::insert('insert into admin (username, password, stagename) values (?, ?, ?)', [$request->stagename, Hash::make($request->stagename), $request->stagename]);
+                if ($admin)
+                    session()->flash('status', 'success');
             } else {
                 session()->flash('status', 'fail');
             }
@@ -500,7 +502,9 @@ class RegistrationController extends Controller
             }
 
             if ($data_umum && $data_individu1 && $data_individu2) {
-                session()->flash('status', 'success');
+                $admin = DB::insert('insert into admin (username, password, stagename) values (?, ?, ?)', [$request->stagename, Hash::make($request->stagename), $request->stagename]);
+                if ($admin)
+                    session()->flash('status', 'success');
             } else {
                 session()->flash('status', 'fail');
             }

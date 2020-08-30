@@ -44,11 +44,12 @@ Route::get('/email','CMSController@email')->name('email');
 
 Route::get('/event','CMSController@event')->name('event');
 Route::group(['prefix'=>'login'], function(){
-	Route::get('','PanelController@index')->name('login');
+    Route::get('','PanelController@index')->name('login');
+    Route::POST('/post', 'PanelController@loginPost')->name('loginPost');
 });
 
 Route::get('/admin','PanelController@admin')->name('admin');
 
-Route::any('{query}', 
+Route::any('{query}',
   function() { return redirect('/'); })
   ->where('query', '.*');

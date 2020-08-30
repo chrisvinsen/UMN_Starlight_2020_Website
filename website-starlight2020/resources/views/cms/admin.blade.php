@@ -347,7 +347,7 @@ span.circle {
       </div>
       <div class="sidebar-background" style="background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=247b379684184e3794e14d34 00c7d629&amp;auto=format&amp;fit=crop&amp;w=9026&amp;q=80') ">         </div>
     </div>
- 
+
     <div class="main-panel">
         <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
@@ -371,7 +371,7 @@ span.circle {
                 </button>
               </div>
             </form> -->
-            
+
           </div>
         </div>
       </nav>
@@ -384,16 +384,16 @@ span.circle {
           <img
             src="#"
             alt="Random Image"
-          
+
           />
         </div>
 
         <div class="card__name">
-          <h2>Nama Stage</h2>
+          <h2>{{$data_umum->stagename}}</h2>
           <div class="card__handle">
-            <span class="handle">@instagram</span>
+            <span class="handle">{{$data_umum->instagram}}</span>
             <span class="circle"></span>
-            <span class="category">Stage Description</span>
+            <span class="category">{{$data_umum->stagedescription}}</span>
           </div>
         </div><!--Nama Performers-->
 
@@ -440,7 +440,7 @@ span.circle {
         <div class="card__heading">
           <div class="heading">Register Date :</div>
           <div class="date">
-            32 Juli 2020
+          {{$data_umum->created_at}}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -465,9 +465,9 @@ span.circle {
               Contact :
             </div>
             <div class="number" style="font-size: 16px;">
-            <p><a style="text-decoration: none;" href="http://line.me/ti/p/~@dmn8577"><i class="lni lni-line"></i> @252uzsbl</a></p>
-           
-            <p style="text-decoration: none;" class="lni lni-phone">08999838085</p>
+            <p><a style="text-decoration: none;" href="http://line.me/ti/p/~@dmn8577"><i class="lni lni-line"></i> {{$data_umum->line}}</a></p>
+
+            <p style="text-decoration: none;" class="lni lni-phone"> {{$data_umum->phonenumber}}</p>
             </div>
           </div><!--Contact-->
 
@@ -476,7 +476,7 @@ span.circle {
               Token :
             </div>
             <div class="number">
-              AKU252
+            {{$data_umum->token}}
             </div>
           </div><!--Token-->
 
@@ -485,9 +485,9 @@ span.circle {
               Stage :
             </div>
             <div class="number">
-              Caribana
+            {{$data_umum->stage}}
               <div class="info">
-                Status : Pending
+                Status : {{$data_umum->status}}
                 </svg>
               </div>
             </div>
@@ -501,7 +501,7 @@ span.circle {
         <div class="card__heading">
           <div class="heading">Register Date :</div>
           <div class="date">
-          32 Juli 2020
+          {{$data_umum->created_at}}
           <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -526,7 +526,7 @@ span.circle {
           Nama Pengirim :
           </div>
           <div class="number" style="font-size: 16px;">
-          <p>Starlight</p>
+          <p>{{$data_umum->payment_name}}</p>
 
         </div>
         </div><!--Contact-->
@@ -536,8 +536,8 @@ span.circle {
           Nama & No. Bank :
           </div>
           <div class="number">
-          <p>BCA</p>
-          <p>00000272789</p>
+          <p>{{$data_umum->payment_bank}}</p>
+          <p>{{$data_umum->payment_number}}</p>
           </div>
         </div><!--Nama dan Nomor Bank-->
 
@@ -547,7 +547,7 @@ span.circle {
           </div>
         <div class="number">
             <img
-            src="#"
+            src="{{asset($data_umum->payment)}}"
 
           />
           <div class="info">
@@ -564,7 +564,7 @@ span.circle {
         <div class="card__heading">
           <div class="heading">Register Date :</div>
           <div class="date">
-            32 Juli 2020
+            {{$data_umum->created_at}}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -583,9 +583,9 @@ span.circle {
         </div><!--Date-->
         <br>
         <div class="insight" style="font-size: 2rem;">
-          <p>Full Name      : Starlighters</p>
-          <p>Birth of Date  : 24 Juli 2000</p>
-          <p>School         : UMN</p>
+          <p>Full Name      : {{$data_individu[0]->fullname}}</p>
+          <p>Birth of Date  : {{$data_individu[0]->birthdate}}</p>
+          <p>School         : {{$data_individu[0]->school}}</p>
         </div>
         <div class="insights">
 
@@ -595,9 +595,9 @@ span.circle {
               Contact :
             </div>
             <div class="number" style="font-size: 16px;">
-            <p><a style="text-decoration: none;" href="http://line.me/ti/p/~@dmn8577"><i class="lni lni-line"></i> @252uzsbl</a></p>
-           
-            <p style="text-decoration: none;" class="lni lni-phone">08999838085</p>
+            <p><a style="text-decoration: none;" href="http://line.me/ti/p/~@dmn8577"><i class="lni lni-line"></i> {{$data_individu[0]->line}}</a></p>
+
+            <p style="text-decoration: none;" class="lni lni-phone"> {{$data_individu[0]->phonenumber}}</p>
             </div>
           </div><!--Contact-->
 
@@ -606,7 +606,7 @@ span.circle {
               Address :
             </div>
             <div class="number">
-              <p style="text-decoration: none; font-size: 16px;">Scientia Boulevard, Tangerang Selatan.</p>
+              <p style="text-decoration: none; font-size: 16px;">{{$data_individu[0]->address}}</p>
             </div>
           </div><!--Alamat-->
 
@@ -616,8 +616,8 @@ span.circle {
             </div>
             <div class="number">
                 <img
-                src="#"
-              
+                src="{{asset($data_individu[0]->ktp)}}"
+
               />
               <div class="info">
               </div>
@@ -630,8 +630,8 @@ span.circle {
             </div>
             <div class="number">
                 <img
-                src="#"
-              
+                src="{{asset($data_individu[0]->studentid)}}"
+
               />
               <div class="info">
               </div>
@@ -640,7 +640,7 @@ span.circle {
 
         </div>
       </div><!--end anggota-->
-    
+
 
       </div> <!--end tab content-->
       </div><!--End Content-->

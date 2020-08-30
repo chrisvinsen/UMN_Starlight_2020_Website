@@ -1,4 +1,3 @@
-
 <style>
 body
 {
@@ -42,7 +41,7 @@ body
     clip-path: circle(50%);
     height: 700px;
     width: 700px;
-    z-index: -1; 
+    z-index: -1;
     overflow: hidden;
 
 }
@@ -70,7 +69,7 @@ body
     background: linear-gradient(180deg, rgba(217,3,3,1) 0%, rgba(163,2,2,1) 48%, rgba(39,0,0,1) 89%);
     color: #ffffff;
     font-weight: 700;
-    
+
 }
 
 .myInput
@@ -109,7 +108,7 @@ body
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-@section('content')
+
 <div class="container">
         <div class="card">
             <div class="card-body">
@@ -117,31 +116,38 @@ body
                 <header class="myHed text-center">
                 <img src="{{ asset('images/core-img/Logo_starlight_fix.png') }}" style="width: 20%; height: 20%;" class="img-responsive">
                 </header>
-                <form class="main-form text-center" method="POST" action="{{ route('login') }}">
-
+                <form class="main-form text-center" method="POST" action="{{ route('loginPost') }}">
+                {{csrf_field()}}
                         <div class="form-group my-0">
                                 <label class="my-0">
                                     <i class="fas fa-user"></i>
-                                    <input type="text" class="myInput" placeholder="{{ __('Username') }}">
-                                   
+                                    <input type="text" class="myInput" placeholder="{{ __('Username') }}" name="username" />
+
                                 </label>
                         </div>
-                        
+
                         <div class="form-group my-0">
                             <label>
                                 <i class="fas fa-lock"></i>
-                                <input type="password" class="myInput" placeholder="{{ __('Password') }}">
-                               
+                                <input type="password" class="myInput" placeholder="{{ __('Password') }}" name="password" />
+
                             </label>
                         </div>
-                        <label class="check_1"><input type="checkbox" checked>{{ __('Remember Me') }}</label>
+                        <label class="check_1"><input type="checkbox" checked name="remember_me" />{{ __('Remember Me') }}</label>
 
                         <div class="form-group">
                             <label>
-                                <input type="button" class="form-control button" value="{{ __('Login') }}">
+                                <input type="submit" class="form-control button" value="{{ __('Login') }}" />
                             </label>
                         </div>
                 </form>
             </div>
         </div>
     </div>
+
+<script src="{{ asset('js/cms/sweetalert/sweetalert.js') }}"></script>
+@if (session('status') == 'fail')
+<script>
+    Swal.fire("Login gagal", "Username atau password yang dimasukkan salah, silahkan coba lagi.", "error");
+</script>
+@endif
