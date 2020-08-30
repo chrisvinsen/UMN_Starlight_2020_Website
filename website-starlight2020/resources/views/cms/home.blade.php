@@ -93,7 +93,7 @@
         <div class="countdown-up-area">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-12 col-md-3 text-center mb-80">
+                    <div class="col-12 col-md-3 text-center mb-3">
                         <!-- Countdown Text -->
                         <div class="countdown-content-text mb-10 wow bounceInLeft" data-wow-delay="300ms">
                             <h6>Main Event</h6>
@@ -101,7 +101,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-9 mb-80">
+                    <div class="col-12 col-md-9 mb-4">
                         <div class="countdown-timer mb-10 wow bounceInUp" data-wow-delay="300ms">
                             <div id="clock"></div>
                         </div>

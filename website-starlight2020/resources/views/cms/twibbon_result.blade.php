@@ -14,17 +14,17 @@
 @section('content')
 <div class="container col-sm-8 pt-5 pb-5">
     <div style="margin-top: 100px; text-align: center;">
-        <h1 class="f-carneval" style="letter-spacing: 5px;font-size: 55px;">TWIBBON STARLIGHT 2020</h1>
+        <h1 class="f-carneval wow fadeInUp" style="letter-spacing: 5px;font-size: 55px;">TWIBBON STARLIGHT 2020</h1>
         <div class="mt-5 mx-3">
-            <div style ="max-width:400px;position: relative;margin:auto;padding:0;" id = "frame" >
+            <div class="wow fadeInUp" style ="max-width:400px;position: relative;margin:auto;padding:0;" id = "frame" >
                 <img id = "photo" src = "{{ asset($photo) }}" alt = "photo">
                 <canvas id = "canvas" style = "display: block"></canvas>
             </div>
             
             <div class="mt-3">
-                <button class="btn starlight-btn mx-2 px-4 mb-3 mt-2" id = "download"><i class="fas fa-download"></i> Unduh Twibbon</button>
+                <button class="btn starlight-btn mx-2 px-4 mb-3 mt-2" id = "download"><i class="fas fa-download wow fadeInUp"></i> Unduh Twibbon</button>
                 <label for="uploadphoto">
-                <span class="btn starlight-btn mx-1 mb-3 mt-2" >
+                <span class="btn starlight-btn mx-1 mb-3 mt-2 wow fadeInUp" >
                 <i class="fas fa-upload"></i> Unggah Foto Baru
                 </span>
                 <form action="{{ route('twibbonPost') }}" class="formfull" method="POST" enctype="multipart/form-data">
@@ -34,8 +34,8 @@
                 </div>
             <div class="mx-auto">
                 <div class="mt-1">
-                    <h3 class="text-white mb-4"> Silahkan Gunakan Caption ini: </h3>
-                        <div class="paper">
+                    <h3 class="text-white mb-4 wow fadeInUp"> Silahkan Gunakan Caption ini: </h3>
+                        <div class="paper wow fadeInUp">
                             <div class="paper-content">
                                 <textarea id="caption" readonly>[STARLIGHT 2020 OFFICIALLY STARTED]
 
@@ -56,7 +56,7 @@ E-mail: starlight@umn.ac.id⁣⁣
                     </div>
                 </div>
                 <div class="mt-3">
-                    <button type="button" id="copyCaption" class="btn starlight-btn mx-3">
+                    <button type="button" id="copyCaption" class="btn starlight-btn mx-3 wow fadeInUp">
                         Copy Caption <i class="fas fa-copy"></i>
                     </button>
                 </div>
@@ -127,7 +127,7 @@ E-mail: starlight@umn.ac.id⁣⁣
             if (flag) {
                 const photo = document.getElementById('preview_canvas');
                 photo.toBlobHD((blob) => {
-                    saveAs(blob, "STARLIGHT2020.png");
+                    saveAs(blob, "Twibbon Starlight 2020.png");
                 }, "image/png");
             } else {
                 const photo = document.createElement('canvas');
@@ -136,7 +136,7 @@ E-mail: starlight@umn.ac.id⁣⁣
                 photo.getContext('2d').drawImage(canvas, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
                 photo.getContext('2d').drawImage(img, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
                 photo.toBlobHD((blob) => {
-                    saveAs(blob, "STARLIGHT2020.png");
+                    saveAs(blob, "Twibbon Starlight 2020.png");
                 }, "image/png");
             }
         });
