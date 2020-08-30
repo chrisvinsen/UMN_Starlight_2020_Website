@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use App\DataUmum;
+use App\DataIndividu;
 use Response;
 use File;
 use Mail;
@@ -86,27 +88,26 @@ class RegistrationController extends Controller
             else{
                 $bankname = $request->payment_bank;
             }
-            try {
-                $data_umum = DB::insert('insert into data_umum (stagename, membersvalue, email, line, phonenumber, instagram, stagedescription, payment, payment_name, payment_bank, payment_number, token, stage, status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-                [
-                    $request->stagename,
-                    $request->membersvalue,
-                    $request->email,
-                    $request->line,
-                    $request->phonenumber,
-                    $request->instagram,
-                    $request->stagedescription,
-                    $path_payment,
-                    $request->payment_name,
-                    $bankname,
-                    // $request->payment_bank,
-                    $request->payment_number,
-                    strtoupper(Str::random(6)),
-                    'Caribana',
-                    'Pending'
+            try {   
+                $data_umum = DataUmum::create([
+                    'stagename'        => $request->stagename,
+                    'membersvalue'        => $request->membersvalue,
+                    'email'        => $request->email,
+                    'line'        => $request->line,
+                    'phonenumber'        => $request->phonenumber,
+                    'instagram'        => $request->instagram,
+                    'stagedescription'        => $request->stagedescription,
+                    'payment'        => $path_payment,
+                    'payment_name'        => $request->payment_name,
+                    'payment_bank'        => $bankname,
+                    'payment_number'        => $request->payment_number,
+                    'token'        => strtoupper(Str::random(6)),
+                    'stage'        => 'Caribana',
+                    'status'        => 'Pending'
                 ]);
+                
             } catch(QueryException $e) {
-                session()->flash('status', 'fail');
+                session()->flash('status', 'fail_dataumum');
                 return redirect('registration');
             }
         }
@@ -518,6 +519,7 @@ class RegistrationController extends Controller
             $message->subject("Thank you for Being a Vergilia!");
             $message->from('starlight@umn.ac.id', 'Starlight 2020');
             // $message->attach("https://starlight.umn.ac.id/files/Committee Recruitment/CENTAURI.pdf");
+            $message->attach(public_path('files/Regulasi Venicea Starlight UMN 2020-min.pdf'));
             $message->to($email);
         });
 

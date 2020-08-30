@@ -565,7 +565,7 @@
                                         <label>Scan Foto KTP <small>(jika telah berumur 18 tahun)</small></label>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" name="ktp8" id="ktp8"  onchange="checkFile(this)" accept="image/*">
-                                            <label class="custom-file-label" for="ktp8" style="background-color: #ffffff;" id="ktp5label">Choose file...</label>
+                                            <label class="custom-file-label" for="ktp8" style="background-color: #ffffff;" id="ktp8label">Choose file...</label>
                                             <div class="invalid-feedback">Invalid file</div>
                                         </div>
                                     </div>
@@ -591,7 +591,7 @@
                             </h5>
                             <div class="col-lg-12 mt-3">
                                 <div class="row">
-                                    <object class="regulation-obj" data="{{ asset('files/Regulasi Venicea Starlight UMN 2020.pdf') }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" style="width:100%; height:500px">
+                                    <object class="regulation-obj" data="{{ asset('files/Regulasi Venicea Starlight UMN 2020-min.pdf') }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" style="width:100%; height:500px">
                                         <div class="rules">
                                             <h5><b>A. Ketentuan Umum Vergilia (Peserta) Lomba :</b></h5>
                                             1. Starlight 2020 terdiri atas 3 rangkaian acara; mulai dari Venicea, Mardi Gras, hingga Rio de Janeiro. <br>
@@ -663,13 +663,13 @@
                                             <div class="indent">
                                                 a. 1-3 orang/kelompok <br>
                                                 <div class="indent">
-                                                    Earlybird	: Rp 80.000,-  <br>
-                                                    New Normal	: Rp 100.000,- <br>
+                                                    Earlybird   : Rp 80.000,-  <br>
+                                                    New Normal  : Rp 100.000,- <br>
                                                 </div>
                                                 b. 4-8 orang/kelompok  <br>
                                                 <div class="indent">
-                                                    Earlybird	: Rp 140.000,-  <br>
-                                                    New Normal 	: Rp 160.000,-  <br>
+                                                    Earlybird   : Rp 140.000,-  <br>
+                                                    New Normal  : Rp 160.000,-  <br>
                                                 </div>
                                                 <div style="font-style:italic;color:red;"><b>*Early Bird</b>: 31 Agustus - 13 September 2020. <br></div>
                                                 <div style="font-style:italic;color:red;"><b>*New Normal</b>: 14 September - 10 Oktober 2020. <br></div>
@@ -765,7 +765,7 @@
                 </div>
                 <div class="wizard-footer">
                     <div class="pull-right">
-                        <a href="{{ asset('files/Regulasi Venicea Starlight UMN 2020.pdf') }}" class='btn btn-next btn-fill btn-danger btn-wd' id="downloadbtn" onclick="donwloadCheck()" name="next" download>Next</a>
+                        <a href="{{ asset('files/Regulasi Venicea Starlight UMN 2020-min.pdf') }}" class='btn btn-next btn-fill btn-danger btn-wd' id="downloadbtn" onclick="donwloadCheck()" name="next" download>Next</a>
                         <input type='button' class='btn btn-next btn-fill btn-danger btn-wd hideBtn' onclick="nextcheck()" name='next' value='Next' id="nextbtn"/>
                         <input type='submit' class='btn btn-finish btn-fill btn-danger btn-wd' onclick="finishcheck()" value='Finish' id="finishbtn" />
                     </div>
@@ -798,6 +798,11 @@
         'Mohon menunggu e-mail dari Starlight untuk informasi selanjutnya',
         'success'
     )
+</script>
+@endif
+@if (session('status') == 'fail_dataumum')
+<script>
+    Swal.fire("Registrasi gagal", "Terjadi kesalahan saat registrasi, silahkan coba lagi dengan stage name atau email lain.", "error");
 </script>
 @endif
 @if (session('status') == 'fail')

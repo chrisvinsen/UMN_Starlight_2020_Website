@@ -25,11 +25,6 @@ class CMSController extends Controller
         return view('cms.aboutus', compact('title', 'nav_menu'));
     }
 
-    public function email()
-    {
-        return view('cms.template.email');
-    }
-
     public function committee()
     {
         $title = "Committee";
@@ -43,7 +38,7 @@ class CMSController extends Controller
         $title = "Contact";
         $nav_menu = "contact";
 
-    	return view('cms.contact', compact('title', 'nav_menu'));
+        return view('cms.contact', compact('title', 'nav_menu'));
     }
 
     public function event(){
