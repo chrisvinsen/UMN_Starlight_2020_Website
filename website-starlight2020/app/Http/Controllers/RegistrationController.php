@@ -19,8 +19,8 @@ class RegistrationController extends Controller
     public function index(){
         $title = "Registration";
         $nav_menu = "";
-        $stagename_list = DataUmum::get();
-        return view('cms.registration', compact('title', 'nav_menu', 'stagename_list'));
+
+        return view('cms.registration', compact('title', 'nav_menu'));
     }
 
     public function registrationPost(Request $request) {
