@@ -69,7 +69,7 @@
         <div class="icon-scroll" id="scrollDown"></div>
 
     </section>
-    <section class="about-us-countdown-area section-padding-100-0" id="about">
+    <section class="about-us-countdown-area section-padding-100-0" id="about" style="background-color: #270000;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-6 order-2">
@@ -181,4 +181,5 @@
 
 @section('custom_js')
 <!-- Custom js -->
+<script src="{{ asset('js/cms/countdown.js') }}"></script>
 @endsection

@@ -2,7 +2,6 @@
  .about-us-countdown-area {
      position: relative;
      z-index: 1;
-     background-color: #270000; /* what is starlight */
 }
  .about-us-countdown-area .about-content-text h6 { /* what is starlight head + our tagline */
      font-size: 14px;

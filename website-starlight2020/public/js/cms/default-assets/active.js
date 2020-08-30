@@ -224,7 +224,28 @@ $(document).ready(function($){
     // :: 13.0 Countdown Active Code
     // ****************************
     if ($.fn.countdown) {
-        $("#clock").countdown("2020/10/24", function (event) {
+        let current_date = new Date();
+
+        let venicea_start = new Date(2020, 7, 31); // 31 Agustus 2020
+        let venicea_end = new Date(2020, 9, 10); // 10 Oktober 2020
+        let mardi_gras = new Date(2020, 10, 6) // 6 November 2020
+        let rio_de_janeiro = new Date(2020, 10, 21) // 21 November 2020
+
+        let use_date
+
+        if (current_date < venicea_start) {
+            use_date = venicea_start;
+        } else if (current_date < venicea_end) {
+            use_date = venicea_end;
+        } else if (current_date < mardi_gras) {
+            use_date = mardi_gras;
+        } else if (current_date < rio_de_janeiro) {
+            use_date = rio_de_janeiro;
+        } else {
+            use_date = new Date(2020, 11, 31) // 31 Desember 2020
+        }
+
+        $("#clock").countdown(use_date, function (event) {
             $(this).html(event.strftime("<div>%m <span>Months</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
         });
     }

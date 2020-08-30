@@ -71,9 +71,6 @@
     <!-- Popper JS -->
     <script src="{{ asset('js/cms/popper/popper.min.js') }}"></script>
 
-    <!-- Custom JS -->
-    <script src="{{ asset('js/cms/script.js') }}"></script>
-
     <script>
         // $(window).on('load', function () {
         //     $('#preloader').fadeOut('slow');

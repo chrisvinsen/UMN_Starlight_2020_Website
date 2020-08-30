@@ -313,3 +313,16 @@ h4{
 .splide__arrows {
   display: none!important;
 }
+
+#clock div {
+  color: #270000 !important;
+  border: 2px solid rgb(39, 0, 0, .25) !important;
+}
+
+.text-black {
+  color: black;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
