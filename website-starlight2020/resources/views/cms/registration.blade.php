@@ -15,6 +15,18 @@
 @endsection
 
 @section('content')
+<script>
+    var stagename_list = [
+        @foreach ($stagename_list as $st)
+            "{{ $st->stagename }}", 
+        @endforeach
+    ];
+    var email_list = [
+        @foreach ($stagename_list as $st)
+            "{{ $st->email }}", 
+        @endforeach
+    ];
+</script>
 <div class="container col-sm-8 pt-5 pb-5">
     <div class="wizard-container" style="letter-spacing:1px; font-size:14px;" >
         <div class="wizard-card card py-4" data-color="red" id="wizard">
@@ -67,8 +79,8 @@
                         <div class="col-lg-8 offset-lg-2">
                             <div class="row">
                                 <div class="col-lg-4 offset-lg-2">
-                                    <div class="choice active" id="solochoice" data-toggle="wizard-checkbox" onclick="solo()">
-                                        <input type="checkbox" name="solo" value="solo" id="solocheck" checked="checked">
+                                    <div class="choice active" id="solochoice" data-toggle="wizard-radio" onclick="solo()">
+                                        <input type="radio" name="sologroup" value="solo" id="solocheck">
                                         <div class="card card-checkboxes card-hover-effect">
                                             <i class="fa fa-user" aria-hidden="true"></i>
                                             Solo
@@ -76,8 +88,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 offset">
-                                    <div class="choice" id="groupchoice" data-toggle="wizard-checkbox" onclick="group()">
-                                        <input type="checkbox" name="group" value="group" id="groupcheck">
+                                    <div class="choice" id="groupchoice" data-toggle="wizard-radio" onclick="group()">
+                                        <input type="radio" name="sologroup" value="group" id="groupcheck">
                                         <div class="card card-checkboxes card-hover-effect">
                                             <i class="fa fa-users" aria-hidden="true"></i>
                                             Group
@@ -94,7 +106,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label>Nama Panggung<span class="text-danger">*</span></label>
-                                        <input name="stagename" type="text" class="form-control" placeholder="Starlighters" maxlength="50" required>
+                                        <input name="stagename" data-rule-uniquestagename="true" type="text" class="form-control" placeholder="Starlighters" maxlength="50" required>
                                     </div>
                                     <div class="form-group" id="membersvalue">
                                         <label>Jumlah Anggota<span class="text-danger">*</span><small> (maksimal 8 anggota) </small></label>
@@ -102,7 +114,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Email<span class="text-danger">*</span><small> (perwakilan) </small></label>
-                                        <input name="email" type="email" class="form-control" placeholder="starlight@gmail.com" maxlength="50" minlength="6" required>
+                                        <input name="email" type="email" class="form-control" data-rule-uniqueemail="true" placeholder="starlight@gmail.com" maxlength="50" minlength="6" required>
                                     </div>
                                     <div class="form-group">
                                         <label>ID Line<span class="text-danger">*</span><small> (perwakilan) </small></label>

@@ -44,6 +44,26 @@ transparent = true;
                 return (d.getTime() <= endDate.getTime() && d.getTime() >= startDate.getTime())
             }, "Masukkan tahun yang sah."
             );
+            jQuery.validator.addMethod('uniquestagename', function (value, element){
+                let check = true;
+                for (let i = 0; i < stagename_list.length; ++i) {
+                    if(stagename_list[i].toLowerCase() === value.toLowerCase() ){
+                        check = false;
+                    }
+                }                 
+                return check;
+            }, "Nama panggung sudah digunakan."
+            );
+            jQuery.validator.addMethod('uniqueemail', function (value, element){
+                let check = true;
+                for (let i = 0; i < email_list.length; ++i) {
+                    if(email_list[i].toLowerCase() === value.toLowerCase() ){
+                        check = false;
+                    }
+                }                 
+                return check;
+            }, "Email sudah digunakan."
+            );
             /*  Activate the tooltips      */
             $('[rel="tooltip"]').tooltip();
             $.validator.messages.required = "Kamu perlu memasukkan data ini.";

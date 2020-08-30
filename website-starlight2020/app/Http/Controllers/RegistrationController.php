@@ -20,7 +20,8 @@ class RegistrationController extends Controller
         $title = "Registration";
         $nav_menu = "";
 
-        return view('cms.registration', compact('title', 'nav_menu'));
+        $stagename_list = DataUmum::get();
+        return view('cms.registration', compact('title', 'nav_menu', 'stagename_list'));
     }
 
     public function registrationPost(Request $request) {

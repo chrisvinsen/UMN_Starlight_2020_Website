@@ -201,13 +201,6 @@ function solo() {
     $("#circle-formgeneral").removeClass("checked");
     $("#circle-formindividual").removeClass("checked");
 
-    if (!$("#groupchoice").hasClass("active")) {
-        $("#groupchoice").addClass("active");
-        $("#groupcheck").attr("checked", true);
-    } else {
-        $("#groupchoice").removeClass("active");
-        $("#groupcheck").removeAttr("checked");
-    }
 }
 function group() {
     // $("#a-validation").addClass("disable");
@@ -217,13 +210,6 @@ function group() {
     $("#circle-formgeneral").removeClass("checked");
     $("#circle-formindividual").removeClass("checked");
 
-    if (!$("#solochoice").hasClass("active")) {
-        $("#solochoice").addClass("active");
-        $("#solocheck").attr("checked", true);
-    } else {
-        $("#solochoice").removeClass("active");
-        $("#solocheck").removeAttr("checked");
-    }
 }
 function changeMembers() {
     // $("#a-validation").addClass("disable");
@@ -303,6 +289,7 @@ function changeMembers() {
     };
 })(jQuery);
 $(document).ready(function () {
+    $("#solocheck").attr('checked', 'checked');
     $(".phone").usPhoneFormat({
         format: "xxxx-xxxx-xxx",
     });
