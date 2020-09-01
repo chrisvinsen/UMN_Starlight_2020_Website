@@ -5,12 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use File;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
 class PanelController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $title = "Login";
         $nav_menu = "";
 
@@ -20,39 +20,44 @@ class PanelController extends Controller
             return view('cms.login', compact('title', 'nav_menu'));
     }
 
-    public function admin() {
+    public function admin()
+    {
         $title = "Admin";
         $nav_menu = "";
 
-        $data_umum = DB::table('data_umum')->where('stagename', Session::get('stagename'))->first();
-        $tempDate = date_create("$data_umum->created_at");
-        $newDate = date_format($tempDate, 'd F Y');
-        $data_umum->created_at = $newDate;
-        $data_umum->line = '@' . $data_umum->line;
-        $data_individu = array();
-        for ($i = 0; $i < $data_umum->membersvalue; $i++)
-            array_push($data_individu, DB::table('data_individu')->where('stagename', Session::get('stagename'))->first());
-        for ($i = 0; $i < $data_umum->membersvalue; $i++) {
-            $date = $data_individu[$i]->birthdate;
+        $data_umum = DB::table('data_umum')->get();
+        for ($i = 0; $i < count($data_umum); $i++) {
+            $date = $data_umum[$i]->created_at;
             $tempDate = date_create("$date");
             $newDate = date_format($tempDate, 'd F Y');
-            $data_individu[$i]->birthdate = $newDate;
-            $data_individu[$i]->line = '@' . $data_individu[$i]->line;
+            $data_umum[$i]->created_at = $newDate;
+            $data_umum[$i]->line = '@' . $data_umum[$i]->line;
+
+            $data_individu = DB::table('data_individu')->select('fullname', 'birthdate', 'address', 'school', 'phonenumber', 'line', 'ktp', 'studentid', 'stagename')->where('stagename', $data_umum[$i]->stagename)->get();
+            for ($j = 0; $j < count($data_individu); $j++) {
+                $date = $data_individu[$j]->birthdate;
+                $tempDate = date_create("$date");
+                $newDate = date_format($tempDate, 'd F Y');
+                $data_individu[$j]->birthdate = $newDate;
+                $data_individu[$j]->line = '@' . $data_individu[$j]->line;
+            }
+            $data_umum[$i]->data_individu = array();
+            for ($j = 0; $j < count($data_individu); $j++)
+                array_push($data_umum[$i]->data_individu, $data_individu[$j]);
         }
 
         return view('cms.admin', compact('title', 'nav_menu', 'data_umum', 'data_individu'));
     }
 
-    public function loginPost(Request $request) {
+    public function loginPost(Request $request)
+    {
         $username = $request->username;
         $password = $request->password;
 
         $admin = DB::table('admin')->where('username', $username)->first();
-        if ($admin && Hash::check($password, $admin->password)) {
+        if ($admin && $password == $admin->password) {
             if (!strcmp($request->remember_me, 'on'))
                 Session::put('remember_me', TRUE);
-            Session::put('stagename', $admin->stagename);
-
             return redirect('admin');
         }
 
