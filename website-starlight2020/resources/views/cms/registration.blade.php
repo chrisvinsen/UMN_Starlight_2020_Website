@@ -799,10 +799,10 @@
 
 @section('custom_js')
 <!-- Custom js -->
-<script src="{{ asset('js/cms/register.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/cms/registration.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/jquery-ui.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/jquery.bootstrap.wizard.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/cms/paper-bootstrap-wizard/paper-bootstrap-wizard.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/cms/paper-bootstrap-wizard/paper-bootstrap-wizard2.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/paper-bootstrap-wizard/jquery.validate.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/cms/sweetalert/sweetalert.js') }}"></script>
 <script>
