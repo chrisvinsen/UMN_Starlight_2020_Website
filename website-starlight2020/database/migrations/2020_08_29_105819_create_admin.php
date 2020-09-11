@@ -17,10 +17,7 @@ class CreateAdmin extends Migration
             $table->increments('id');
             $table->string('username')->unique();
             $table->string('password');
-            $table->string('stagename', 50);
             $table->timestamps();
-
-            $table->foreign('stagename')->references('stagename')->on('data_umum')->onDelete('no action');
         });
     }
 
