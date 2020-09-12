@@ -64,6 +64,16 @@
 <!-- End of all content -->
 @endsection
 @section('custom_js')
+<script src="{{ asset('js/cms/sweetalert/sweetalert.js') }}"></script>
+@if (session('status') == 'success')
+<script>
+    Swal.fire(
+        'Terima kasih telah mendaftar!',
+        'Mohon menunggu E-mail dari Starlight untuk informasi selanjutnya. Jangan lupa untuk menggunakan Twibbon Starlight 2020 sebagai identitas Vergilia ya!',
+        'success'
+    )
+</script>
+@endif
 <!-- Custom js -->
 <script>
     $('form input').change(function() {

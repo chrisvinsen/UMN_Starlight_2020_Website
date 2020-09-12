@@ -31,7 +31,7 @@
     <div class="wizard-container" style="letter-spacing:1px; font-size:14px;" >
         <div class="wizard-card card py-4" data-color="red" id="wizard">
             <form action="{{ route('registrationPost') }}" class="formfull" method="POST" enctype="multipart/form-data">
-            {{csrf_field()}}
+            @csrf
                 <div class="wizard-header text-center">
                     <h2 class="wizard-title mb-4 f-carneval"> PENDAFTARAN PESERTA </h2>
                 </div>
@@ -810,15 +810,6 @@
         $('.date-picker').datepicker();
     })
 </script>
-@if (session('status') == 'success')
-<script>
-    Swal.fire(
-        'Registrasi berhasil',
-        'Mohon menunggu e-mail dari Starlight untuk informasi selanjutnya',
-        'success'
-    )
-</script>
-@endif
 @if (session('status') == 'fail_dataumum')
 <script>
     Swal.fire("Registrasi gagal", "Terjadi kesalahan saat registrasi, silahkan coba menggunakan nama panggung atau email lain.", "error");

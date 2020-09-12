@@ -13,19 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('home', function () {
-	return redirect("/");
-});
-
-Route::get('','CMSController@home')->name('home');
+Route::get('/','CMSController@home')->name('home');
 
 Route::get('/aboutus','CMSController@aboutus')->name('aboutus');
 
-Route::group(['prefix'=>'committee'], function(){
-	Route::get('','CMSController@committee')->name('committee');
-});
+Route::get('/committee','CMSController@committee')->name('committee');
 
 Route::get('/contact','CMSController@contact')->name('contact');
+
+Route::get('/event','CMSController@event')->name('event');
+
+Route::get('/email','CMSController@email')->name('email');
 
 Route::group(['prefix'=>'registration'], function(){
 	Route::get('','RegistrationController@index')->name('registration');
@@ -40,15 +38,18 @@ Route::group(['prefix'=>'twibbon'], function(){
 	Route::get('','TwibbonController@index')->name('twibbon');
 	Route::post('post', 'TwibbonController@twibbonPost')->name('twibbonPost');
 });
-Route::get('/email','CMSController@email')->name('email');
 
-Route::get('/event','CMSController@event')->name('event');
-Route::group(['prefix'=>'login'], function(){
-    Route::get('','PanelController@index')->name('login');
-    Route::POST('/post', 'PanelController@loginPost')->name('loginPost');
+// Authentication Routes...
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+Route::group(['prefix'=>'admin'], function(){
+	Route::get('/registration','PanelController@registration')->name('panel.registration')->middleware('auth');
+	Route::get('/registration/{dataUmum}','PanelController@registration_detail')->name('panel.registration.detail')->middleware('auth');
 });
 
-Route::get('/admin','PanelController@admin')->name('admin');
+
 
 Route::any('{query}',
   function() { return redirect('/'); })

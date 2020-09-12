@@ -103,7 +103,9 @@
 
                     <div class="col-12 col-md-9 mb-4">
                         <div class="countdown-timer mb-10 wow bounceInUp" data-wow-delay="300ms">
-                            <div id="clock"></div>
+                            <div id="clock">
+                            </div>
+                            
                         </div>
                     </div>
                 </div>

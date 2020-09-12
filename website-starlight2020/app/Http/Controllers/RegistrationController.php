@@ -113,6 +113,8 @@ class RegistrationController extends Controller
             }
         }
 
+        $is_success = false;
+
         if (strcmp($type, 'solo') == 0) {
             $path_ktp0 = null;
             $path_studentid0 = null;
@@ -158,6 +160,7 @@ class RegistrationController extends Controller
 
             if ($data_umum && $data_individu0) {
                 session()->flash('status', 'success');
+                $is_success = true;
             } else {
                 session()->flash('status', 'fail');
             }
@@ -504,6 +507,7 @@ class RegistrationController extends Controller
 
             if ($data_umum && $data_individu1 && $data_individu2) {
                 session()->flash('status', 'success');
+                $is_success = true;
             } else {
                 session()->flash('status', 'fail');
             }
@@ -520,6 +524,10 @@ class RegistrationController extends Controller
             $message->attach(public_path('files/Regulasi Venicea Starlight UMN 2020-min.pdf'));
             $message->to($email);
         });
+
+        if ($is_success) {
+            return redirect('twibbon');
+        }
 
         return redirect('registration');
     }
