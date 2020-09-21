@@ -97,7 +97,7 @@
                         <!-- Countdown Text -->
                         <div class="countdown-content-text mb-10 wow bounceInLeft" data-wow-delay="300ms">
                             <h6>Main Event</h6>
-                            <h4>Count Every Second Until The Main Event</h4>
+                            <h4>Count Every Second Until The Main Event!</h4>
                         </div>
                     </div>
 
