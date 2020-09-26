@@ -16,7 +16,7 @@ class RegistrationResultCheckController extends Controller
     }
 
     public function searchPost(Request $request){
-        $result = DB::table('data_umum')->select('token', 'stage', 'status')->where('token', $request->search)->first();
+        $result = DB::table('data_umum')->select('stagename', 'token', 'stage', 'status')->where('token', $request->search)->first();
 
         if ($result) {
             if ($result->status == "Pending") {
@@ -25,6 +25,8 @@ class RegistrationResultCheckController extends Controller
             }
             elseif ($result->status == "Accepted") {
                 session()->flash('msg', 'success');
+                session()->flash('name', $result->stagename);
+                session()->flash('link', "https://line.me/R/ti/g/y-ADlqqycC");
                 return redirect('registration/result');
             }
             elseif ($result->status == "Declined") {
