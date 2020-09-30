@@ -30,7 +30,7 @@
             </div>
         </div>
     </section>
-    <section class="about-us-countdown-area section-padding-100-0" id="about">
+    <section class="about-us-countdown-area section-padding-100-0" id="about" style="background-color: #270000;">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-8">
