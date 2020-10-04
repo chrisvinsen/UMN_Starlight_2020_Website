@@ -132,7 +132,7 @@
                                         <label>Deskripsi penampilan<span class="text-danger">*</span><small> (penjelasan secara singkat tentang apa yang ingin ditampilkan) </small></label>
                                         <textarea name="stagedescription" class="form-control" placeholder="Extend your light" rows="3" required></textarea>
                                     </div>
-                                    <!-- <div class="form-group">
+                                    <div class="form-group">
                                         <label>Bukti pembayaran uang pendaftaran<span class="text-danger">*</span></label>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" name="payment" id="payment" required onchange="checkFile(this)" accept="image/*">
@@ -165,7 +165,7 @@
                                     <div class="form-group">
                                         <label>No rekening pengirim<span class="text-danger">*</span></label>
                                         <input name="payment_number" id="payment_numberinput" type="text" class="form-control" placeholder="1234567890" required onkeypress="return event.charCode >= 48 && event.charCode <= 57 && $(this).val().length < 18">
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -607,26 +607,28 @@
                                     <object class="regulation-obj" data="{{ asset('files/Regulasi Venicea Starlight UMN 2020-min.pdf') }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" style="width:100%; height:500px">
                                         <div class="rules">
                                             <h5><b>A. Ketentuan Umum Vergilia (Peserta) Lomba :</b></h5>
-                                            1. Starlight 2020 terdiri atas 3 rangkaian acara; mulai dari Venicea, Mardi Gras, hingga Rio de Janeiro. <br>
-                                            2. Pendaftaran tahap Venicea dibuka melalui website (starlight.umn.ac.id) yang akan diselenggarakan mulai dari <b>Senin, 31 Agustus 2020</b> sampai dengan <b>Sabtu, 10 Oktober 2020</b> Pk 23.59 WIB. <br>
-                                            3. Bakat yang ditampilkan dapat berupa <b>APAPUN</b>, dengan syarat <b>BUKAN</b> berupa editing dan animasi. <br>
-                                            4. Peserta <b>WAJIB</b> secara resmi terdaftar dalam instansi pendidikan pada tingkat SMA/SMK/MA (Sekolah Menengah Atas/ Sekolah Menengah Kejuruan/ Madrasah Aliyah) atau Perguruan Tinggi se-Indonesia. <br>
-                                            5. Peserta dapat mengatasnamakan atau menjadi perwakilan dari instansi pendidikan mereka masing-masing atau mendaftar tanpa instansi <b>(membawa nama tim pribadi).</b> <br>
-                                            6. Tidak ada batasan usia bagi peserta, selama peserta masih terdaftar secara aktif dalam instansi pendidikan tersebut. <br>
-                                            7. Salah satu perwakilan dari peserta yang lolos ke tahap selanjutnya (tahap stage Mardi Gras) <b>WAJIB</b> untuk masuk ke dalam grup besar melalui aplikasi LINE. Untuk Link invitation akan tercantum pada laman pengumuman lolos dari Venicea ke Mardi Gras. <br>
-                                            8. Bagi peserta yang sudah dinyatakan lolos ke tahap selanjutnya, <b>DILARANG</b> untuk mengundurkan diri. <u>Bila mengundurkan diri maka uang pendaftaran tidak akan dikembalikan. <br></u>
-                                            9. Peserta yang sudah mendaftarkan diri <b>DILARANG</b> untuk mengganti/menambahkan/mengurangi jumlah anggotanya dari awal hingga akhir rangkaian acara. Kecuali dengan keadaan sebagai berikut : <br>
+                                            1. Peserta teriri <b>minimal</b> 1 orang dan <b>maksimal</b> 8 orang.<br>
+                                            2. Pendaftaran tahap Venicea Starligh 2020 <b>TIDAK DIPUNGUT BIAYA.</b><br>
+                                            3. Starlight 2020 terdiri atas 3 rangkaian acara; mulai dari Venicea, Mardi Gras, hingga Rio de Janeiro. <br>
+                                            4. Pendaftaran tahap Venicea dibuka melalui website (starlight.umn.ac.id) yang akan diselenggarakan mulai dari <b>Senin, 31 Agustus 2020</b> sampai dengan <b>Sabtu, 10 Oktober 2020</b> Pk 23.59 WIB. <br>
+                                            5. Bakat yang ditampilkan dapat berupa <b>APAPUN</b>, dengan syarat <b>BUKAN</b> berupa editing dan animasi. <br>
+                                            6. Peserta <b>WAJIB</b> secara resmi terdaftar dalam instansi pendidikan pada tingkat SMA/SMK/MA (Sekolah Menengah Atas/ Sekolah Menengah Kejuruan/ Madrasah Aliyah) atau Perguruan Tinggi se-Indonesia. <br>
+                                            7. Peserta dapat mengatasnamakan atau menjadi perwakilan dari instansi pendidikan mereka masing-masing atau mendaftar tanpa instansi <b>(membawa nama tim pribadi).</b> <br>
+                                            8. Tidak ada batasan usia bagi peserta, selama peserta masih terdaftar secara aktif dalam instansi pendidikan tersebut. <br>
+                                            9. Salah satu perwakilan dari peserta yang lolos ke tahap selanjutnya (tahap stage Mardi Gras) <b>WAJIB</b> untuk masuk ke dalam grup besar melalui aplikasi LINE. Untuk Link invitation akan tercantum pada laman pengumuman lolos dari Venicea ke Mardi Gras. <br>
+                                            10. Peserta yang sudah mendaftarkan diri <b>DILARANG</b> untuk mengganti/menambahkan/mengurangi jumlah anggotanya dari awal hingga akhir rangkaian acara. Kecuali dengan keadaan sebagai berikut : <br>
                                             <div class="indent">a. Diopname, (melampirkan surat keterangan dari Rumah Sakit dan diserahkan kepada LO yang bersangkutan). <br></div>
                                             <div class="indent">b. Keluarga Inti meninggal, dengan menginformasikan kepada LO masing-masing. <br></div>
-                                            10. Keputusan juri bersifat mutlak dan <b>TIDAK DAPAT</b> diganggu gugat. <br>
-                                            11. <u>Bagi mahasiswa/i Universitas Multimedia Nusantara,</u> akan mendapatkan <b>SKKM Minat Bakat</b> dengan ketentuan sebagai berikut : <br>
+                                            11. Keputusan juri bersifat mutlak dan <b>TIDAK DAPAT</b> diganggu gugat. <br>
+                                            12. <u>Bagi mahasiswa/i Universitas Multimedia Nusantara,</u> akan mendapatkan <b>SKKM Minat Bakat</b> dengan ketentuan sebagai berikut : <br>
                                             <div class="indent">a. Menjadi partisipan sebagai Vergilia(peserta)lomba = +1 SKKM<br></div>
                                             <div class="indent">b. Bagi Pemenang : <br>
                                             <div class="indent">   Sirius(The Newborn Star) =+4SKKM</div><br>
                                             <div class="indent">   Adara (First Runner-Up) =+3SKKM</div><br>
                                             <div class="indent">   Murzim(Second Runner-Up) =+2SKKM</div><br>
-                                            13. Seluruh peserta audisi online <b>WAJIB mengikuti</b> seluruh ketentuan dan aturan yang berlaku di Starlight 2020. <br>
-                                            14. Jika peserta tidak mengikuti regulasi yang telah ditetapkan oleh pihak panitia Starlight 2020, maka pihak panitia berhak <b>mendiskualifikasi</b> peserta. <br><br>
+                                            13. Pihak panitia Starlight 2020 berhak menggunakan dan meminta video audisi peserta untuk kebutuhan publikasi dan promosi acara Starligh 2020.<br>
+                                            14. Seluruh peserta audisi online <b>WAJIB mengikuti</b> seluruh ketentuan dan aturan yang berlaku di Starlight 2020. <br>
+                                            15. Jika peserta tidak mengikuti regulasi yang telah ditetapkan oleh pihak panitia Starlight 2020, maka pihak panitia berhak <b>mendiskualifikasi</b> peserta. <br><br>
                                             <h5><b>B. Aspek Penilaian</b></h5>
                                             Berikut adalah persentase untuk penilaian peserta :<br>
                                             <div class="indent">
@@ -675,29 +677,7 @@
                                                     <td>Rp 125.000 + E-Sertifikat</td>
                                                 </tr>
                                             </table> <br>
-                                            <h5><b>D. Ketentuan Pendaftaran :</b></h5>
-                                            1. Peserta terdiri dari <b>minimal</b> 1 orang dan <b>maksimal</b> 8 orang.  <br>
-                                            2. Peserta dianggap <b>resmi terdaftar</b> dalam perlombaan apabila <b>sudah memenuhi ketentuan biaya pendaftaran</b> sejumlah : <br>
-                                            <div class="indent">
-                                                a. 1-3 orang/kelompok <br>
-                                                <div class="indent">
-                                                    Earlybird   : Rp 80.000,-  <br>
-                                                    New Normal  : Rp 100.000,- <br>
-                                                </div>
-                                                b. 4-8 orang/kelompok  <br>
-                                                <div class="indent">
-                                                    Earlybird   : Rp 140.000,-  <br>
-                                                    New Normal  : Rp 160.000,-  <br>
-                                                </div>
-                                                <div style="font-style:italic;color:red;"><b>*Early Bird</b>: 31 Agustus - 21 September 2020. <br></div>
-                                                <div style="font-style:italic;color:red;"><b>*New Normal</b>: 22 September - 10 Oktober 2020. <br></div>
-                                            </div>
-                                            3. Biaya pendaftaran ditransfer ke rekening dengan nomor rekening <b>BCA 8831372281 atas nama JONATHAN NITISANJAYA</b> dengan berita : Venicea_Nama Panggung.  <br>
-
-                                            Nominal yang ditransfer oleh peserta <b>WAJIB</b> menggunakan kode unik di belakangnya, yaitu ‘005’. Contoh: Transfer biaya pendaftaran sebesar Rp 125.005,00. <br>
-                                            4. Ketentuan uang pendaftaran bagi <b>peserta yang tidak lolos</b> pada Venicea Stage akan dikembalikan sebesar <b>25%</b> dari uang pendaftaran. <br>
-                                            5. Bagi <b>peserta yang berasal dari Mahasiswa Universitas Multimedia Nusantara</b>, akan mendapatkan potongan sebesar <b>30%</b> dari biaya pendaftaran (dengan syarat apabila <b>SELURUH</b> anggota tim merupakan mahasiswa Universitas Multimedia Nusantara dan diwajibkan untuk memasukkan bukti berupa scan foto Kartu Tanda Mahasiswa). <br><br>
-                                            <h5><b>E. Ketentuan Konten Video Penampilan Vergilia (Peserta) :</b></h5>
+                                            <h5><b>D. Ketentuan Konten Video Penampilan Vergilia (Peserta) :</b></h5>
                                             1. Video berdurasi <b>minimal</b> 2 menit 30 detik dan <b>maksimal</b> 4 menit. <br>
                                             2. Peserta <b>DILARANG</b> melakukan tahap editing seperti color grading, penggunaan autotune, atau penggunaan efek-efek visual dan audio lainnya, <b>terkecuali</b> untuk penggabungan beberapa footage video yang <b>TETAP</b> direkam secara one-take. <br>
                                             <div class="indent">
@@ -727,7 +707,7 @@
                                             11. Peserta <b>DILARANG</b> menampilkan brand produk atau jasa dalam video penampilan. <br>
                                             12. Peserta <b>DILARANG</b> membawa atau menampilkan unsur SARA, Asusila, Kekerasan, dan Pornografi dalam konten video. <br>
                                             13. Peserta <b>DILARANG</b> menggunakan konten video yang menyinggung dan merugikan orang lain.  <br><br>
-                                            <h5><b>F. Ketentuan Submisi Video :</b></h5>
+                                            <h5><b>E. Ketentuan Submisi Video :</b></h5>
                                             1. Submisi dikumpulkan dalam bentuk <b>video</b> dan diunggah ke Instagram (IGTV). <br>
                                             2. Video peserta (IGTV) <b>WAJIB</b> di <u>keep</u> di instagram hingga hari<b> Sabtu, 24 Oktober 2020.</b><br>
                                             3. Peserta <b>WAJIB</b> mengunggah video melalui Instagram, dengan menggunakan hashtag <b>#Starlight2020 #ExtendYourLight #AudisiVeniceaStarlight</b>, mention <b>@starlightumn</b>, dan tag <b>@starlightumn</b>. <br>
