@@ -71,24 +71,25 @@ class RegistrationController extends Controller
             }
         }
 
-        if ($request->hasFile('payment')) {
-            $extension = $request->file('payment')->getClientOriginalExtension();
+        // if ($request->hasFile('payment')) {
+        //     $extension = $request->file('payment')->getClientOriginalExtension();
 
-            $path = public_path('images/Registration/Payment');
+        //     $path = public_path('images/Registration/Payment');
 
-            if (!File::exists($path)) {
-                File::makeDirectory($path, $mode = 0777, true, true);
-            }
+        //     if (!File::exists($path)) {
+        //         File::makeDirectory($path, $mode = 0777, true, true);
+        //     }
 
-            $filename = 'payment_' . $request->stagename . '.' . $extension;
-            $path_payment = '/images/Registration/Payment/' . $filename;
-            $request->file('payment')->move($path, $filename);
-            if($request->payment_bank == "Others"){
-                $bankname = $request->payment_bank_others;
-            }
-            else{
-                $bankname = $request->payment_bank;
-            }
+        //     $filename = 'payment_' . $request->stagename . '.' . $extension;
+        //     $path_payment = '/images/Registration/Payment/' . $filename;
+        //     $request->file('payment')->move($path, $filename);
+        //     if($request->payment_bank == "Others"){
+        //         $bankname = $request->payment_bank_others;
+        //     }
+        //     else{
+        //         $bankname = $request->payment_bank;
+        //     }
+        if (true) { // karena pembayaran di free in, code yang atas di comment dan diganti line ini
             try {   
                 $data_umum = DataUmum::create([
                     'stagename'        => $request->stagename,
@@ -98,10 +99,10 @@ class RegistrationController extends Controller
                     'phonenumber'        => $request->phonenumber,
                     'instagram'        => $request->instagram,
                     'stagedescription'        => $request->stagedescription,
-                    'payment'        => $path_payment,
-                    'payment_name'        => $request->payment_name,
-                    'payment_bank'        => $bankname,
-                    'payment_number'        => $request->payment_number,
+                    // 'payment'        => $path_payment,
+                    // 'payment_name'        => $request->payment_name,
+                    // 'payment_bank'        => $bankname,
+                    // 'payment_number'        => $request->payment_number,
                     'token'        => strtoupper(Str::random(6)),
                     'stage'        => 'Caribana',
                     'status'        => 'Pending'

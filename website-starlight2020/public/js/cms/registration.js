@@ -79,10 +79,12 @@ function nextcheck() {
         }
     }
     if ($("#formgeneral").hasClass("active")) {
-        if ($("#payment").get(0).files.length === 0) {
-            $("#paymentlabel").css("border-color", "#dc3545");
-            $("#paymentlabel").css("color", "#b10000");
-        }
+        // di comment karena payment registnya free
+
+        // if ($("#payment").get(0).files.length === 0) {
+        //     $("#paymentlabel").css("border-color", "#dc3545");
+        //     $("#paymentlabel").css("color", "#b10000");
+        // }
         if ($(".formfull").valid()) {
             $(".linav").removeClass("active");
             $("#li-formindividual").addClass("active");
@@ -160,10 +162,10 @@ function setformgeneral() {
 }
 function setformindividual() {
     $("#finishbtn").removeClass("hideBtn");
-    if ($("#payment").get(0).files.length === 0) {
-        $("#paymentlabel").css("border-color", "#dc3545");
-        $("#paymentlabel").css("color", "#b10000");
-    }
+    // if ($("#payment").get(0).files.length === 0) {
+    //     $("#paymentlabel").css("border-color", "#dc3545");
+    //     $("#paymentlabel").css("color", "#b10000");
+    // }
     if ($(".formfull").valid()) {
         $(".linav").removeClass("active");
         $("#li-formindividual").addClass("active");

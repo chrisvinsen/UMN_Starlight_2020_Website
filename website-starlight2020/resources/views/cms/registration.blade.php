@@ -132,7 +132,7 @@
                                         <label>Deskripsi penampilan<span class="text-danger">*</span><small> (penjelasan secara singkat tentang apa yang ingin ditampilkan) </small></label>
                                         <textarea name="stagedescription" class="form-control" placeholder="Extend your light" rows="3" required></textarea>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label>Bukti pembayaran uang pendaftaran<span class="text-danger">*</span></label>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" name="payment" id="payment" required onchange="checkFile(this)" accept="image/*">
@@ -165,7 +165,7 @@
                                     <div class="form-group">
                                         <label>No rekening pengirim<span class="text-danger">*</span></label>
                                         <input name="payment_number" id="payment_numberinput" type="text" class="form-control" placeholder="1234567890" required onkeypress="return event.charCode >= 48 && event.charCode <= 57 && $(this).val().length < 18">
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>

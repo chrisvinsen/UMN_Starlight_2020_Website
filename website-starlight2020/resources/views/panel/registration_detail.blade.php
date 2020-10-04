@@ -51,25 +51,29 @@
 
                 <div class="education layout-spacing ">
                     <div class="widget-content widget-content-area">
-                        <h3 class="">Payment Status</h3>
-                         <div class="user-info-list">
-                            <div class="">
-                                <ul class="contacts-block list-unstyled">
-                                    <li class="py-2">
-                                        From: {{ $dataUmum->payment_name }}
-                                    </li>
-                                    <li class="py-2">
-                                        Bank Name: {{ $dataUmum->payment_bank }}
-                                    </li>
-                                    <li class="py-2">
-                                        Bank Number: {{ $dataUmum->payment_number }}
-                                    </li>
-                                    <li class="py-2">
-                                        <img src="{{ $dataUmum->payment }}" class="w-100" alt="Transfer receipt" >
-                                    </li>
-                                </ul>
+                        @if ($dataUmum->payment) 
+                            <h3 class="">Payment Status</h3>
+                            <div class="user-info-list">
+                                <div class="">
+                                    <ul class="contacts-block list-unstyled">
+                                        <li class="py-2">
+                                            From: {{ $dataUmum->payment_name }}
+                                        </li>
+                                        <li class="py-2">
+                                            Bank Name: {{ $dataUmum->payment_bank }}
+                                        </li>
+                                        <li class="py-2">
+                                            Bank Number: {{ $dataUmum->payment_number }}
+                                        </li>
+                                        <li class="py-2">
+                                            <img src="{{ $dataUmum->payment }}" class="w-100" alt="Transfer receipt" >
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        @else
+                            <h3 class=""> Free Payment </h3>
+                        @endif
                     </div>
                 </div>
 

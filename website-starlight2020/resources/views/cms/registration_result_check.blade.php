@@ -57,7 +57,7 @@
         <h4 style="color:white;margin-top:70px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique, urna at elementum rutrum, lacus sem tempor ante, a condimentum ante quam in lectus. Sed maximus augue a dolor blandit, ut maximus orci vestibulum. Nunc dictum dui mauris, sit amet vulputate ipsum consectetur nec. Fusce nunc turpis, tempor quis lorem a, porta eleifend felis. Nam vitae rhoncus libero.</h4>
     </div>
     <div class="results-success" style="@if (session('msg')=='success') display:block; @endif">
-        <!-- <div class="group-wrapper">
+        <div class="group-wrapper">
             <div class="link-wrapper">
                 <a class="joingroup" href="#">Join line group</a>
                 <div class="icon">
@@ -66,9 +66,9 @@
                     </svg>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="results-success-content"></div>
-        <a class="btn starlight-btn mt-5 joingrouplink" href="{{ session('link') }}" style="display:none;"> Join Line Group <i class="fab fa-line"></i></a>
+        <!-- <a class="btn starlight-btn mt-5 joingrouplink" href="{{ session('link') }}" style="display:none;"> Join Line Group <i class="fab fa-line"></i></a> -->
     </div>
     <div class="results-fail" style="@if (session('msg')=='fail') display:block; @endif">
     </div>
