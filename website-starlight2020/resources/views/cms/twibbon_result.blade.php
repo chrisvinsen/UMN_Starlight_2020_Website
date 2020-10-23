@@ -37,21 +37,22 @@
                     <h3 class="text-white mb-4 wow fadeInUp"> Silahkan Gunakan Caption ini: </h3>
                         <div class="paper wow fadeInUp">
                             <div class="paper-content">
-                                <textarea id="caption" readonly>[STARLIGHT 2020 OFFICIALLY STARTED]
+                                <textarea id="caption" readonly>Wherever else, it's just a regular Friday, but on Planet Starlight, it's Mardi Gras! 🎭
 
-Hello! My name is (name) and I'm ready to join STARLIGHT 2020 🌟 as a vergillia, where I would like to proudly show you my marvelous (voice/movement/magic/...) ✨ I would like to invite all of you to join our special Starlight Carnival Stage: Venicea 🎪, Mardi Gras 🎪, and Rio de Janeiro 🎪 to support (me/us).
+Hello, Starlighters!
+I'm [name], and I'm inviting you to come celebrate the second stage of Starlight 2020, Mardi Gras!
 
-So stay tune on @starlightumn for any updates and pack your bags for a journey with (me/us)! ✨
+📅 Friday, 6 November 2020 Pk 19.00 WIB
+🎪 Starlight UMN's YouTube channel
 
-See you, Starlighters! 🙌🏻
 —⁣⁣
 Starlight!⁣⁣ Extend Your Light 💫⁣⁣
 —⁣⁣
-Instagram: @starlightumn ⁣⁣
+Instagram: @starlightumn  ⁣⁣
 LINE: @252uzsbl⁣⁣
 Web: starlight.umn.ac.id⁣⁣
 E-mail: starlight@umn.ac.id⁣⁣
-#starlightumn⁣⁣ #extendyourlight⁣⁣ #carnival</textarea>
+#StarlightUMN #Extendyourlight</textarea>
                         </div>
                     </div>
                 </div>
@@ -82,9 +83,10 @@ E-mail: starlight@umn.ac.id⁣⁣
 
         const img = new Image();
         const APP_URL = {!! json_encode(url('/')) !!}
-        img.src = `${APP_URL}/images/gallery/twibbon_venicea.png`;
+        img.src = `${APP_URL}/images/gallery/twibbon_mardigras.png`;
         const photo = document.getElementById('photo');
         const min = Math.min(photo.width, photo.height);
+        console.log(photo.width, photo.height);
 
         const canvas = document.getElementById('canvas');
         canvas.width = photo.width;
@@ -133,8 +135,8 @@ E-mail: starlight@umn.ac.id⁣⁣
                 const photo = document.createElement('canvas');
                 photo.width = 1000;
                 photo.height = 1000;
-                photo.getContext('2d').drawImage(canvas, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
-                photo.getContext('2d').drawImage(img, 0, 0, 1000, 1000, 0, 0, 1000, 1000);
+                photo.getContext('2d').drawImage(canvas, 0, 0, 1000, 1000);
+                photo.getContext('2d').drawImage(img, 0, 0, 1000, 1000);
                 photo.toBlobHD((blob) => {
                     saveAs(blob, "Twibbon Starlight 2020.png");
                 }, "image/png");

@@ -15,37 +15,37 @@
     <div style="margin-top:100px;text-align:center;">
         <h1 class="f-carneval wow fadeInUp" style="letter-spacing: 5px;font-size: 55px;">TWIBBON STARLIGHT 2020</h1>
         <div class="mt-5">
-            <h5 class="text-white wow fadeInUp">ONE STEP CLOSER TO BE A VERGILIA!🌟</h5>
+            <h5 class="text-white wow fadeInUp">The wait is over, Mardi Gras Stage is ready for you!</h5>
             <hr class="bg-white wow fadeInUp">
             <p class="text-white wow fadeInUp">
-                Tunjukkan dirimu sebagai vergilia dalam first stage Starlight 2020 “VENICEA”🎪 dengan menggunakan twibbon di bawah ini kemudian unggah ke Instagram-mu!✨ Semangat! ✨
+                The journey begins now ‼️ Call for everyone to join the fun by posting this twibbon on your Instagram page and get ready for the show 🎭 Best of luck, Vergilia!
             </p>
         </div>
         <div class="mt-3">
             <div class="polaroid-wrapper">
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_venicea_drea.jpg') }}">
+                        <img src="{{ asset('images/gallery/twibbon_mardigras_gia.png') }}">
                     </div>
                 </div>
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_venicea_brenda.jpg') }}">
+                        <img src="{{ asset('images/gallery/twibbon_mardigras_figo.png') }}">
                     </div>
                 </div>
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_venicea_rekha.jpg') }}">
+                        <img src="{{ asset('images/gallery/twibbon_mardigras_winola.png') }}">
                     </div>
                 </div>
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_venicea_adit.jpg') }}">
+                        <img src="{{ asset('images/gallery/twibbon_mardigras_steph.png') }}">
                     </div>
                 </div>
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_venicea_theo.jpg') }}">
+                        <img src="{{ asset('images/gallery/twibbon_mardigras_cevo.png') }}">
                     </div>
                 </div>
             </div>

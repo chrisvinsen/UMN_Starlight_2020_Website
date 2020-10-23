@@ -1,7 +1,7 @@
 let current_date = new Date();
 
 let venicea_start = new Date(2020, 7, 31); // 31 Agustus 2020
-let venicea_end = new Date(2020, 9, 10); // 10 Oktober 2020
+let venicea_end = new Date(2020, 9, 21); // 20 Oktober 2020
 let mardi_gras = new Date(2020, 10, 6) // 6 November 2020
 let rio_de_janeiro = new Date(2020, 10, 21) // 21 November 2020
 

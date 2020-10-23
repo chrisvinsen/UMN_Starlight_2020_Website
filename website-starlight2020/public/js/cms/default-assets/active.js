@@ -228,7 +228,7 @@ $(document).ready(function($){
         let current_date = new Date();
 
         let venicea_start = new Date(2020, 7, 31); // 31 Agustus 2020
-        let venicea_end = new Date(2020, 9, 11); // 10 Oktober 2020
+        let venicea_end = new Date(2020, 9, 21); // 20 Oktober 2020
         let mardi_gras = new Date(2020, 10, 6) // 6 November 2020
         let rio_de_janeiro = new Date(2020, 10, 21) // 21 November 2020
 
@@ -237,7 +237,7 @@ $(document).ready(function($){
         if (current_date < venicea_start) {
             use_date = '2020/08/31'; 
         } else if (current_date < venicea_end) {
-            use_date = '2020/10/10 23:59:59'; 
+            use_date = '2020/10/20 23:59:59'; 
         } else if (current_date < mardi_gras) {
             use_date = '2020/11/06'; 
         } else if (current_date < rio_de_janeiro) {
