@@ -25,6 +25,8 @@ Route::get('/event','CMSController@event')->name('event');
 
 Route::get('/email','CMSController@email')->name('email');
 
+Route::get('/vote','CMSController@vote')->name('vote');
+
 Route::group(['prefix'=>'registration'], function(){
 	Route::get('','RegistrationController@index')->name('registration');
 	Route::post('/post', 'RegistrationController@registrationPost')->name('registrationPost');
