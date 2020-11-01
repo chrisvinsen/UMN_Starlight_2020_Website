@@ -64,7 +64,6 @@
     width: 100%; 
     height: 100%; 
     z-index: -1;
-    display:none;
 }
 .f-carneval{
     font-size: 55px;
@@ -235,7 +234,6 @@
 .results-success, .results-fail, .results-pending {
     margin-top: 240px;
     text-align: center;
-    display: none;
 }
 
 
