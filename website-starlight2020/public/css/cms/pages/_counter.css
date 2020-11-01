@@ -32,13 +32,13 @@
          font-size: 14px;
     }
 }
- .about-us-countdown-area .countdown-up-area .countdown-timer #clock {
+.about-us-countdown-area .countdown-up-area .countdown-timer #clock, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers {
      display: flex;
      align-items: center;
      justify-content: center;
      color: #fff;
 }
- .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+ .about-us-countdown-area .countdown-up-area .countdown-timer #clock div, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div {
      font-size: 62px;
      font-weight: 600;
      padding: 20px 5px;
@@ -49,29 +49,29 @@
      line-height: 1;
 }
  @media only screen and (min-width:992px) and (max-width:1199px) {
-     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div {
          font-size: 42px;
          margin: 0 10px;
     }
 }
  @media only screen and (min-width:768px) and (max-width:991px) {
-     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div {
          font-size: 36px;
          margin: 0 5px;
     }
 }
  @media only screen and (max-width:767px) {
-     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div {
          font-size: 16px;
          margin: 0 2px;
     }
 }
  @media only screen and (max-width:767px) {
-     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div {
          font-size: 24px;
     }
 }
- .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+ .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div span {
      margin-top: 5px;
      font-size: 18px;
      color: #5d5e8d;
@@ -79,22 +79,22 @@
      display: block;
 }
  @media only screen and (min-width:992px) and (max-width:1199px) {
-     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div span {
          font-size: 16px;
     }
 }
  @media only screen and (min-width:768px) and (max-width:991px) {
-     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div span {
          font-size: 14px;
     }
 }
  @media only screen and (max-width:767px) {
-     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div span {
          font-size: 10px;
     }
 }
  @media only screen and (max-width:767px) {
-     .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+    .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div span {
          font-size: 12px;
     }
 }

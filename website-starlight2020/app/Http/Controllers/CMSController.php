@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\DataUmum;
 use Response;
 use DB;
 use Mail;
@@ -46,6 +47,15 @@ class CMSController extends Controller
         $nav_menu = "event";
         
         return view('cms.event', compact('title', 'nav_menu'));
+        
+    }
+
+    public function vote(){
+        $title = "Voting Stellar";
+        $nav_menu = "Voting Stellar";
+        $stagename_list = DataUmum::get();
+        
+        return view('cms.vote', compact('title', 'nav_menu', 'stagename_list'));
         
     }
 }
