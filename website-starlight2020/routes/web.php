@@ -25,7 +25,12 @@ Route::get('/event','CMSController@event')->name('event');
 
 Route::get('/email','CMSController@email')->name('email');
 
-Route::get('/vote','CMSController@vote')->name('vote');
+
+Route::group(['prefix'=>'vote'], function(){
+	Route::get('/','VotingStellarController@index')->name('vote');
+	Route::post('post', 'VotingStellarController@storeVoteData')->name('vote.store');
+	Route::post('check', 'VotingStellarController@checkVotedData')->name('vote.check');
+});
 
 Route::group(['prefix'=>'registration'], function(){
 	Route::get('','RegistrationController@index')->name('registration');
