@@ -39,11 +39,16 @@
     .hover-effect.grayscale.active {
         filter: grayscale(0%) !important;
     }
-
-    .hover-effect.active .normal-image {
+    .hover-effect.grayscale .hover-image {
+        display: none !important
+    }
+    .hover-effect.grayscale .normal-image {
+        display: block !important
+    }
+    .hover-effect.grayscale.active .normal-image {
         display: none !important;
     }
-    .hover-effect.active .hover-image {
+    .hover-effect.grayscale.active .hover-image {
         display: block !important;
     }
     @media(max-width:990px){

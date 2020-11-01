@@ -43,7 +43,36 @@ class CreatePesertaStellarTable extends Migration
                 'images'       => 'images/voting-stellar/peserta4.png',
                 'images_hover' => 'images/voting-stellar/peserta4_hover.png',
             ],
-            
+            [
+                'name'         => 'peserta5',
+                'images'       => 'images/voting-stellar/peserta5.png',
+                'images_hover' => 'images/voting-stellar/peserta5_hover.png',
+            ],
+            [
+                'name'         => 'peserta6',
+                'images'       => 'images/voting-stellar/peserta6.png',
+                'images_hover' => 'images/voting-stellar/peserta6_hover.png',
+            ],
+            [
+                'name'         => 'peserta7',
+                'images'       => 'images/voting-stellar/peserta7.png',
+                'images_hover' => 'images/voting-stellar/peserta7_hover.png',
+            ],
+            [
+                'name'         => 'peserta8',
+                'images'       => 'images/voting-stellar/peserta8.png',
+                'images_hover' => 'images/voting-stellar/peserta8_hover.png',
+            ],
+            [
+                'name'         => 'peserta9',
+                'images'       => 'images/voting-stellar/peserta9.png',
+                'images_hover' => 'images/voting-stellar/peserta9_hover.png',
+            ],
+            [
+                'name'         => 'peserta10',
+                'images'       => 'images/voting-stellar/peserta10.png',
+                'images_hover' => 'images/voting-stellar/peserta10_hover.png',
+            ],
         ]);
     }
 
