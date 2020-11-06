@@ -126,7 +126,7 @@
             <div class="swiper-slide-content"><span class="timeline-year">GRAND OPENING</span>
               <h4 class="timeline-title f-carneval text-white mb-2">CARIBANA</h4>
               <p class="timeline-text">
-                Perjalanan Starlight 2020 akan dimulai dengan adanya Grand Opening yang bernama Caribana. Caribana akan dilaksanakan selama 2 hari, yaitu pada hari Senin, 31 Agustus 2020 dan Rabu, 2 September 2020. Caribana akan menampilkan performers yang berasal dari Starlight 2019 sebagai pembukaan dari Starlight 2020. Selain itu, terdapat acara mini talkshow yang berdurasi kurang lebih 20 menit per-harinya. Mini Talkshow ini dinamakan dengan Stargazing, yaitu pembahasan mengenai bagaimana generasi muda dapat mencari dan memperdalam talenta dalam diri melalui motivasi dari narasumber. Dengan memiliki 2 tema yang berbeda yaitu “Ignite Your Light with (narasumber)” untuk hari pertama dan bertema “How to Extend Your Light with (narasumber)” untuk hari kedua.
+              Perjalanan Starlight 2020 akan dimulai dengan adanya Grand Opening yang bernama Caribana. Caribana akan dilaksanakan selama 2 hari, yaitu pada hari Senin, 31 Agustus 2020 dan Rabu, 2 September 2020. Caribana akan menampilkan performers yang berasal dari Starlight 2019 sebagai pembukaan dari Starlight 2020. Selain itu, terdapat acara mini talkshow yang berdurasi kurang lebih 20 menit per-harinya. Mini Talkshow ini dinamakan dengan Stargazing, yaitu pembahasan mengenai bagaimana generasi muda dapat mencari dan memperdalam talenta dalam diri melalui motivasi dari narasumber. Dengan memiliki 2 tema yang berbeda yaitu "Ignite Your Light with Raynaldo Wijaya" untuk hari pertama dan bertema "How to Extend Your Light with Bimo Kusumo" untuk hari kedua.
                 </p>
             </div>
           </div>
@@ -134,7 +134,7 @@
             <div class="swiper-slide-content"><span class="timeline-year">FIRST STAGE</span>
               <h4 class="timeline-title f-carneval text-white mb-2">VENICEA</h4>
               <p class="timeline-text">
-                Venicea Stage merupakan tahap awal bagi para calon peserta Starlight 2020 yang menggunakan media sosial Instagram sebagai salah satu persyaratan untuk mendaftarkan diri. Tahap ini dimulai dari para peserta mendaftarkan diri dan mengumpulkan hasil karyanya dalam bentuk video. Seleksi di dalam tahap Venicea Stage dilakukan oleh para panitia Starlight 2020 beserta beberapa perwakilan dari pihak Universitas Multimedia Nusantara. Pada tahap ini, terdapat 30 peserta sebagai target yang ditetapkan oleh panitia Starlight 2020.
+              Venicea Stage merupakan tahap awal bagi para calon peserta Starlight 2020 yang menggunakan media sosial Instagram sebagai salah satu persyaratan untuk mendaftarkan diri. Tahap ini dimulai dari para peserta mendaftarkan diri dan mengumpulkan hasil karyanya dalam bentuk video. Seleksi di dalam tahap Venicea Stage dilakukan oleh para panitia Starlight 2020 yang berkompeten di bidangnya. Pada tahap ini, terdapat 20 peserta sebagai target yang ditetapkan oleh panitia Starlight 2020.
               </p>
             </div>
           </div>
@@ -142,8 +142,8 @@
             <div class="swiper-slide-content"><span class="timeline-year">SECOND STAGE</span>
               <h4 class="timeline-title f-carneval text-white mb-2">MARDI GRAS</h4>
               <p class="timeline-text">
-              Sebelum melaksanakan Mardi Gras Stage, terdapat Technical Meeting untuk membahas keberlangsungan acara dan peraturan serta regulasi untuk peserta lomba. Panitia berharap agar acara Starlight 2020 dapat dipandang sebagai ajang lomba yang adil dan jujur. Oleh karena itu, kami mengundang lima juri dari pihak eksternal atau internal UMN. Juri yang didatangkan merupakan juri yang memang sudah ahli dengan bidangnya dan sudah berpengalaman. <br><br>
-              Media yang digunakan dalam Mardi Gras Stage berupa YouTube Live, dan akan menggunakan sistem Live Recorded. Pada tahap ini, terdapat 15 peserta/tim yang akan menampilkan bakatnya. Kemudian peserta tersebut akan diseleksi untuk lolos ke tahap selanjutnya yaitu, Rio de Janeiro Stage.
+              Sebelum melaksanakan Mardi Gras Stage, terdapat Technical Meeting untuk membahas keberlangsungan acara dan peraturan serta regulasi untuk peserta lomba. Panitia berharap agar acara Starlight 2020 dapat dipandang sebagai ajang lomba yang adil dan jujur. Oleh karena itu, kami mengundang lima juri dari pihak eksternal maupun internal UMN. Juri yang didatangkan merupakan juri yang memang sudah ahli dengan bidangnya dan sudah berpengalaman<br><br>
+              5 juri kami adalah Aulion, Jojo Anito, Gerry Anake, Mutiara Farhana, dan Mutiara Bertha. Media yang digunakan dalam Mardi Gras Stage berupa YouTube Live. Pada tahap ini, terdapat 15 Vergilia yang akan menampilkan bakatnya. Kemudian peserta tersebut akan diseleksi oleh juri untuk lolos ke tahap selanjutnya yaitu, Rio de Janeiro Stage.
 
               </p>
             </div>
@@ -152,8 +152,9 @@
             <div class="swiper-slide-content"><span class="timeline-year">FINAL STAGE</span>
               <h4 class="timeline-title f-carneval text-white mb-2">RIO DE JANEIRO</h4>
               <p class="timeline-text">
-              Rio de Janeiro Stage (Final Stage) merupakan acara puncak dari Starlight 2020 di mana semua peserta yang telah lolos hingga tahap ini akan menunjukkan penampilannya di panggung Starlight 2020. Sebelum melaksanakan Rio de Janeiro Stage, terdapat Technical Meeting untuk membahas keberlangsungan acara dan peraturan serta regulasi untuk peserta lomba. Media yang digunakan dalam Rio de Janeiro Stage sendiri berupa YouTube Live, dan akan menggunakan sistem Live Recorded. <br><br>
-              Rangkaian acara Rio de Janeiro dibuka dengan adanya kata sambutan dari ketua Starlight 2020 hingga beberapa tamu undangan untuk mengawali keberlangsungan acara. Kemudian 10 peserta/tim yang telah dinyatakan lolos dari Mardi Gras Stage akan memberikan penampilannya berupa video. Selama Rio de Janeiro Stage, akan diumumkan dan diberikan penghargaan kepada para pemenang, sesuai dengan keputusan juri, panitia, serta penonton dengan hak suara mereka dalam mendukung peserta pilihannya. Juri yang terdapat di Rio de Janeiro Stage, merupakan juri yang juga berada di Mardi Gras Stage.
+              Rio de Janeiro Stage (Final Stage) merupakan acara puncak dari Starlight 2020 di mana semua peserta yang telah lolos hingga tahap ini akan menunjukkan penampilannya di panggung Starlight 2020. Sebelum melaksanakan Rio de Janeiro Stage, terdapat Technical Meeting untuk membahas keberlangsungan acara dan peraturan serta regulasi untuk peserta lomba. Media yang digunakan dalam Rio de Janeiro Stage sendiri berupa You Tube Live.<br><br>
+              Rangkaian acara Rio de Janeiro dibuka dengan adanya kata sambutan dari ketua Starlight 2020 hingga beberapa tamu undangan untuk mengawali keberlangsungan acara. Kemudian 10 Vergilia yang telah dinyatakan lolos dari Mardi Gras Stage akan memberikan penampilannya berupa video.<br><br>
+              Selama Rio de Janeiro Stage, akan diumumkan dan diberikan penghargaan kepada para pemenang, sesuai dengan keputusan juri, panitia, serta penonton dengan hak suara mereka dalam mendukung peserta pilihannya. Selain itu, juri yang terdapat di Rio de Janeiro Stage, merupakan juri yang juga sama di Mardi Gras Stage.
               </p>
             </div>
           </div>
