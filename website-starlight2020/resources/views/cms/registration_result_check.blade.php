@@ -20,16 +20,16 @@
         background-position: center;
     }
     h1 {
-        font-size: calc(20px + 2vw) !important;
+        font-size: calc(11px + 1.5vw) !important;
     }
     h2 {
-        font-size: calc(16px + 1.25vw) !important;
+        font-size: calc(9px + 1.25vw) !important;
     }
     h3 {
-        font-size: calc(14px + 1vw) !important;
+        font-size: calc(7px + 1vw) !important;
     }
     .custom-font-size {
-        font-size: calc(14px + 1vw) !important;
+        font-size: calc(6px + 1vw) !important;
     }
 </style>
 @endsection
@@ -38,7 +38,7 @@
 <div id="main">
     <div class="results-success-video @if (session('msg') != 'success') d-none @endif">
         <!--Taro VIDEO LOLOS-->
-        <video id="video" src="{{ asset('images/bg-img/l_rio.mp4') }}"  no-controls autoplay loop style="object-fit:cover; width:100%; height:100%">
+        <video id="video" src="{{ asset('images/bg-img/l_rio1.mp4') }}"  no-controls autoplay loop style="object-fit:cover; width:100%; height:100%">
             ....
         </video>
     </div>
@@ -125,16 +125,15 @@
     var successContent1 = "Dear Vergilia, this is your captain speaking. Para Vergilia yang terhormat, ini kapten yang berbicara";
     var successContent2 = "On behalf of the entire crew, we would like to congrulate you for your incredible performance through the Mardi Grass Stage";
     var successContent3 = "Atas nama seluruh awak pesawat yang bertugas, kami mengucapkan selamat atas penampilan Anda yang luar biasa pada panggung Mardi Grass. Kami juga menyambut Anda untuk bergabung menuju destinasi selanjutnya, Rio De Janeiro!";
-    var successContent4 = "As we continue our journey, please prepare your belongings, fasten your seatbelts, and be ready for take off. Thankyou for flying with Starlight Airlines.";    
-    var successContent5 = "Sembari melanjutkan perjalanan, para penumpang diperkenankan untuk mempersiapkan barang-barang pribadi,";    
-    var successContent6 = "mengencangkan sabuk pengaman, dan bersiap untuk lepas landas.";   
-    var successContent7 = "Terimakasih atasp pilihan Anda untuk terbang bersama Starlight Airlines";
-    var eleSuccess = "<h2 style='color:white;word-wrap: break-word;'>" + successContent1.split("").join("</h2><h2 style='color:white;word-wrap: break-word;'>") + "<br>" + successContent2.split("").join("</h2><h2 style='color:white;word-wrap: break-word;'>") + "<br><br>" +  successContent3.split("").join("</h2><h3 style='color:white;margin-top:17px;'>") + "<br>" + successContent4.split("").join("</h3><h3 style='color:white;margin-top:17px;'>") + "</h3>";
+    var successContent4 = "As we continue our journey, please prepare your belongings, fasten your seatbelts, and be ready for take off.Thankyou for flying with Starlight Airlines. Sembari melanjutkan perjalanan, para penumpang diperkenankan untuk mempersiapkan barang-barang pribadi, mengencangkan sabuk pengaman, dan bersiap untuk lepas landas.Terimakasih atas pilihan Anda untuk terbang bersama Starlight Airlines";    
+    // var successContent5 = "Sembari melanjutkan perjalanan, para penumpang diperkenankan untuk mempersiapkan barang-barang pribadi, mengencangkan sabuk pengaman, dan bersiap untuk lepas landas.";    
+    // var successContent6 = "Terimakasih atasp pilihan Anda untuk terbang bersama Starlight Airlines";
+    var eleSuccess = "<h2 style='background-color:#000000;color:white;word-wrap: break-word;'>" + successContent1.split("").join("</h2><h2 style='background-color:#000000;color:white;word-wrap: break-word;'>") + "<br>" + successContent2.split("").join("</h2><h2 style='background-color:#000000;color:white;word-wrap: break-word;'>") + "<br><br>" +  successContent3.split("").join("</h2><h3 style='background-color:#000000;color:white;margin-top:17px;'>") + "<br>" + successContent4.split("").join("</h3><h3 style='background-color:#000000;color:white;margin-top:17px;'>") + "</h3>";
     $(eleSuccess).hide().appendTo(".results-success-content").each(function (i) {
-        $(this).delay(70 * i).css({
+        $(this).delay(65 * i).css({
             display: "inline",
             opacity: 0
-        }).animate( {opacity: 1}, 100);
+        }).animate( {opacity: 1}, 120);
     });
     $(".joingrouplink").fadeIn(3000);
 </script>
