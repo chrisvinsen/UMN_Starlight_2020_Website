@@ -6,7 +6,7 @@
 <style>
     #main {
         @if (session('msg')=='fail')  
-            background: url("{{ asset('images/bg-img/background_6.jpg') }}");
+            background: url("{{ asset('images/bg-img/gl_rio.jpg') }}");
             background-position: right !important;
             height: 100vh;
         @elseif (session('msg') == 'success')
@@ -37,7 +37,8 @@
 @section('content')
 <div id="main">
     <div class="results-success-video @if (session('msg') != 'success') d-none @endif">
-        <video id="video" src="{{ asset('images/bg-img/background_7.mp4') }}" muted no-controls autoplay loop style="object-fit:cover; width:100%; height:100%">
+        <!--Taro VIDEO LOLOS-->
+        <video id="video" src="{{ asset('images/bg-img/l_rio.mp4') }}"  no-controls autoplay loop style="object-fit:cover; width:100%; height:100%">
             ....
         </video>
     </div>
@@ -85,7 +86,7 @@
                 </div>
             </div> -->
             <div class="results-success-content"></div>
-            <a class="btn starlight-btn mt-4 joingrouplink" href="{{ session('link') }}" style="display:none;"> Join Line Group <i class="fab fa-line"></i></a>
+            <!-- <a class="btn starlight-btn mt-4 joingrouplink" href="{{ session('link') }}" style="display:none;"> Join Line Group <i class="fab fa-line"></i></a> -->
         </div>
         <div class="results-fail @if (session('msg') != 'fail') d-none @endif">
         </div>
@@ -105,9 +106,10 @@
 @if (session('msg')=='fail')
 <script>
     //Typewriter on fail
-    var failContent1 = "Dear Vergilia, on behalf of the entire citizen,";
-    var failContent2 = "we regret to inform you that this marks the end of your journey."
-    var failContent3 = "We sincerely thank you for your tremendous effort in extending your light and sharing it with us ";
+    var failContent1 = "Vergilia yang terhormat, Mewakili seluruh penduduk Planet Starlight";
+    var failContent2 = "Kami memohon maaf karena ini adalah akhir dari perjalanan Anda."
+    var failContent3 = "Kami berterimakasih atas usaha kalian yang luar biasa";
+    var failContent4 = "dalam mengembangkan cahaya Anda dan membagikannya dengan kami.";
     var eleFail = "<h2 style='color:white;'>" + failContent1.split("").join("</h2><h2 style='color:white;'>") + "<br>" + "<h2 style='color:white;'>" + failContent2.split("").join("</h2><h2 style='color:white;'>") + "<br><br>" + "<h2 style='color:white;'>" + failContent3.split("").join("</h2><h2 style='color:white;'>") + "</h2>";
     $(eleFail).hide().appendTo(".results-fail").each(function (i) {
         $(this).delay(70 * i).css({
@@ -120,10 +122,13 @@
 @if (session('msg')=='success')
 <script>
     //Typewriter on success
-    var successContent1 = "Arise Vergilia!";
-    var successContent2 = "Congratulations, {{ session('name') }}!"
-    var successContent3 = " You are now one step closer to winning the title of Sirius!";
-    var successContent4 = "So, put on your seatbelts as we rise through the skies, to the land of Mardi Gras";
+    var successContent1 = "Dear Vergilia, this is your captain speaking. Para Vergilia yang terhormat, ini kapten yang berbicara";
+    var successContent2 = "On behalf of the entire crew, we would like to congrulate you for your incredible performance through the Mardi Grass Stage";
+    var successContent3 = "Atas nama seluruh awak pesawat yang bertugas, kami mengucapkan selamat atas penampilan Anda yang luar biasa pada panggung Mardi Grass. Kami juga menyambut Anda untuk bergabung menuju destinasi selanjutnya, Rio De Janeiro!";
+    var successContent4 = "As we continue our journey, please prepare your belongings, fasten your seatbelts, and be ready for take off. Thankyou for flying with Starlight Airlines.";    
+    var successContent5 = "Sembari melanjutkan perjalanan, para penumpang diperkenankan untuk mempersiapkan barang-barang pribadi,";    
+    var successContent6 = "mengencangkan sabuk pengaman, dan bersiap untuk lepas landas.";   
+    var successContent7 = "Terimakasih atasp pilihan Anda untuk terbang bersama Starlight Airlines";
     var eleSuccess = "<h2 style='color:white;word-wrap: break-word;'>" + successContent1.split("").join("</h2><h2 style='color:white;word-wrap: break-word;'>") + "<br>" + successContent2.split("").join("</h2><h2 style='color:white;word-wrap: break-word;'>") + "<br><br>" +  successContent3.split("").join("</h2><h3 style='color:white;margin-top:17px;'>") + "<br>" + successContent4.split("").join("</h3><h3 style='color:white;margin-top:17px;'>") + "</h3>";
     $(eleSuccess).hide().appendTo(".results-success-content").each(function (i) {
         $(this).delay(70 * i).css({
