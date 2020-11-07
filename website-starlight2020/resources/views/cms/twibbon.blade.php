@@ -15,37 +15,38 @@
     <div style="margin-top:100px;text-align:center;">
         <h1 class="f-carneval wow fadeInUp" style="letter-spacing: 5px;font-size: 55px;">TWIBBON STARLIGHT 2020</h1>
         <div class="mt-5">
-            <h5 class="text-white wow fadeInUp">The wait is over, Mardi Gras Stage is ready for you!</h5>
+            <h5 class="text-white wow fadeInUp">Do you believe in magic? <br>
+            <p class="text-white wow fadeInUp">Even if you don't, prepare to be enchanted in the amazing Rio de Janeiro!</p></h5>
             <hr class="bg-white wow fadeInUp">
             <p class="text-white wow fadeInUp">
-                The journey begins now ‼️ Call for everyone to join the fun by posting this twibbon on your Instagram page and get ready for the show 🎭 Best of luck, Vergilia!
+            We are nearing the end of your journey with Planet Starlight! Let's celebrate together by simply posting this twibbon on your Instagram page and get ready for the biggest carnival 🎉 Make 'em go wow, Vergilia! ⭐️
             </p>
         </div>
         <div class="mt-3">
             <div class="polaroid-wrapper">
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_mardigras_gia.png') }}">
+                        <img src="{{ asset('images/gallery/twibbon_rio_1.png') }}">
                     </div>
                 </div>
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_mardigras_figo.png') }}">
+                        <img src="{{ asset('images/gallery/twibbon_rio_2.png') }}">
                     </div>
                 </div>
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_mardigras_winola.png') }}">
+                        <img src="{{ asset('images/gallery/twibbon_rio_3.png') }}">
                     </div>
                 </div>
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_mardigras_steph.png') }}">
+                        <img src="{{ asset('images/gallery/twibbon_rio_4.png') }}">
                     </div>
                 </div>
                 <div class="item">
                     <div class="polaroid wow fadeInUp">
-                        <img src="{{ asset('images/gallery/twibbon_mardigras_cevo.png') }}">
+                        <img src="{{ asset('images/gallery/twibbon_rio_5.png') }}">
                     </div>
                 </div>
             </div>

@@ -37,22 +37,26 @@
                     <h3 class="text-white mb-4 wow fadeInUp"> Silahkan Gunakan Caption ini: </h3>
                         <div class="paper wow fadeInUp">
                             <div class="paper-content">
-                                <textarea id="caption" readonly>Wherever else, it's just a regular Friday, but on Planet Starlight, it's Mardi Gras! 🎭
+                                <textarea id="caption" readonly>Prepare yourself for the biggest carnival & the final stage of Starlight 2020, Rio de Janeiro! 
+From top of the mountains to the sea—
+everywhere is a carnival, you'll see!
 
-Hello, Starlighters!
-I'm [name], and I'm inviting you to come celebrate the second stage of Starlight 2020, Mardi Gras!
+Olá, Starlighters!
 
-📅 Friday, 6 November 2020 Pk 19.00 WIB
+I'm [name], and I'm inviting you to witness the rise of Sirius in Rio de janeiro Stage! 
+
+📅 Saturday, 21 November 2020
+⏰ 19.00 WIB
 🎪 Starlight UMN's YouTube channel
 
-—⁣⁣
-Starlight!⁣⁣ Extend Your Light 💫⁣⁣
+See you there, ADIOS 👋🏼
+
 —⁣⁣
 Instagram: @starlightumn  ⁣⁣
 LINE: @252uzsbl⁣⁣
 Web: starlight.umn.ac.id⁣⁣
 E-mail: starlight@umn.ac.id⁣⁣
-#StarlightUMN #Extendyourlight</textarea>
+#StarlightUMN #ExtendYourLight</textarea>
                         </div>
                     </div>
                 </div>
@@ -83,7 +87,7 @@ E-mail: starlight@umn.ac.id⁣⁣
 
         const img = new Image();
         const APP_URL = {!! json_encode(url('/')) !!}
-        img.src = `${APP_URL}/images/gallery/twibbon_mardigras.png`;
+        img.src = `${APP_URL}/images/gallery/twibbon_rio.png`;
         const photo = document.getElementById('photo');
         const min = Math.min(photo.width, photo.height);
         console.log(photo.width, photo.height);
