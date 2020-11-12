@@ -1,0 +1,54 @@
+.kotak-dalam{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.kotak{
+    text-align : center
+
+}
+
+@font-face {
+    font-family: 'orange-juice';
+    src: url( '../../fonts/Orange-Juice.ttf' ) format('truetype') ;
+}
+
+.title{
+    font-family : 'orange-juice';
+    font-weight : 500
+}
+
+.text-atas{
+    font-size : 25pt;
+    color : rgb(153, 39, 31);
+    line-height : 0.8;
+}
+
+.text-bawah {
+    font-size : 45pt;
+    color :  rgb(254, 63, 52);
+    line-height : 0.8;
+
+}
+.juara-1{
+    font-size : 25pt;
+    color : rgb(89, 221, 246);
+}
+
+.juara-2{
+    font-size : 25pt;
+    color :  rgb(1, 95, 42);
+}
+
+.juara-3{
+    font-size : 25pt;
+    color : rgb(254, 63, 52);
+}
+
+body{
+    background-color:  rgb(255, 243, 227);
+}
