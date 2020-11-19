@@ -124,7 +124,7 @@
                                     {{Str::limit($peserta->name, 20)}}
                                 </span>
                             </div>
-                            <button id="{{$peserta->id}}-{{$peserta->name}}" class="btn vote-btn mt-3 voteButton vote-btnbfr" style="width: 80%;"><div class="voteText">Vote</div></button>
+                            <button id="{{$peserta->id}}--{{$peserta->name}}" class="btn vote-btn mt-3 voteButton vote-btnbfr" style="width: 80%;"><div class="voteText">Vote</div></button>
                         </div>
                     </div>
                 </div>
@@ -159,9 +159,10 @@
 
     $(".voteButton").click(function(){
         id_name = $(this).attr('id');
-        id_name_split = id_name.split('-');
+        id_name_split = id_name.split('--');
         id = id_name_split[0];
         name = id_name_split[1];
+        name = name.replace(' ', '');
         base_url = "{{asset('images/voting-stellar')}}";
 
         currentThis = $(this);
