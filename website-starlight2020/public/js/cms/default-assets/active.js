@@ -246,9 +246,6 @@ $(document).ready(function($){
             use_date = '2020/01/01'; // 31 Desember 2020
         }
 
-        $(".clockOthers").countdown(use_date, function (event) {
-            $(this).html(event.strftime("<div>%w <span>Weeks</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
-        });
         $("#clock").countdown(use_date, function (event) {
             $(this).html(event.strftime("<div>%w <span>Weeks</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
         });

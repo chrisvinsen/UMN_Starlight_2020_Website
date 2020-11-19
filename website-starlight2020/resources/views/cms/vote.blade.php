@@ -37,6 +37,7 @@
         filter: grayscale(100%);
     }
     .hover-effect.grayscale.active {
+        transform: scale(1.1);
         filter: grayscale(0%) !important;
     }
     .hover-effect.grayscale .hover-image {
@@ -70,6 +71,10 @@
             background-image: url("{{ asset('images/bg-img/leaf_left.png') }}")!important;
         }
     }
+
+    .clockOthers.color-white span {
+        color: white !important;
+    }
 </style>
 @endsection
 @section('content')
@@ -94,18 +99,21 @@
                         <div class="col-12 col-md-3 text-center mb-3">
                             <!-- Countdown Text -->
                             <div class="countdown-content-text mb-10" data-wow-delay="300ms">
-                                <h6>Countdown Voting Stellar</h6>
+                                <h6 class="countdown-text">Countdown Voting Stellar</h6>
                                 <!-- <h4 style="color: #270000">Countdown Voting Stellar</h4> -->
                             </div>
                         </div>
 
                         <div class="col-12 col-md-9 mb-4">
                             <div class="countdown-timer mb-10" data-wow-delay="300ms">
-                                <div id="clock"></div>
+                                <div class="clockOthers color-white"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="button-announcement" class="text-center d-none py-3">
+                <a href="#" class="btn starlight-btn mt-3 mt-lg-0 ml-3 ml-lg-5"> Check the Winners NOW! <i class="fas fa-angle-right"></i> </a>
             </div>
         </div>
 
@@ -140,7 +148,40 @@
     let clientIP = "";
     $(document).ready(function() {
         handleVotedStellar();
+
+        let current_date = new Date();
+
+        let stellar_end = new Date(2020, 10, 21, 22, 0, 0) // 21 November 2020
+        let stellar_announcement = new Date(2020, 10, 21, 23, 0 ,0) // 21 November 2020
+
+        let use_date;
+
+        if (current_date < stellar_end) {
+            use_date = '2020/11/21 22:00:00'; 
+            $(".countdown-text").text("Voting Stellar Ends");
+        } else if (current_date < stellar_announcement) {
+            use_date = '2020/11/21 23:00:00'; 
+            $(".countdown-text").text("Announcement of Sirius");
+        } 
+
+        if (current_date < stellar_announcement) {
+            $(".clockOthers").countdown(use_date, function (event) {
+                $(this).html(event.strftime("<div>%w <span>Weeks</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
+            });
+        } else {
+            $(".countdown-up-area").addClass("d-none");
+            $("#button-announcement").removeClass("d-none");
+        }
+
+            
+        // $("#clock").countdown(use_date, function (event) {
+        //     $(this).html(event.strftime("<div>%w <span>Weeks</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
+        // });
+
+
     })
+
+
     // $(".card-img-top").on({
     //     "mouseover" : function() {
     //         this.src = "{{asset('images/gallery/twibbon_venicea.png')}}";
@@ -162,13 +203,13 @@
         id_name_split = id_name.split('--');
         id = id_name_split[0];
         name = id_name_split[1];
-        name = name.replace(' ', '');
+        name_nospace = name.replace(' ', '');
         base_url = "{{asset('images/voting-stellar')}}";
 
         currentThis = $(this);
 
         swalWithBootstrapButtons.fire({
-            imageUrl: base_url + "/" + name + "_hover.png",
+            imageUrl: base_url + "/" + name_nospace + "_hover.png",
             title: 'You fully support ' + name + ' in becoming Stellar?',
             imageWidth: 250,
             showCancelButton: true,
@@ -237,7 +278,7 @@
         swalWithBootstrapButtons.fire({
             icon: 'success',
             title: 'Thank you for casting your vote!',
-            html: 'Await the revelation of Stellar on: <div class="about-us-countdown-area mt-3"><div class="countdown-up-area"><div class="container"><div class="row align-items-center"><div class="col-lg-12"><div class="countdown-timer mb-10"><div class="clockOthers" style="color:black;"><div style="font-size: 17px!important;border: 2px solid rgb(0 0 0 / 15%)!important;"> <span class="mb-10">Day</span>21</div> <div style="font-size: 17px!important;border: 2px solid rgb(0 0 0 / 15%)!important;"> <span class="mb-10">Month</span>10</div> <div style="font-size: 17px!important;border: 2px solid rgb(0 0 0 / 15%)!important;"> <span class="mb-10">Year</span>2020</div> <div style="font-size: 17px!important;border: 2px solid rgb(0 0 0 / 15%)!important;"> <span class="mb-10">Time</span>12:00</div> </div></div></div></div></div></div></div>',
+            html: 'Await the revelation of Stellar on: <div class="about-us-countdown-area mt-3"><div class="countdown-up-area"><div class="container"><div class="row align-items-center"><div class="col-lg-12 p-0 m-0"><div class="countdown-timer mb-10"><div class="clockOthers" style="color:black;"><div style="font-size: 17px;border: 2px solid rgb(0 0 0 / 15%)!important;"> <span class="mb-10">Day</span>21</div> <div style="font-size: 17px;border: 2px solid rgb(0 0 0 / 15%)!important;"> <span class="mb-10">Month</span>11</div> <div style="font-size: 17px;border: 2px solid rgb(0 0 0 / 15%)!important;"> <span class="mb-10">Year</span>2020</div> <div style="font-size: 17px;border: 2px solid rgb(0 0 0 / 15%)!important;"> <span class="mb-10">Time</span>22:00</div> </div></div></div></div></div></div></div>',
             allowEnterKey: false,
             showConfirmButton: false,
         }); 

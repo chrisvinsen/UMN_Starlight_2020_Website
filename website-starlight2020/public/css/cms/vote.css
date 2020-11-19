@@ -79,3 +79,12 @@ h5{
     background: #c7c7c7;
     background-image: none;
 }
+
+@media only screen and (max-width: 400px){
+    .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div span {
+        font-size: 10px;
+    }
+    .about-us-countdown-area .countdown-up-area .countdown-timer #clock div, .about-us-countdown-area .countdown-up-area .countdown-timer .clockOthers div {
+        font-size: 12px!important;
+    }
+}

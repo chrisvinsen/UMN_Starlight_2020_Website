@@ -46,14 +46,12 @@ class CMSController extends Controller
         $nav_menu = "event";
         
         return view('cms.event', compact('title', 'nav_menu'));
-        
     }
 
     public function announcement(){
-        $title = "Announcement";
+        $title = "Announcement of Sirius";
         $nav_menu = "announcement";
         
         return view('cms.announcement', compact('title', 'nav_menu'));
-        
     }
 }

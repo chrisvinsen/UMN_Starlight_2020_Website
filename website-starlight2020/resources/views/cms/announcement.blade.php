@@ -22,7 +22,7 @@
                         <h5 class="title wow fadeInUp juara-2" >Adara </h5>
                         <div class="kotak-dalam">
                             <img src="{{ asset('images/core-img/2.png') }}" class="nomor2">
-                            <img src="{{ asset('images/gallery/twibbon_rio_1.png') }}">
+                            <img src="{{ asset('images/voting-stellar/27.png') }}">
                         </div>
                         <h5 class="title wow fadeInUp juara-2" >Nama </h5>
                     </div>
@@ -32,7 +32,7 @@
                         <h5 class="title wow fadeInUp juara-1 mb-4" >Sirius </h5>
                         <div class="kotak-dalam">
                             <img src="{{ asset('images/core-img/1.png') }}" class="nomor1">
-                            <img src="{{ asset('images/gallery/twibbon_rio_2.png') }}">
+                            <img src="{{ asset('images/voting-stellar/27.png') }}">
                         </div>
                         <h5 class="title wow fadeInUp juara-1" >Nama </h5>
                     </div>
@@ -42,7 +42,7 @@
                         <h5 class="title wow fadeInUp juara-3" >Murzim </h5>
                         <div class="kotak-dalam">
                             <img src="{{ asset('images/core-img/3.png') }}" class="nomor3">
-                            <img src="{{ asset('images/gallery/twibbon_rio_3.png') }}">
+                            <img src="{{ asset('images/voting-stellar/27.png') }}">
                         </div>
                         <h5 class="title wow fadeInUp juara-3" >Nama </h5>
                     </div>
@@ -56,7 +56,7 @@
                         <h1 class="title wow fadeInUp text-bawah" >STELLAR </h1>
                         <div class="kotak-dalam mt-5">
                             <img src="{{ asset('images/core-img/1.png') }}" class="nomor1">
-                            <img src="{{ asset('images/gallery/twibbon_rio_1.png') }}">
+                            <img src="{{ asset('images/voting-stellar/27.png') }}">
                         </div>
                         <h5 class="title wow fadeInUp juara-1" > <span>Nama </span> </h5> 
                     </div>
@@ -67,7 +67,7 @@
                         <h1 class="title wow fadeInUp text-bawah" >CASIOPEIA </h1>
                         <div class="kotak-dalam mt-5">
                             <img src="{{ asset('images/core-img/1.png') }}" class="nomor1"> 
-                            <img src="{{ asset('images/gallery/twibbon_rio_2.png') }}">
+                            <img src="{{ asset('images/voting-stellar/27.png') }}">
                         </div>
                         <h5 class="title wow fadeInUp juara-1" ><span>Nama </span> </h5>
                     </div>
